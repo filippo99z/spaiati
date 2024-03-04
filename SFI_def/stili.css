@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.schoolbell{
+    font-family: Schoolbell;
+}
+.comba{
+    font-family: Comba;
+}
+p{
+    font-size: 1.5vw;
+}
+h1{
+    font-size: 3vw;
+}
+h2{
+    font-size: 2.5vw;
+    color: #6204BF;
+    font-weight: bolder;
+}
+body{
+    background-color: #EFB5F2;
+}
+.viola{
+    background-color: #6204BF;
+}
+.blu{
+    background-color: #3D46F2;
+}
+.arancio{
+    background-color: #FE6C0C;
+}
+.giallo{
+    background-color: #ECF447;
+}
+.tGiallo{
+    color: #ECF447;
+}
+.fucsia{
+    background-color: #F21DB9
+}
+
+/* navbar */
+.logo{
+    width: 8vw;
+}
+.navbar{
+    background-color: #ECF447;
+    border-bottom:4px solid #F21DB9;
+}
+
+.navbar a{
+    font-size: 1.3vw;
+    font-family: Inter;
+    font-weight: bolder;
+}
+
+.navbar-nav .nav-link.active{
+    color: #F21DB9;
+    border-bottom: 2px solid #F21DB9;
+    padding-bottom: 0;
+}
+.custom-toggler .navbar-toggler-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("immagini/toggler.png");
+    background-size: 40px;
+}
+button{
+    background-color: transparent;
+}
+.close-btn{
+    width: 40px !important;
+}
+.offcanvas-header{
+    border-bottom:4px solid #F21DB9;
+    background-color: #ECF447;
+}
+.navbar a:hover {
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+    color: #F21DB9;
+}
+/*fine navbar*/
+
+/*footer*/
+.footer{
+    background-color: #ECF447;
+    border-top: 4px solid #F21DB9;
+    color: #F21DB9;
+
+}
+.icona{
+    width:45px;
+    height: 45px;
+}
+.icona:hover{
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+    cursor: pointer;
+}
+/*fine footer*/
+
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@media(max-width: 767px){
+
+    h1{
+        font-size: 4vh;
+    }
+    p{
+        font-size: 2vh;
+    }
+
+    /*css navbar*/
+    .sidebar{
+        background-color: #ECF447;
+        min-width: 100vw;
+    }
+    .sidebar a{
+        color: #F21DB9;
+        font-size: 2.5vh;
+    }
+    .logo{
+        width: 16vw;
+    }
+    .navbar-nav .nav-link.active{
+        color: #F21DB9;
+        border: 0px solid #F21DB9;
+        padding-bottom: 8px;
+    }
+    hr{
+        color: #F21DB9;
+    }
+    #carrello{
+        align-items: center;
+        background-color: #EFB5F2;
+        border-radius: 30px;
+        border: 2px solid #F21DB9;
+        bottom: 0%;
+        margin-top: 3vh;
+        margin-left: 30vw !important;
+        margin-right: 30vw !important;
+        box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+
+    }
+    .navbar a:hover {
+        -webkit-animation: none;
+        animation: none;
+        color: #F21DB9;
+    }
+    .hero{
+        height: 50vh;
+    }
+    /* fine css navbar*/
+    .svgV{
+        display: none !important;
+    }
+    .svgO{
+        display: block;
+        z-index: -1;
+
+    }
+    .fiore{
+        width: 70% !important;
+    }
+    .ciocco{
+        height: 40vh;
+    }
+
+    #sticker1{
+
+        width: 18vh !important;
+        top: 10%;
+        left:0%;
+
+    }
+    #sticker2{
+
+        width: 18vh !important;
+        top: 5%;
+        right:0%;
+
+    }
+    #sticker3{
+
+        width: 18vh !important;
+        top: 10%;
+        left:0%;
+
+    }
+    .stelline{
+        width: 15vh !important;
+        top: 35% !important;
+        left:10%;
+    }
+    .stelline2{
+
+        width: 15vh !important;
+        top: 35% !important;
+        right:7% !important;
+        transform: rotate(12deg);
+    }
+    /*css footer*/
+    .icona{
+        width:35px !important;
+        height: 35px !important;
+    }
+    #freccia{
+        transform: rotate(-90deg) scaleX(-1);
+
+    }
+    #seguici{
+        display: block !important;
+    }
+    /*fine css footer*/
+}
