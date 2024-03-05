@@ -7,6 +7,9 @@
 .comba{
     font-family: Comba;
 }
+.inter{
+    font-family: Inter;
+}
 p{
     font-size: 1.5vw;
 }
@@ -15,12 +18,9 @@ h1{
 }
 h2{
     font-size: 2.5vw;
-    color: #6204BF;
-    font-weight: bolder;
 }
 body{
     background-color: #EFB5F2;
-
 }
 .purlple{
     background-color: #6204BF;
@@ -39,6 +39,12 @@ body{
 }
 .fucsia{
     background-color: #F21DB9
+}
+.tWhite{
+ color: #f8f4db;
+}
+.tBlack{
+    color: #262626;
 }
 
 /* navbar */
@@ -176,9 +182,9 @@ button{
 }
 
 .bottone{
-    border: 5px solid #6204BF;
+    border: 5px solid;
     border-radius: 3vh;
-    background-color: #d3b3f5;
+
     font-family: Inter;
     box-shadow: 4px 4px 0px rgba(0,0,0,1);
     font-size: 2vw;
