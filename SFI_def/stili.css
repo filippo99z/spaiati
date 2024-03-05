@@ -165,7 +165,83 @@ button{
     }
 }
 
-@media(max-width: 767px){
+
+
+
+.titolo{
+    font-size: clamp(42px, 5vw, 72px);
+    font-family: 'Inter';
+    font-weight: bolder;
+
+}
+
+.bottone{
+    border: 5px solid #6204BF;
+    border-radius: 3vh;
+    background-color: #d3b3f5;
+    font-family: Inter;
+    box-shadow: 4px 4px 0px rgba(0,0,0,1);
+    font-size: 2vw;
+    margin: 0;
+    width:fit-content;
+    font-weight: bold;
+}
+
+.contatti{
+    background-color: #EFB5F2;
+    border: 5px solid #ECF447;
+    border-radius: 3vh;
+    padding:30px 2vw;
+    margin: auto;
+
+}
+.input{
+    background-color: #f8f4db;
+    border: none;
+    border-radius: 2.5vh;
+    font-size: 16px;
+    width: 100%;
+    padding: 1vw 1vw;
+    margin-bottom: 2vh;
+}
+.messaggio{
+    background-color: #f8f4db;
+    border: none;
+    border-radius: 2.5vh;
+    font-size: 16px;
+    width: 100%;
+    padding: 1vw 1vw;
+    margin-bottom: 2vh;
+    height: 15vh;
+    resize:none
+}
+.bottoneForm{
+    background-color: #f8f4db;
+    border-radius: 2.5vh;
+    color: #262626;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: bold;
+    width:fit-content;
+    padding: 0.7vw 3vw;
+    margin: auto;
+}
+.sfondoForm{
+    background-image: url('immagini/contatti/vector.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.formContainer{
+    width: 60%;
+    margin-left: 15vw;
+    margin-top: 10vh
+}
+.contattiS1{
+    position: absolute; top: -5vh;left:35vw;width: 45%
+}
+
+
+@media screen and (max-width: 767px){
 
     h1{
         font-size: 4vh;
@@ -215,54 +291,41 @@ button{
         height: 50vh;
     }
     /* fine css navbar*/
-    .svgV{
-        display: none !important;
+    .bottone{
+        font-size: 2.5vh !important;
     }
-    .svgO{
-        display: block;
-        z-index: -1;
+    .sfondoForm{
+        background-image: url('immagini/contatti/Vector2.png') !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .formContainer{
+        width: 90% !important;
+        margin: auto !important;
+        margin-top: 20vh !important;
+    }
+    .input{
+        border-radius: 1.5vh !important;
+        padding-left:2vh !important;
+        padding-right:2vh !important;
+    }
+    .messaggio{
+        border-radius: 1.5vh !important;
+        padding-left:2vh !important;
+        padding-right:2vh !important;
+    }
+    .bottoneForm{
 
     }
-    .fiore{
-        width: 70% !important;
+    .contatti{
+        padding:3vh 2vh !important;
     }
-    .ciocco{
-        height: 40vh;
+    .contattiS1{
+        top: 55vh;
+        left:5vw;
+        width: 35%;
     }
 
-    #sticker1{
-
-        width: 18vh !important;
-        top: 10%;
-        left:0%;
-
-    }
-    #sticker2{
-
-        width: 18vh !important;
-        top: 5%;
-        right:0%;
-
-    }
-    #sticker3{
-
-        width: 18vh !important;
-        top: 10%;
-        left:0%;
-
-    }
-    .stelline{
-        width: 15vh !important;
-        top: 35% !important;
-        left:10%;
-    }
-    .stelline2{
-
-        width: 15vh !important;
-        top: 35% !important;
-        right:7% !important;
-        transform: rotate(12deg);
-    }
     /*css footer*/
     .icona{
         width:35px !important;
@@ -276,64 +339,4 @@ button{
         display: block !important;
     }
     /*fine css footer*/
-}
-
-
-.titolo{
-    font-size: clamp(42px, 5vw, 72px);
-    font-family: 'Inter';
-    font-weight: bolder;
-
-}
-
-.bottone{
-    border: 5px solid #6204BF;
-    border-radius: 3vh;
-    background-color: #d3b3f5;
-    font-family: Inter;
-    box-shadow: 4px 4px 0px rgba(0,0,0,1);
-    font-size: 2vw;
-    margin: 0;
-    width:fit-content;
-    font-weight: bold;
-}
-
-.contatti{
-    background-color: #EFB5F2;
-    border: 5px solid #ECF447;
-    border-radius: 3vh;
-    padding:30px 2vw;
-    margin: auto;
-
-}
-.input{
-    background-color: #f8f4db;
-    border: none;
-    border-radius: 2.5vh;
-    font-size: 16px;
-    width: 100%;
-    padding: 1vw 1vw;
-    margin-bottom: 2vh;
-}
-.messaggio{
-    background-color: #f8f4db;
-    border: none;
-    border-radius: 2.5vh;
-    font-size: 16px;
-    width: 100%;
-    padding: 1vw 1vw;
-    margin-bottom: 2vh;
-    height: 10vw;
-    resize:none
-}
-.bottoneForm{
-    background-color: #f8f4db;
-    border-radius: 2.5vh;
-    color: #262626;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: bold;
-    width:fit-content;
-    padding: 0.7vw 3vw;
-    margin: auto;
 }
