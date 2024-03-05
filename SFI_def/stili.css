@@ -22,19 +22,19 @@ body{
     background-color: #EFB5F2;
 
 }
-.viola{
+.purlple{
     background-color: #6204BF;
 }
 .blu{
     background-color: #3D46F2;
 }
-.arancio{
+.orange{
     background-color: #FE6C0C;
 }
-.giallo{
+.yellow{
     background-color: #ECF447;
 }
-.tGiallo{
+.tYellow{
     color: #ECF447;
 }
 .fucsia{
@@ -168,7 +168,7 @@ button{
 
 
 
-.titolo{
+.title{
     font-size: clamp(42px, 5vw, 72px);
     font-family: 'Inter';
     font-weight: bolder;
@@ -277,8 +277,8 @@ button{
         border: 2px solid #F21DB9;
         bottom: 0%;
         margin-top: 3vh;
-        margin-left: 30vw !important;
-        margin-right: 30vw !important;
+        margin-left: 30vw;
+        margin-right: 30vw;
         box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
 
     }
@@ -292,33 +292,33 @@ button{
     }
     /* fine css navbar*/
     .bottone{
-        font-size: 2.5vh !important;
+        font-size: 2.5vh;
     }
     .sfondoForm{
-        background-image: url('immagini/contatti/Vector2.png') !important;
+        background-image: url('immagini/contatti/Vector2.png');
         background-size: cover;
         background-repeat: no-repeat;
     }
     .formContainer{
-        width: 90% !important;
-        margin: auto !important;
-        margin-top: 20vh !important;
+        width: 90% ;
+        margin: auto ;
+        margin-top: 20vh;
     }
     .input{
-        border-radius: 1.5vh !important;
-        padding-left:2vh !important;
-        padding-right:2vh !important;
+        border-radius: 1.5vh ;
+        padding-left:2vh ;
+        padding-right:2vh;
     }
     .messaggio{
-        border-radius: 1.5vh !important;
-        padding-left:2vh !important;
-        padding-right:2vh !important;
+        border-radius: 1.5vh;
+        padding-left:2vh;
+        padding-right:2vh;
     }
     .bottoneForm{
 
     }
     .contatti{
-        padding:3vh 2vh !important;
+        padding:3vh 2vh;
     }
     .contattiS1{
         top: 55vh;
@@ -328,15 +328,11 @@ button{
 
     /*css footer*/
     .icona{
-        width:35px !important;
-        height: 35px !important;
+        width:35px;
+        height: 35px;
     }
     #freccia{
         transform: rotate(-90deg) scaleX(-1);
-
-    }
-    #seguici{
-        display: block !important;
     }
     /*fine css footer*/
 }
