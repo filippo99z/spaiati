@@ -46,134 +46,6 @@ body{
 .tBlack{
     color: #262626;
 }
-
-/* navbar */
-.logo{
-    width: 8vw;
-}
-.navbar{
-    background-color: #ECF447;
-    border-bottom:4px solid #F21DB9;
-}
-
-.navbar a{
-    font-size: 1.3vw;
-    font-family: Inter;
-    font-weight: bolder;
-}
-
-.navbar-nav .nav-link.active{
-    color: #F21DB9;
-    border-bottom: 2px solid #F21DB9;
-    padding-bottom: 0;
-}
-.custom-toggler .navbar-toggler-icon {
-    width: 40px;
-    height: 40px;
-    background-image: url("immagini/toggler.png");
-    background-size: 40px;
-}
-button{
-    background-color: transparent;
-}
-.close-btn{
-    width: 40px !important;
-}
-.offcanvas-header{
-    border-bottom:4px solid #F21DB9;
-    background-color: #ECF447;
-}
-.navbar a:hover {
-    -webkit-animation: jello-horizontal 0.9s both;
-    animation: jello-horizontal 0.9s both;
-    color: #F21DB9;
-}
-/*fine navbar*/
-
-/*footer*/
-.footer{
-    background-color: #ECF447;
-    border-top: 4px solid #F21DB9;
-    color: #F21DB9;
-
-}
-.icona{
-    width:45px;
-    height: 45px;
-}
-.icona:hover{
-    -webkit-animation: jello-horizontal 0.9s both;
-    animation: jello-horizontal 0.9s both;
-    cursor: pointer;
-}
-/*fine footer*/
-
-
-@-webkit-keyframes jello-horizontal {
-    0% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-    30% {
-        -webkit-transform: scale3d(1.25, 0.75, 1);
-        transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-        -webkit-transform: scale3d(0.75, 1.25, 1);
-        transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-        -webkit-transform: scale3d(1.15, 0.85, 1);
-        transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-        -webkit-transform: scale3d(0.95, 1.05, 1);
-        transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-        -webkit-transform: scale3d(1.05, 0.95, 1);
-        transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-}
-
-@keyframes jello-horizontal {
-    0% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-    30% {
-        -webkit-transform: scale3d(1.25, 0.75, 1);
-        transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-        -webkit-transform: scale3d(0.75, 1.25, 1);
-        transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-        -webkit-transform: scale3d(1.15, 0.85, 1);
-        transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-        -webkit-transform: scale3d(0.95, 1.05, 1);
-        transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-        -webkit-transform: scale3d(1.05, 0.95, 1);
-        transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-}
-
-
-
-
 .title{
     font-size: clamp(42px, 5vw, 72px);
     font-family: 'Inter';
@@ -258,8 +130,145 @@ button{
 .overflow-hidden {
     overflow: hidden;
 }
+.divVector{
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: -1vh;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
 
+.grid-item {
+    aspect-ratio: 1;
+    border: 1px solid #ccc;
+    text-align: center;
+}
 
+/* navbar */
+.logo{
+    width: 8vw;
+}
+.navbar{
+    background-color: #ECF447;
+    border-bottom:4px solid #F21DB9;
+}
+.navbar a{
+    font-size: 1.3vw;
+    font-family: Inter;
+    font-weight: bolder;
+}
+.navbar-nav .nav-link.active{
+    color: #F21DB9;
+    border-bottom: 2px solid #F21DB9;
+    padding-bottom: 0;
+}
+.custom-toggler .navbar-toggler-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("immagini/toggler.png");
+    background-size: 40px;
+}
+button{
+    background-color: transparent;
+}
+.close-btn{
+    width: 40px !important;
+}
+.offcanvas-header{
+    border-bottom:4px solid #F21DB9;
+    background-color: #ECF447;
+}
+.navbar a:hover {
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+    color: #F21DB9;
+}
+/*fine navbar*/
+
+/*footer*/
+.footer{
+    background-color: #ECF447;
+    border-top: 4px solid #F21DB9;
+    color: #F21DB9;
+
+}
+.icona{
+    width:45px;
+    height: 45px;
+}
+.icona:hover{
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+    cursor: pointer;
+}
+/*fine footer*/
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
 @media screen and (max-width: 767px){
 
     h1{
