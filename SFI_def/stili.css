@@ -246,6 +246,19 @@ button{
     position: absolute; top: -5vh;left:35vw;width: 45%
 }
 
+.cut-img{
+    position: relative;
+    right: -3vw; /* Regola questo valore per il taglio desiderato */
+    max-width: calc(100% + 50px); /* Larghezza massima per consentire il taglio */
+    height: auto;
+    top: -2vh;
+
+
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+
 
 @media screen and (max-width: 767px){
 
