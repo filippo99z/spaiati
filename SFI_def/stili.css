@@ -10,6 +10,9 @@
 .inter{
     font-family: Inter;
 }
+.bolder{
+    font-weight: bolder;
+}
 p{
     font-size: 1.5vw;
 }
