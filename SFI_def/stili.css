@@ -25,7 +25,7 @@ h2{
 body{
     background-color: #EFB5F2;
 }
-.purlple{
+.purple{
     background-color: #6204BF;
 }
 .blu{
@@ -37,9 +37,7 @@ body{
 .yellow{
     background-color: #ECF447;
 }
-.tYellow{
-    color: #ECF447;
-}
+
 .fucsia{
     background-color: #F21DB9
 }
@@ -48,6 +46,21 @@ body{
 }
 .tBlack{
     color: #262626;
+}
+.tYellow{
+    color: #ECF447;
+}
+.tPurple{
+    color:#6204BF;
+}
+.tBlue{
+    color: #3D46F2;
+}
+.tOrange{
+    color:#FE6C0C;
+}
+.tFucsia{
+    color:#F21DB9;
 }
 .title{
     font-size: clamp(42px, 5vw, 72px);
@@ -150,6 +163,12 @@ body{
     aspect-ratio: 1;
     border: 1px solid #ccc;
     text-align: center;
+}
+.price-position{
+    width: 50%;
+    position: absolute;
+    top: -40px;
+    left: -40px;
 }
 
 /* navbar */
