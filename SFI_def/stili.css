@@ -70,9 +70,8 @@ body{
 }
 
 .bottone{
-    border: 5px solid;
-    border-radius: 3vh;
 
+    border-radius: 3vh;
     font-family: Inter;
     box-shadow: 4px 4px 0px rgba(0,0,0,1);
     font-size: 2vw;
@@ -80,6 +79,29 @@ body{
     width:fit-content;
     font-weight: bold;
 }
+
+.btn-purple{
+    border: 5px solid #6204BF;
+    background-color: #D3B3F5;
+
+}
+.btn-yellow{
+    border: 5px solid #ECF447;
+    background-color: #F6F7BA;
+}
+.btn-blue{
+    border: 5px solid #3D46F2;
+    background-color: #C2C5FF;
+}
+.btn-fucsia{
+    border: 5px solid #F21DB9;
+    background-color: #F997FF;
+}
+.btn-orange{
+    border: 5px solid #FE6C0C;
+    background-color: #F3B385;
+}
+
 
 .contatti{
     background-color: #EFB5F2;
