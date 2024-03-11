@@ -10,10 +10,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-md sticky-top px-md-5">
-    <div class="container-fluid px-md-0">
+<nav class="navbar navbar-expand-md sticky-top px-md-5 px-4">
+    <div class="container-fluid px-0">
         <a class="navbar-brand logo py-0" href="index.html"><img class="logo" src="immagini/logo.png" alt="logo"></a>
-        <button class="navbar-toggler shadow-none border-0 rounded-circle custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler shadow-none border-0 rounded-circle custom-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -60,18 +60,20 @@
 <!-- contenuto -->
 <div class=" container-fluid">
     <div class="row ">
-        <div class="col-md-5 px-md-5">
-            <h1 class="inter bolder tBlue" style="padding-top: 10vh;">
+        <div class="col-md-5 px-md-5 px-4">
+            <h1 class="inter bolder tBlue pt-10">
                 I NOSTRI <br>PRODOTTI
             </h1>
-            <p class="mb-md-0 pt-md-3 tBlack" style="padding-bottom: 10vh">
-                Benvenuto nel cuore del nostro universo di stile, dove l'originalità si fonde con la comodità. Nel nostro shop, ti attende una collezione eclettica di calze stravaganti, progettate per esprimere la tua personalità in ogni passo.
+            <p class="mb-md-0 pt-md-3 tBlack pb-10" >
+                <span id="text-hide"> Benvenuto nel cuore del nostro universo di stile, dove l'originalità si fonde con la comodità. Nel nostro shop, ti attende una collezione eclettica di calze stravaganti, progettate per esprimere la tua personalità in ogni passo.
                 <br><br>
-                Inizia il tuo viaggio di shopping e scopri la varietà di calze uniche che abbiamo da offrire!
+                Inizia il tuo viaggio di shopping e scopri la varietà di calze uniche che abbiamo da offrire! </span>
+                <span id="text-hide2" >Inizia il tuo viaggio di shopping e scopri la varietà di calze uniche che abbiamo da offrire, mi raccomando, ricordati di pagare!</span>
             </p>
+
         </div>
-        <div class="col-md-7 px-md-0">
-            <div style="background-image: url('immagini/shop/pBackground.png');height: 100%; background-size: cover; position: relative; background-position-x: 12vh;background-repeat: no-repeat;background-position-y: -19vh">
+        <div class="col-md-7 px-md-0 px-0" id="background1">
+            <div class="pbackground">
 
             </div>
         </div>
@@ -82,35 +84,35 @@
 </div>
 <div class="blu" style="height: 7vh"></div>
 
-<div class="container-fluid" style="background-image: url('immagini/shop/pVector.png'); background-size: contain; background-repeat: no-repeat">
+<div class="container-fluid pVector" >
     <div style="position:relative;">
         <h2 class="py-md-5 tYellow" style="text-align: center" > SCOPRI LA NOSTRA COLLEZIONE</h2>
         <img src="immagini/shop/stelleshop.png" style="width: 10%;position: absolute; left:75%; top: 5px;">
     </div>
-    <div class="row px-md-5" >
-        <div class="col-md-3">
+    <div class="row px-md-5 px-4" >
+        <div class="col-md-3 col-6 my-3 my-md-0 ps-0  px-md-2">
             <div class="bottone btn-purple" style="width: 100%; text-align: center">
                 SUPERPOTERI
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6 my-3 my-md-0 pe-0  px-md-2">
             <div class="bottone btn-purple" style="width: 100%;text-align: center">
                 TECH
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6 ps-0 px-md-2">
             <div class="bottone btn-purple" style="width: 100%;text-align: center">
                 COMFORT
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6 pe-0  px-md-2">
             <div class="bottone btn-purple" style="width: 100%;text-align: center">
                 MYSTERY BOX
             </div>
         </div>
     </div>
-    <div class="row px-md-5">
-        <div class="col-md-4 p-md-5">
+    <div class="row px-md-5 px-4 d-flex justify-content-between">
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4 mt-5 mt-md-0">
 
             <div class="grid-item mt-md-5 purple" style="position: relative" >
                     <img src="immagini/shop/tech1.png" style="object-fit: cover; width: 100%;">
@@ -119,7 +121,7 @@
             </div>
                 <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
         </div>
-        <div class="col-md-4 p-md-5">
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0 mt-5 mt-md-0">
             <div class="grid-item mt-md-5 purple" style="position: relative" >
 
                 <img src="immagini/shop/stellina.png" class="price-position">
@@ -127,7 +129,84 @@
             </div>
             <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
         </div>
-        <div class="col-md-4 p-md-5">
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4 ">
+            <div class="grid-item mt-md-5 purple" style="position: relative" >
+
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+
+
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
+            <div class="grid-item mt-md-5 purple" style="position: relative" >
+
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4">
+            <div class="grid-item mt-md-5 purple" style="position: relative" >
+
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
+            <div class="grid-item mt-md-5 purple" style="position: relative" >
+
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+
+
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4">
+            <div class="grid-item mt-md-5 purple" style="position: relative" >
+
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
+            <div class="grid-item mt-md-5 purple" style="position: relative" >
+
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4">
+            <div class="grid-item mt-md-5 purple" style="position: relative" >
+
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
+            <div class="grid-item mt-md-5 purple" style="position: relative" >
+
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4">
+            <div class="grid-item mt-md-5 purple" style="position: relative" >
+
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
             <div class="grid-item mt-md-5 purple" style="position: relative" >
 
                 <img src="immagini/shop/stellina.png" class="price-position">
@@ -136,103 +215,25 @@
             <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
         </div>
     </div>
-    <div class="row px-md-5">
-        <div class="col-md-4 p-md-5">
-            <div class="grid-item mt-md-5 purple" style="position: relative" >
-
-                <img src="immagini/shop/stellina.png" class="price-position">
-
-            </div>
-            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
-        </div>
-        <div class="col-md-4 p-md-5">
-            <div class="grid-item mt-md-5 purple" style="position: relative" >
-
-                <img src="immagini/shop/stellina.png" class="price-position">
-
-            </div>
-            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
-        </div>
-        <div class="col-md-4 p-md-5">
-            <div class="grid-item mt-md-5 purple" style="position: relative" >
-
-                <img src="immagini/shop/stellina.png" class="price-position">
-
-            </div>
-            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
-        </div>
-    </div>
-    <div class="row px-md-5">
-        <div class="col-md-4 p-md-5">
-            <div class="grid-item mt-md-5 purple" style="position: relative" >
-
-                <img src="immagini/shop/stellina.png" class="price-position">
-
-            </div>
-            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
-        </div>
-        <div class="col-md-4 p-md-5">
-            <div class="grid-item mt-md-5 purple" style="position: relative" >
-
-                <img src="immagini/shop/stellina.png" class="price-position">
-
-            </div>
-            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
-        </div>
-        <div class="col-md-4 p-md-5">
-            <div class="grid-item mt-md-5 purple" style="position: relative" >
-
-                <img src="immagini/shop/stellina.png" class="price-position">
-
-            </div>
-            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
-        </div>
-    </div>
-    <div class="row px-md-5">
-        <div class="col-md-4 p-md-5">
-            <div class="grid-item mt-md-5 purple" style="position: relative" >
-
-                <img src="immagini/shop/stellina.png" class="price-position">
-
-            </div>
-            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
-        </div>
-        <div class="col-md-4 p-md-5">
-            <div class="grid-item mt-md-5 purple" style="position: relative" >
-
-                <img src="immagini/shop/stellina.png" class="price-position">
-
-            </div>
-            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
-        </div>
-        <div class="col-md-4 p-md-5">
-            <div class="grid-item mt-md-5 purple" style="position: relative" >
-
-                <img src="immagini/shop/stellina.png" class="price-position">
-
-            </div>
-            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
-        </div>
-    </div>
-    <div class="row ">
-        <div class="col-md-6 px-md-0">
-           <img src="immagini/shop/pBackground2.png" style="width: 100%;position: relative;left: -2vh;bottom: -3vw">
+    <div class="row" style="position: relative">
+        <div class="col-md-6 px-md-0 overflow-hidden-x text-center px-0">
+           <img class="pbackground2" src="immagini/shop/pBackground2.png">
         </div>
 
-        <div class="col-md-6 px-md-5 d-flex align-items-center">
-            <div class="pe-md-5">
+        <div class="col-md-6 px-md-5 d-flex align-items-center px-4">
+            <div class="pe-md-5 ">
 
                 <h1 class="inter bolder" style="padding-top: 10vh;">
                     CHE CALZA <br>SEI?
                 </h1>
-                <p class="mb-md-0 py-md-3">
+                <p class="mb-md-0 py-md-3 py-3">
                     Indeciso su quali acquisti fare?<br>
                     Scopri la vera calza che fa per te
                     e corri ad aggiungerla al carrello!
                     <br><br>
                     Cosa aspetti? Clicca sul bottone!
                 </p>
-                <div class="bottone mt-md-3 btn-yellow" style="margin: auto">
+                <div class="bottone mt-md-3 btn-yellow mb-4" style="margin: auto">
                     FAI IL TEST
                 </div>
             </div>

@@ -41,6 +41,9 @@ body{
 .fucsia{
     background-color: #F21DB9
 }
+.fucsia-sm{
+    background-color: transparent;
+}
 .tWhite{
  color: #f8f4db;
 }
@@ -68,6 +71,9 @@ body{
     font-weight: bolder;
 
 }
+#text-hide2{
+    display: none;
+}
 
 .bottone{
 
@@ -79,7 +85,12 @@ body{
     width:fit-content;
     font-weight: bold;
 }
-
+.pb-10{
+    padding-bottom: 10vh
+}
+.pt-10{
+    padding-top: 10vh
+}
 .btn-purple{
     border: 5px solid #6204BF;
     background-color: #D3B3F5;
@@ -101,8 +112,27 @@ body{
     border: 5px solid #FE6C0C;
     background-color: #F3B385;
 }
+.pbackground{
+    background-image: url('immagini/shop/pBackground.png');
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    background-position-x: 12vh;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
 
-
+.pbackground2{
+    width: 100%;
+    position: relative;
+    left: -2vh;
+    bottom: -3vw;
+}
+.pVector{
+    background-image: url('immagini/shop/pVector.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 .contatti{
     background-color: #EFB5F2;
     border: 5px solid #ECF447;
@@ -167,6 +197,9 @@ body{
 }
 .overflow-hidden {
     overflow: hidden;
+}
+.overflow-hidden-x{
+    overflow-x:clip ;
 }
 .divVector{
     height: 100%;
@@ -321,6 +354,51 @@ button{
     p{
         font-size: 2vh;
     }
+    .pbackground{
+        background-image: url('immagini/shop/pBackground.png');
+        height: 100%;
+        background-size:110%;
+        position: relative;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-position-y: 0vh;
+    }
+    .pbackground2{
+        width: 110%;
+        position: relative;
+        margin: auto;
+        align-content: center;
+    }
+
+    #background1{
+        height: 50vh;
+    }
+    .pt-10{
+        padding-top: 2vh;
+    }
+    .pb-10{
+        padding-bottom: 2vh;
+    }
+    #text-hide{
+        display: none;
+    }
+    #text-hide2{
+        display: block;
+    }
+
+    .pVector{
+        background-image:none;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .price-position{
+        width: 50%;
+        position: absolute;
+        top: -20px;
+        left: -20px;
+    }
+
 
     /*css navbar*/
     .sidebar{
