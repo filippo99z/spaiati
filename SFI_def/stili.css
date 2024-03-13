@@ -14,13 +14,13 @@
     font-weight: bolder;
 }
 p{
-    font-size: 1.5vw;
+    font-size: clamp(12px,1.5vw,20px)
 }
 h1{
-    font-size: 3vw;
+    font-size: clamp(36px, 4vw,84px);
 }
 h2{
-    font-size: 2.5vw;
+    font-size: clamp(28px, 4vw,48px);
 }
 body{
     background-color: #EFB5F2;
@@ -77,10 +77,10 @@ body{
 
 .bottone{
 
-    border-radius: 3vh;
+    border-radius: clamp(15px,2vw,20px);
     font-family: Inter;
     box-shadow: 4px 4px 0px rgba(0,0,0,1);
-    font-size: 2vw;
+    font-size: clamp(16px, 2vw, 24px);
     margin: 0;
     width:fit-content;
     font-weight: bold;
@@ -189,14 +189,18 @@ body{
     width: 55%
 }
 
-.cut-img{
+.cut-img-right{
     position: relative;
     right: -3vw; /* Regola questo valore per il taglio desiderato */
     max-width: calc(100% + 50px); /* Larghezza massima per consentire il taglio */
     height: auto;
-    top: -2vh;
+}
 
-
+.cut-img-left{
+    position: relative;
+    left: -3vw; /* Regola questo valore per il taglio desiderato */
+    max-width: calc(100% + 50px); /* Larghezza massima per consentire il taglio */
+    height: auto;
 }
 .overflow-hidden {
     overflow: hidden;
@@ -445,9 +449,7 @@ button{
         height: 50vh;
     }
     /* fine css navbar*/
-    .bottone{
-        font-size: 2.5vh;
-    }
+
     .sfondoForm{
         background-image: url('immagini/contatti/Vector2.png');
         background-size: cover;
@@ -468,9 +470,7 @@ button{
         padding-left:2vh;
         padding-right:2vh;
     }
-    .bottoneForm{
 
-    }
     .contatti{
         padding:3vh 2vh;
     }
