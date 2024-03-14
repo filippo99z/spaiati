@@ -74,6 +74,7 @@ body{
     margin: 0;
     width:fit-content;
     font-weight: bold;
+    cursor: pointer;
 }
 .btn-purple{
     border: 5px solid #6204BF;
@@ -237,6 +238,18 @@ body{
     aspect-ratio: 1;
     border: 1px solid #ccc;
     text-align: center;
+}
+.s1{
+    width: 20%;left: 75%;top:70%
+}
+.s2{
+    width: 20%;left: 75%;top:70%
+}
+.s3{
+    width: 20%;left: 85%;top:70%
+}
+.s4{
+    width: 30%;right: 0%;top:10%;z-index: 999
 }
 /** fine index **/
 
@@ -403,6 +416,18 @@ button{
         background-repeat: no-repeat;
         position: relative;
         top:-1vh
+    }
+    .s1{
+        width: 25%;left: 8%;top:-60vw
+    }
+    .s2{
+        width: 25%;left: 70%;top:-45vw
+    }
+    .s3{
+        width: 25%;left: 8%;top:-60vw
+    }
+    .s4{
+        width: 30%;right: 0%;top:10%;z-index: 999
     }
 
 
