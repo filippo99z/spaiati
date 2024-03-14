@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900');
 
+/** css generali **/
 .schoolbell{
     font-family: Schoolbell;
 }
@@ -65,18 +66,7 @@ body{
 .tFucsia{
     color:#F21DB9;
 }
-.title{
-    font-size: clamp(42px, 5vw, 72px);
-    font-family: 'Inter';
-    font-weight: bolder;
-
-}
-#text-hide2{
-    display: none;
-}
-
 .bottone{
-
     border-radius: clamp(15px,2vw,20px);
     font-family: Inter;
     box-shadow: 4px 4px 0px rgba(0,0,0,1);
@@ -84,12 +74,6 @@ body{
     margin: 0;
     width:fit-content;
     font-weight: bold;
-}
-.pb-10{
-    padding-bottom: 10vh
-}
-.pt-10{
-    padding-top: 10vh
 }
 .btn-purple{
     border: 5px solid #6204BF;
@@ -112,6 +96,27 @@ body{
     border: 5px solid #FE6C0C;
     background-color: #F3B385;
 }
+
+.banner{
+    height: 7vh;
+}
+
+.title{
+    font-size: clamp(42px, 5vw, 72px);
+    font-family: 'Inter';
+    font-weight: bolder;
+}
+#text-hide2{
+    display: none;
+}
+
+.pb-10{
+    padding-bottom: 10vh
+}
+.pt-10{
+    padding-top: 10vh
+}
+
 .pbackground{
     background-image: url('immagini/shop/pBackground.png');
     height: 100%;
@@ -134,16 +139,14 @@ body{
     background-repeat: no-repeat;
 }
 
-.banner{
-    height: 7vh;
-}
+
+
 .contatti{
     background-color: #EFB5F2;
     border: 5px solid #ECF447;
     border-radius: 3vh;
     padding:30px 2vw;
     margin: auto;
-
 }
 .input{
     background-color: #f8f4db;
@@ -192,7 +195,10 @@ body{
     top:-5%;
     width: 55%
 }
-
+/** index css**/
+.flower{
+    width: 80%;
+}
 .cut-img-right{
     position: relative;
     right: -3vw; /* Regola questo valore per il taglio desiderato */
@@ -202,8 +208,8 @@ body{
 
 .cut-img-left{
     position: relative;
-    left: -3vw; /* Regola questo valore per il taglio desiderato */
-    max-width: calc(100% + 50px); /* Larghezza massima per consentire il taglio */
+    left: -3vw;
+    max-width: calc(100% + 50px);
     height: auto;
 }
 .overflow-hidden {
@@ -227,12 +233,14 @@ body{
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
-
 .grid-item {
     aspect-ratio: 1;
     border: 1px solid #ccc;
     text-align: center;
 }
+/** fine index **/
+
+
 .price-position{
     width: 50%;
     position: absolute;
@@ -363,7 +371,9 @@ button{
 }
 @media screen and (max-width: 767px){
 
-
+    .center-sm{
+        margin: auto;
+    }
     .pbackground{
         background-image: url('immagini/shop/pBackground.png');
         height: 100%;
@@ -419,6 +429,9 @@ button{
     }
     .banner{
         height: 5vh;
+    }
+    .flower{
+        width: 70%;
     }
     .price-position{
         width: 50%;
