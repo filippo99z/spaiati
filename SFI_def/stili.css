@@ -68,12 +68,16 @@ body{
 .bottone{
     border-radius: clamp(15px,2vw,20px);
     font-family: Poppins, sans-serif;
-    box-shadow: 4px 4px 0px rgba(0,0,0,1);
+    box-shadow: 5px 5px 0 rgba(0,0,0,1);
     font-size: clamp(16px, 2vw, 24px);
     margin: 0;
     width:fit-content;
     font-weight: 600;
     cursor: pointer;
+}
+.bottone:active {
+    transform: translateY(7px);
+    box-shadow: 2px 2px 0 rgba(0,0,0,1);
 }
 .btn-purple{
     border: 5px solid #6204BF;
