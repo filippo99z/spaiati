@@ -1,6 +1,17 @@
 @import "font/stylesheet.css";
 
 /** css generali **/
+.grid-border{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.grid-border-left{
+    padding-left: 80px;
+
+}
+.grid-border-right{
+    padding-right: 80px;
+}
 .schoolbell{
     font-family: Schoolbell, sans-serif;
 }
@@ -394,6 +405,17 @@ button{
     }
 }
 @media screen and (max-width: 767px){
+    .grid-border{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .grid-border-left{
+        padding-left: 30px;
+
+    }
+    .grid-border-right{
+        padding-right: 30px;
+    }
 
     .center-sm{
         margin: auto;
