@@ -116,9 +116,13 @@ body{
     height: 7vh;
 }
 
+.firstDiv {
+    height: 70vh;
+}
+
 .title{
     font-size: clamp(42px, 5vw, 72px);
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
 }
 #text-hide2{
@@ -132,6 +136,30 @@ body{
     padding-top: 10vh
 }
 
+/*Css calza*/
+.gbackground{
+    background-image: url('immagini/calza/gBackground.png');
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    background-position-x: 12vh;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.littleStar {
+    width: 4%;
+    right: -30%;
+    top:300%;
+}
+
+.gSticker {
+    width: 40%;
+    right: -160%;
+    top:10%;
+}
+
+/*fiore robi- Css robi?*/
 .pbackground{
     background-image: url('immagini/shop/pBackground.png');
     height: 100%;
@@ -154,8 +182,14 @@ body{
     background-repeat: no-repeat;
 }
 
+.star1 {
+    width: 18%;
+    right: -25%;
+    top: 20%;
+}
 
 
+/*Css sara?*/
 .contatti{
     background-color: #EFB5F2;
     border: 5px solid #ECF447;
@@ -210,6 +244,7 @@ body{
     top:-5%;
     width: 55%
 }
+
 /** index css**/
 .flower{
     width: 80%;
@@ -220,7 +255,6 @@ body{
     max-width: calc(100% + 50px); /* Larghezza massima per consentire il taglio */
     height: auto;
 }
-
 .cut-img-left{
     position: relative;
     left: -3vw;
