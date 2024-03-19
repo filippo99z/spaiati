@@ -48,7 +48,6 @@ body{
 .yellow{
     background-color: #ECF447;
 }
-
 .fucsia{
     background-color: #F21DB9
 }
@@ -111,23 +110,17 @@ body{
     border: 5px solid #FE6C0C;
     background-color: #F3B385;
 }
-
 .banner{
     height: 7vh;
 }
 
-.firstDiv {
-    height: 70vh;
-}
 
 .title{
     font-size: clamp(42px, 5vw, 72px);
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
 }
-#text-hide2{
-    display: none;
-}
+
 
 .pb-10{
     padding-bottom: 10vh
@@ -137,6 +130,9 @@ body{
 }
 
 /*Css calza*/
+.firstDiv {
+    height: 70vh;
+}
 .gbackground{
     background-image: url('immagini/calza/gBackground.png');
     height: 100%;
@@ -146,13 +142,11 @@ body{
     background-repeat: no-repeat;
     background-position-y: 50%;
 }
-
 .littleStar {
     width: 4%;
     right: -30%;
     top:280%;
 }
-
 .gSticker {
     width: 40%;
     right: -160%;
@@ -160,6 +154,7 @@ body{
 }
 
 /*fiore robi- Css robi?*/
+
 .pbackground{
     background-image: url('immagini/shop/pBackground.png');
     height: 100%;
@@ -169,7 +164,6 @@ body{
     background-repeat: no-repeat;
     background-position-y: 50%;
 }
-
 .pbackground2{
     width: 100%;
     position: relative;
@@ -181,13 +175,20 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
 }
-
 .star1 {
     width: 18%;
     right: -25%;
     top: 20%;
 }
-
+.price-position{
+    width: 50%;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+}
+#text-hide2{
+    display: none;
+}
 
 /*Css sara?*/
 .contatti{
@@ -247,12 +248,12 @@ body{
 
 /** index css**/
 .flower{
-    width: 80%;
+    width: 90%;
 }
 .cut-img-right{
     position: relative;
-    right: -3vw; /* Regola questo valore per il taglio desiderato */
-    max-width: calc(100% + 50px); /* Larghezza massima per consentire il taglio */
+    right: -3vw;
+    max-width: calc(100% + 50px);
     height: auto;
 }
 .cut-img-left{
@@ -288,26 +289,18 @@ body{
     text-align: center;
 }
 .s1{
-    width: 20%;left: 75%;top:70%
+    width: 20%;left: 75%;top:70%;transform: rotate(-8deg);
 }
 .s2{
-    width: 20%;left: 75%;top:70%
+    width: 20%;left: 75%;top:70%;transform: rotate(12deg);
 }
 .s3{
-    width: 20%;left: 85%;top:70%
+    width: 20%;left: 85%;top:70%; transform: rotate(-12deg);
 }
 .s4{
     width: 30%;right: 0%;top:10%;z-index: 999
 }
 /** fine index **/
-
-
-.price-position{
-    width: 50%;
-    position: absolute;
-    top: -40px;
-    left: -40px;
-}
 
 /* navbar */
 .logo{
@@ -376,7 +369,7 @@ button{
     cursor: pointer;
 }
 /*fine footer*/
-
+/* animazioni per il jello*/
 @-webkit-keyframes jello-horizontal {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
@@ -407,7 +400,6 @@ button{
         transform: scale3d(1, 1, 1);
     }
 }
-
 @keyframes jello-horizontal {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
@@ -438,6 +430,8 @@ button{
         transform: scale3d(1, 1, 1);
     }
 }
+
+/* inizio media queryyyy */
 @media screen and (max-width: 767px){
     .grid-border{
         padding-left: 30px;
@@ -450,7 +444,6 @@ button{
     .grid-border-right{
         padding-right: 30px;
     }
-
     .center-sm{
         margin: auto;
     }
@@ -491,7 +484,7 @@ button{
         width: 25%;left: 70%;top:-45vw
     }
     .s3{
-        width: 25%;left: 8%;top:-60vw
+        width: 25%;left: 8%;top:-60vw;
     }
     .s4{
         width: 30%;right: 0%;top:10%;z-index: 999
@@ -616,4 +609,5 @@ button{
     /*fine css footer*/
 }
 
+/*** nessun csss sotto questa riga */
 
