@@ -285,7 +285,8 @@ body{
 }
 .grid-item {
     aspect-ratio: 1;
-    border: 1px solid #ccc;
+    border: 1vh solid white;
+    border-radius: 1vh;
     text-align: center;
 }
 .s1{
