@@ -288,6 +288,7 @@ body{
     border: 1vh solid white;
     border-radius: 1vh;
     text-align: center;
+    cursor: pointer;
 }
 .s1{
     width: 20%;left: 75%;top:70%;transform: rotate(-8deg);
