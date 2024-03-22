@@ -318,6 +318,23 @@ body{
 .s4{
     width: 30%;right: 0%;top:10%;z-index: 999
 }
+.indexStar1{
+    width: 10%;
+    left: 90%;
+    top:-100%
+}
+.indexStar2{
+    width: 4%;
+    left: -10%;
+    top:-25vh
+}
+.indexStar3{
+    width: 20%;
+    right: 10%;
+    top:-200%
+}
+
+
 
 
 /** fine index **/
@@ -498,7 +515,7 @@ button{
         top:-1vh
     }
     .s1{
-        width: 25%;left: 8%;top:-60vw
+        width: 25%;left: 8%;top: -60%
     }
     .s2{
         width: 25%;left: 70%;top:-45vw
@@ -508,6 +525,21 @@ button{
     }
     .s4{
         width: 30%;right: 0%;top:10%;z-index: 999
+    }
+    .indexStar1{
+        width: 20%;
+        left: 10%;
+        top:-40vh;
+    }
+    .indexStar2{
+        width: 4%;
+        left: -10%;
+        top:80%
+    }
+    .indexStar3{
+        width: 20%;
+        right: 10%;
+        top:-200%
     }
 
 
