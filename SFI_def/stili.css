@@ -121,7 +121,6 @@ body{
     font-weight: bolder;
 }
 
-
 .pb-10{
     padding-bottom: 10vh
 }
@@ -142,6 +141,14 @@ body{
     background-repeat: no-repeat;
     background-position-y: 50%;
 }
+.gbackground2{
+    background-image: url('immagini/calza/sfondoArancione.png');
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
 .littleStar {
     width: 4%;
     right: -30%;
@@ -156,6 +163,11 @@ body{
     background-image: url('immagini/calza/sfondoRosa.png');
     background-size: cover;
     background-repeat: no-repeat;
+}
+.gposition {
+    right: 8%;
+    top:5%;
+}
 }
 
 /*fiore robi- Css robi?*/
