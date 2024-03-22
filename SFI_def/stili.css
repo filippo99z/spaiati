@@ -152,6 +152,11 @@ body{
     right: -160%;
     top:5%;
 }
+.gsfondoForm{
+    background-image: url('immagini/calza/sfondoRosa.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /*fiore robi- Css robi?*/
 
@@ -188,6 +193,12 @@ body{
 }
 #text-hide2{
     display: none;
+}
+
+.sfondoForm{
+    background-image: url('immagini/contatti/vector.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*Css sara?*/
