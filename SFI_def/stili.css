@@ -285,11 +285,16 @@ body{
 }
 .grid-item {
     aspect-ratio: 1;
-    border: 1vh solid white;
-    border-radius: 1vh;
+
+
     text-align: center;
     cursor: pointer;
 }
+.grid-container >.grid-item{
+    border: 1vh solid white;
+    border-radius: 1vh;
+}
+
 .s1{
     width: 20%;left: 75%;top:70%;transform: rotate(-8deg);
 }
@@ -302,6 +307,8 @@ body{
 .s4{
     width: 30%;right: 0%;top:10%;z-index: 999
 }
+
+
 /** fine index **/
 
 /* navbar */
