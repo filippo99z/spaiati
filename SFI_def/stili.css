@@ -135,6 +135,9 @@ body{
 .firstDiv {
     height: 70vh;
 }
+.secondDiv {
+    height: 110vh;
+}
 .gbackground{
     background-image: url('immagini/calza/gBackground.png');
     height: 100%;
@@ -147,7 +150,7 @@ body{
 .littleStar {
     width: 4%;
     right: -30%;
-    top:280%;
+    top:180%;
 }
 .gSticker {
     width: 40%;
@@ -158,6 +161,7 @@ body{
     background-image: url('immagini/calza/sfondoRosa.png');
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 .gdivVector{
     background-image: url('immagini/calza/ondaArancio.png');
@@ -175,9 +179,39 @@ body{
 }
 .gscrittaGia {
     position: absolute;
-    left: 105%;
-    width: 55%;
-    top:80%;
+    left: 78%;
+    width: 75%;
+    top: 90%;
+}
+.gtrestelle {
+    width: 20%;
+    left: 10%;
+    bottom: -25%;
+}
+.gtryme {
+    width: 40%;
+    left: -50%;
+    top: -30%;
+}
+.gscrittaVi {
+    width: 65%;
+    left: 45%;
+    bottom: -18%;
+}
+.gstellineBelline {
+    width: 12%;
+    left: 45%;
+    top: 217%;
+}
+.gscrittaGia2 {
+    width: 11%;
+    right: 5%;
+    top: 273%;
+}
+.gscrittaGia3 {
+    width: 18%;
+    left: 40%;
+    top: 290%;
 }
 
 
