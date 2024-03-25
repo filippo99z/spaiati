@@ -373,7 +373,7 @@ body{
     width: 20%;left: 85%;top:70%; transform: rotate(-12deg);
 }
 .s4{
-    width: 30%;right: 0%;top:10%;z-index: 999
+    width: 30%;right: -20%;top:0%; z-index: 999
 }
 .indexStar1{
     width: 10%;
@@ -582,7 +582,7 @@ button{
         width: 25%;left: 8%;top:-60vw;
     }
     .s4{
-        width: 30%;right: 0%;top:10%;z-index: 999
+        width: 30%;right: 0%;top:70%;z-index: 999
     }
     .indexStar1{
         width: 20%;
