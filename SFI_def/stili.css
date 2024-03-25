@@ -248,6 +248,25 @@ body{
 .star3{
 display: none;
 }
+.sockshop{
+    position: relative;
+}
+.sockshop:hover{
+    position: relative;
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+
+}
+.sockshop:before{
+    content: "";
+    position: absolute;
+    width: 50%; /* Larghezza del collo dell'anfora */
+    top: 80%; /* Posizionamento in alto per creare il collo */
+    left: 50%; /* Posizionamento orizzontale */
+    border-radius: 100%;
+}
 .stickershop{
     width: 50%; left: 55%;top: -50%; position: absolute;
 }
@@ -257,6 +276,7 @@ display: none;
 .textshop1{
     width: 13%;top:20%;left: 5%
 }
+
 .price-position{
     width: 50%;
     position: absolute;
@@ -671,6 +691,7 @@ button{
     .starshop{
         width: 10%;position: absolute; left: 90%; top: 10%;
     }
+
     #background1{
         height: 50vh;
     }
