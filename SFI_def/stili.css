@@ -242,6 +242,15 @@ body{
     right: -25%;
     top: 20%;
 }
+.star2{
+    width: 10%; right: -25%;top: -20%;
+}
+.star3{
+display: none;
+}
+.stickershop{
+    width: 50%; left: 55%;top: -50%; position: absolute;
+}
 .starshop{
     width: 10%;position: absolute; left: 80%; top: 10px;
 }
@@ -643,11 +652,24 @@ button{
     .star1{
         width: 10%; right: 35%; top: 20%;
     }
+    .star2{
+        width: 10%; right: -25%;top: 20%;
+    }
+    .star3{
+        width: 5%;
+        top: -80%;
+        left: -50%;
+        display: block;
+
+    }
+    .stickershop{
+        width: 50%; left: 55%;top: -5%; position: absolute
+    }
     .textshop1{
         display: none;
     }
     .starshop{
-        width: 10%;position: absolute; right: 10%; top: 10%;
+        width: 10%;position: absolute; left: 90%; top: 10%;
     }
     #background1{
         height: 50vh;
