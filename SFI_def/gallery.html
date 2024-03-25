@@ -11,7 +11,7 @@
     <script src="script.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-md sticky-top px-md-5 px-4">
+<nav class="navbar navbar-expand-md sticky-top grid-border">
     <div class="container-fluid px-0">
         <a class="navbar-brand logo py-0" href="index.html"><img class="logo" src="immagini/logo.svg" alt="logo"></a>
         <button class="navbar-toggler shadow-none border-0 rounded-circle custom-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -27,7 +27,7 @@
             <div class="offcanvas-body align-text-center p-0 flex">
                 <ul class="navbar-nav justify-content-center flex-grow-1">
                     <li class="nav-item mx-md-2 mx-3">
-                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        <a class="nav-link "aria-current="page" href="index.html">HOME</a>
                     </li>
                     <hr class="my-1">
                     <li class="nav-item mx-md-2 mx-3">
@@ -39,11 +39,11 @@
                     </li>
                     <hr class="my-1">
                     <li class="nav-item mx-md-2 mx-3">
-                        <a class="nav-link" href="calza.html">CHE CALZA CIAOOOOOO?</a>
+                        <a class="nav-link" href="calza.html">CHE CALZA SEI?</a>
                     </li>
                     <hr class="my-1">
                     <li class="nav-item mx-md-2 mx-3">
-                        <a class="nav-link"  href="gallery.html">#ONYOURFEET</a>
+                        <a class="nav-link active"  href="gallery.html">#ONYOURFEET</a>
                     </li>
                     <hr class="my-1">
                     <li class="nav-item mx-md-2 mx-3">
@@ -62,11 +62,13 @@
 <!-----SEZIONE HERO COVER-->
 <div class="container-fluid">
     <div class="row purple">
-        <div class="col-md-6 px-md-5 px-4 py-4 py-md-0">
-            <h1 class="comba tYellow pt-md-5 mt-md-5"> Sockfusion Innovation</h1>
-            <p class="inter tWhite py-md-5 py-3 my-0 my-md-2 me-md-5" >
-                Benvenuti nel regno incantato delle calze che rompono gli schemi! Da SockFusion Innovations trasformiamo l'ordinario in straordinario, portando un tocco di allegria ai tuoi passi.<br>
-                Esplora il divertente universo delle nostre calze uniche e scopri tutte le curiosità sulla nostra fantasiosa azienda
+        <div class="col-md-6 grid-border-left py-4 py-md-0">
+            <h1 class="inter tYellow pt-md-5 mt-md-5 bolder"> #ONYOURFEET</h1>
+            <p class="inter tWhite py-3 my-0  me-md-5  italic" >
+                Calza il futuro con #OnYourFeet: dove l'originalità abbraccia lo stile in ogni filo!
+            </p>
+            <p class="inter tWhite pb-md-5 py-3 my-0 my-md-2 me-md-5" >
+                Scopri il futuro nei dettagli: nella galleria #OnYourFeet le calze diventano opere d'arte. Sfoglia immagini uniche, esplora stili straordinari. La moda, ad ogni passo, è un capolavoro.
             </p>
             <div class="mb-md-5 pb-md-5" >
                 <div class="bottone px-md-4 py-md-2 px-2 py-1 btn-yellow tBlack" style="position: relative">
@@ -96,16 +98,57 @@
 </div>
 <div class="fucsia banner" >
 </div>
-
-<div class="container-fluid px-0 fucsia ">
+<!--- sezione immagini che si spostano -->
+<div class="container-fluid px-0">
     <div class="row m-0">
-        <div class="col-12 grid-border">
+        <div class="col-12 grid-border py-5 ">
+            <h2 class="inter bolder tPurple pb-5">
+                #EXPLORE THE GALLERY
+            </h2>
+            <img src="immagini/gallery/exploreProva.png" width="100%">
+        </div>
+    </div>
+    <img src="immagini/gallery/Vector.png"  width="100%">
+</div>
+
+<!---sezione sliderrr-->
+<div class="container-fluid px-0 fucsia ">
+    <div class="row m-0" style=" overflow-x: hidden">
+        <div class="col-12 grid-border" >
             <h2 class="tYellow inter bolder">
                 #ONYOURFEET
             </h2>
             <p class="tYellow inter">Ogni immagine racconta una storia di moda, un dettaglio alla volta.</p>
-            <img src="immagini/gallery/gallery_cover.png" style="width: 50%;" id="roll1" alt="">
-            <p onclick="slide()">prova</p>
+            <div class="my-5" style="position: relative;width: fit-content;margin: auto" id="sliderPC">
+                    <div class="slider" style="width:72vw;height: 30vw">
+                       <img src="immagini/gallery/visor.png" id="roll1" alt="" style="position:absolute;z-index: 100">
+                        <img src="immagini/gallery/gallery_cover.png" id="roll2" alt="" style="position:absolute;z-index: 99;left:7vw">
+                        <img src="immagini/gallery/gallery_cover.png" id="roll3" alt="" style="position:absolute;z-index: 98;left:14vw">
+                        <img src="immagini/gallery/gallery_cover.png" id="roll4" alt="" style="position:absolute;z-index: 97;left:21vw">
+                        <img src="immagini/gallery/gallery_cover.png" id="roll5" alt="" style="position:absolute;z-index: 96;left:28vw">
+                        <img src="immagini/gallery/gallery_cover.png" id="roll6" alt="" style="position:absolute;z-index: 95;left:35vw">
+                        <img src="immagini/gallery/gallery_cover.png" id="roll7" alt="" style="position:absolute;z-index: 94;left:42vw">
+                    </div>
+                <img src="immagini/gallery/leftButton.png" width="6%" style="position: absolute;left: -10%;top:44%; z-index: 1000" onclick="slideIn()">
+                <img src="immagini/gallery/rightButton.png" width="6%" style="position: absolute;right: -10%;top:44%;z-index: 1000" onclick="slideOut()">
+            </div>
+
+            <!-- slider da mobile  inzialmente nascosto-->
+            <div class="my-5" style="position: relative;width: fit-content;margin: auto" id="sliderMobile">
+                <div class="slider" style="width:72vw;height: 70vw">
+                    <img src="immagini/gallery/visor.png" id="rollsm1" alt="" style="position:absolute;z-index: 100">
+                    <img src="immagini/gallery/gallery_cover.png" id="rollsm2" alt="" style="position:absolute;z-index: 99; transform: rotate(3deg)">
+                    <img src="immagini/gallery/gallery_cover.png" id="rollsm3" alt="" style="position:absolute;z-index: 98;transform: rotate(-2deg)">
+                    <img src="immagini/gallery/gallery_cover.png" id="rollsm4" alt="" style="position:absolute;z-index: 97;transform: rotate(2deg)">
+                    <img src="immagini/gallery/gallery_cover.png" id="rollsm5" alt="" style="position:absolute;z-index: 96;transform: rotate(-4deg)">
+                    <img src="immagini/gallery/gallery_cover.png" id="rollsm6" alt="" style="position:absolute;z-index: 95;transform: rotate(3deg)">
+                    <img src="immagini/gallery/gallery_cover.png" id="rollsm7" alt="" style="position:absolute;z-index: 94;transform: rotate(-3deg)">
+                </div>
+                <img src="immagini/gallery/leftButton.png" width="10%" style="position: absolute;left: -15%;top:40%; z-index: 1000" onclick="slideInSm()">
+                <img src="immagini/gallery/rightButton.png" width="10%" style="position: absolute;right: -15%;top:40%;z-index: 1000" onclick="slideOutSm()">
+            </div>
+            <!--- -->
+
         </div>
        
     </div>
@@ -132,22 +175,14 @@
             </div>
             <div class="row mt-5">
                 <div class="col-12 d-flex justify-content-center">
-                 
                         <img class="m-2 icona" src="immagini/facebook.png" >
-                   
-                    
                         <img class="m-2 icona" src="immagini/instagram.png">
-                   
                 </div>
             </div>
         </div>
     </div>
-   
-    
 </div>
-<div style="text-align: center">
-    <h1 style="padding: 30vh 0;">Gallery</h1>
-</div>
+
 <div class="footer p-md-5 p-3 m-0 w-100">
 
     <div class="row text-center">

@@ -24,6 +24,9 @@
 .bolder{
     font-weight: bolder;
 }
+.italic{
+    font-style: italic;
+}
 p{
     font-size: clamp(12px,1.5vw,20px)
 }
@@ -408,6 +411,31 @@ body{
 	-webkit-animation: roll-out-left 0.6s ease-in both;
 	        animation: roll-out-left 0.6s ease-in both;
 }
+.roll-out-right {
+    -webkit-animation: roll-out-right 0.6s ease-in both;
+    animation: roll-out-right 0.6s ease-in both;
+}
+.roll-in-left {
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+    animation: roll-in-left 0.6s ease-out both;
+}
+.roll-in-right {
+    -webkit-animation: roll-in-right 0.6s ease-out both;
+    animation: roll-in-right 0.6s ease-out both;
+}
+.slider img{
+    width: 30vw;
+    border-radius: 30px;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+#sliderPC{
+    display: block;
+}
+#sliderMobile{
+    display: none;
+}
 
 
 /* navbar */
@@ -542,31 +570,110 @@ button{
 /* KEYFRAME ROLL OUT GALLERY CAROUSEL **/
 
 
- @-webkit-keyframes roll-out-left {
+@-webkit-keyframes roll-out-left {
     0% {
       -webkit-transform: translateX(0) rotate(0deg);
               transform: translateX(0) rotate(0deg);
       opacity: 1;
     }
     100% {
-      -webkit-transform: translateX(-1000px) rotate(-540deg);
-              transform: translateX(-1000px) rotate(-540deg);
+      -webkit-transform: translateX(-1000px) rotate(-140deg);
+              transform: translateX(-1000px) rotate(-140deg);
       opacity: 0;
     }
   }
-  @keyframes roll-out-left {
+@keyframes roll-out-left {
     0% {
       -webkit-transform: translateX(0) rotate(0deg);
               transform: translateX(0) rotate(0deg);
       opacity: 1;
     }
     100% {
-      -webkit-transform: translateX(-1000px) rotate(-540deg);
-              transform: translateX(-1000px) rotate(-540deg);
+      -webkit-transform: translateX(-1000px) rotate(-140deg);
+              transform: translateX(-1000px) rotate(-140deg);
       opacity: 0;
     }
   }
-  
+
+@-webkit-keyframes roll-in-left {
+    0% {
+        -webkit-transform: translateX(-800px) rotate(-140deg);
+        transform: translateX(-800px) rotate(-140deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+@keyframes roll-in-left {
+    0% {
+        -webkit-transform: translateX(-800px) rotate(-140deg);
+        transform: translateX(-800px) rotate(-140deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes roll-out-right {
+    0% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(1000px) rotate(160deg);
+        transform: translateX(1000px) rotate(160deg);
+        opacity: 0;
+    }
+}
+@keyframes roll-out-right {
+    0% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(1000px) rotate(160deg);
+        transform: translateX(1000px) rotate(160deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes roll-in-right {
+    0% {
+        -webkit-transform: translateX(800px) rotate(160deg);
+        transform: translateX(800px) rotate(160deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+@keyframes roll-in-right {
+    0% {
+        -webkit-transform: translateX(800px) rotate(160deg);
+        transform: translateX(800px) rotate(160deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+
+
+
+
 /* inizio media queryyyy */
 @media screen and (max-width: 767px){
     .grid-border{
@@ -681,6 +788,21 @@ button{
         position: absolute;
         top: -20px;
         left: -20px;
+    }
+
+    /** css gallery **/
+    #sliderPC{
+        display: none;
+    }
+    #sliderMobile{
+        display: block;
+    }
+    .slider img{
+        width: 70vw;
+        border-radius: 30px;
+        box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+        aspect-ratio: 1;
+        object-fit: cover;
     }
 
     /*css calza*/
