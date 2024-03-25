@@ -14,3 +14,7 @@ function gira(element){
 
 
 }
+function slide() {
+    let img =document.getElementById("roll1");
+    img.classList.add("roll-out-left");
+}
