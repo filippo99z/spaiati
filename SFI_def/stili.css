@@ -402,6 +402,14 @@ body{
 
 /** fine index **/
 
+ /*** CSS GALLERY ***/
+
+.roll-out-left {
+	-webkit-animation: roll-out-left 0.6s ease-in both;
+	        animation: roll-out-left 0.6s ease-in both;
+}
+
+
 /* navbar */
 .logo{
     width: 8vw;
@@ -531,7 +539,34 @@ button{
         transform: scale3d(1, 1, 1);
     }
 }
+/* KEYFRAME ROLL OUT GALLERY CAROUSEL **/
 
+
+ @-webkit-keyframes roll-out-left {
+    0% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(-1000px) rotate(-540deg);
+              transform: translateX(-1000px) rotate(-540deg);
+      opacity: 0;
+    }
+  }
+  @keyframes roll-out-left {
+    0% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(-1000px) rotate(-540deg);
+              transform: translateX(-1000px) rotate(-540deg);
+      opacity: 0;
+    }
+  }
+  
 /* inizio media queryyyy */
 @media screen and (max-width: 767px){
     .grid-border{
