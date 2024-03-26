@@ -849,7 +849,9 @@ button{
     }
 
     /*css calza*/
-
+    .gSticker {
+        width: 10%;
+    }
 
     /*css navbar*/
     .sidebar{
