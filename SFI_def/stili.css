@@ -36,6 +36,9 @@ h1{
 h2{
     font-size: clamp(28px, 4vw,48px);
 }
+.tCard{
+    font-size: 100%;
+}
 body{
     background-color: #EFB5F2;
 }
@@ -121,6 +124,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
 }
+
 .pb-10{
     padding-bottom: 10vh
 }
@@ -399,6 +403,7 @@ display: none;
 .grid-container >.grid-item{
     border: 1vh solid white;
     border-radius: 1vh;
+
 }
 
 .s1{
