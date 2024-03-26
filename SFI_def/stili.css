@@ -257,7 +257,7 @@ display: none;
 .sockshop:hover{
     position: relative;
     width: 100%;
-
+    border-radius: 100%/75% 50% 75% 50%;
     position: relative;
     overflow: hidden;
 
