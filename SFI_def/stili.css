@@ -255,24 +255,15 @@ body{
 .star3{
 display: none;
 }
-.sockshop{
-    position: relative;
-}
-.sockshop:hover{
-    position: relative;
-    width: 100%;
-    border-radius: 100%/75% 50% 75% 50%;
-    position: relative;
-    overflow: hidden;
 
+.tech1{
+    object-fit: cover;
+    width: 100%;
 }
-.sockshop:before{
-    content: "";
-    position: absolute;
-    width: 50%; /* Larghezza del collo dell'anfora */
-    top: 80%; /* Posizionamento in alto per creare il collo */
-    left: 50%; /* Posizionamento orizzontale */
-    border-radius: 100%;
+.shape1{
+    display: none;
+    object-fit: cover;
+    width: 80%;
 }
 .stickershop{
     width: 50%; left: 55%;top: -50%; position: absolute;
