@@ -1,21 +1,37 @@
 var counter =0;
 var counterSm = 0;
+var cards = [];
 function gira(element){
     let counter = document.getElementById("counter").textContent;
     console.log(counter);
     if(counter<3){
         counter++;
 
+
         document.getElementById("counter").innerHTML = counter;
         element.style.display ="none";
         let fronte = element.nextElementSibling;
+        console.log(fronte.getAttribute("value"))
+        let value = fronte.getAttribute("value")
+        cards.push(value);
+        if (counter ==3){
+            checkWin(cards);
+        }
         fronte.style.display ="block";
+
     }else{
-        console.log("non puoi girare più carte");
+        alert("hai gia gitato il numero massimo di carte!")
     }
 
 
 }
+function checkWin(array){
+    if(array[0] == array[1] && array[1]== array[2]){
+        alert("hai vintoooooo!");
+    }
+
+}
+
 function slideOut() {
     console.log("cliccato");
     if(counter<7){
