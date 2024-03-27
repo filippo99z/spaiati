@@ -26,8 +26,17 @@ function gira(element){
 
 }
 function checkWin(array){
-    if(array[0] == array[1] && array[1]== array[2]){
-        alert("hai vintoooooo!");
+    //let audio = new Audio('');  decidere audio vittoria
+    if(array[0] == array[1] && array[1]==array[2]){
+        console.log("hai vintoooo!");
+        document.getElementById("overlay").style.display="block";
+        confetti.start();
+       // audio.play()
+        setTimeout(function (){
+            document.getElementById("overlay").style.display="none";
+            confetti.stop();
+           // audio.pause();
+        },6000)
     }
 
 }
