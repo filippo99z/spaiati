@@ -425,6 +425,11 @@ display: none;
     top:-200%
 }
 
+.quizBox{
+    border-top-left-radius: 3vh;
+    border-bottom-left-radius: 3vh
+}
+
 
 
 
@@ -714,6 +719,17 @@ button{
     }
     .center-sm{
         margin: auto;
+    }
+    .quizBox{
+
+        border-top-left-radius: 0vh;
+        border-bottom-left-radius: 3vh;
+        border-bottom-right-radius: 3vh;
+    }
+    .grid-container >.grid-item{
+        border: 2px solid white;
+        border-radius: 5px;
+
     }
     .pbackground{
         background-image: url('immagini/shop/pBackground.png');
