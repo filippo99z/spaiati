@@ -27,6 +27,7 @@
 .grid-border-right{
     padding-right: 80px;
 }
+
 .schoolbell{
     font-family: Schoolbell, sans-serif;
 }
@@ -43,7 +44,7 @@ p{
     font-size: clamp(12px,1.5vw,20px)
 }
 h1{
-    font-size: clamp(36px, 4vw,84px);
+    font-size: clamp(24px, 4vw,84px);  /* no bueno questo*/
 }
 h2{
     font-size: clamp(28px, 4vw,48px);
@@ -129,7 +130,7 @@ body{
     height: 7vh;
 }
 .title{
-    font-size: clamp(42px, 5vw, 72px);
+    font-size: clamp(36px, 6vw, 72px);
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
 }
@@ -399,6 +400,14 @@ display: none;
 }
 
 /** index css**/
+.quizBox{
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+}
+.gameBox{
+    width: 75%;
+    border-radius: 16px;
+}
 .flower{
     width: 90%;
 }
@@ -490,7 +499,7 @@ display: none;
 
 /* navbar */
 .logo{
-    width: 8vw;
+    width: 7vw;
 }
 .navbar{
     background-color: #ECF447;
@@ -647,15 +656,16 @@ button{
   
 /* inizio media queryyyy */
 @media screen and (max-width: 767px){
-    .grid-border{
-        padding-left: 30px;
-        padding-right: 30px;
+    .wrapper {
+        height: 32px;
     }
-    .grid-border-left{
-        padding-left: 30px;
+
+    .scroll p {
+        font-size: 32px;
 
     }
-    .grid-border-right{
+    .grid-border-sm{
+        padding-left: 30px;
         padding-right: 30px;
     }
     .center-sm{
@@ -690,6 +700,15 @@ button{
         background-repeat: no-repeat;
         position: relative;
         top:-1vh
+    }
+    .quizBox{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .gameBox{
+        width: 100%;
+        border-radius: 16px;
     }
     .s1{
         width: 25%;left: 8%;top: -60%
