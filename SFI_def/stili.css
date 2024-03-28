@@ -1,21 +1,6 @@
 @import "font/stylesheet.css";
 
 /** css generali **/
-#overlay{
-    display: none;
-    opacity:0.8;
-    background-color:black;
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0px;
-    left:0px;
-    z-index:1000;
-    background-image: url("immagini/index/vittoria.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
-}  /** div che compare solo quando il giocatore vince **/
 .grid-border{
     padding-left: 80px;
     padding-right: 80px;
@@ -27,8 +12,6 @@
 .grid-border-right{
     padding-right: 80px;
 }
-/** questi tre sono da rivedere **/
-
 .schoolbell{
     font-family: Schoolbell, sans-serif;
 }
@@ -41,9 +24,6 @@
 .bolder{
     font-weight: bolder;
 }
-.italic{
-    font-style: italic;
-}
 p{
     font-size: clamp(12px,1.5vw,20px)
 }
@@ -52,9 +32,6 @@ h1{
 }
 h2{
     font-size: clamp(28px, 4vw,48px);
-}
-.tCard{
-    font-size: 100%;
 }
 body{
     background-color: #EFB5F2;
@@ -134,71 +111,13 @@ body{
     background-color: #F3B385;
 }
 .banner{
-    height: 100px;
-    display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
+    height: 7vh;
 }
-.banner p{
-    text-transform: uppercase;
-    font-size: 100px;
-    white-space: nowrap;
-    padding: 0 1rem;
-    animation: move-rtl 6000ms linear infinite;
-}
-
-
-/** scritte che scorrono **/
-.wrapper {
-    display: flex;
-    align-items: center;
-    height: 48px;
-    overflow: hidden;
-}
-.scroll {
-    white-space: nowrap;
-    margin: 0 0;
-}
-.scroll div {
-    display: flex;
-    gap: 1em;
-}
-.scroll p {
-    font-size: 48px;
-    margin-bottom: 0;
-    line-height: 10px;
-}
-.RightToLeft {
-    animation: RightToLeft 30s infinite linear;
-}
-@keyframes  RightToLeft {
-    from {
-        transform: translateX(0%);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
-.LeftToRight {
-    animation: LeftToRight 30s infinite linear;
-}
-@keyframes  LeftToRight {
-    from {
-        transform: translateX(-50%);
-    }
-    to {
-        transform: translateX(0%);
-    }
-}
-/** fine scritte che scorrono **/
-
 .title{
     font-size: clamp(42px, 5vw, 72px);
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-
 }
-
 .pb-10{
     padding-bottom: 10vh
 }
@@ -209,7 +128,7 @@ body{
     margin-top: 10vh;
 }
 .width {
-    width: 100%; /* questo booooo chi l'ha fatto */
+    width: 100%;
 }
 
 /*Css calza*/
@@ -337,6 +256,8 @@ body{
     left: 40%;
     top: 290%;
 }
+
+
 /*fiore robi- Css robi?*/
 
 .pbackground{
@@ -370,6 +291,7 @@ body{
 .star3{
 display: none;
 }
+
 .tech1{
     object-fit: cover;
     width: 100%;
@@ -388,6 +310,7 @@ display: none;
 .textshop1{
     width: 13%;top:20%;left: 5%
 }
+
 .price-position{
     width: 50%;
     position: absolute;
@@ -402,7 +325,7 @@ display: none;
     background-image: url('immagini/contatti/vector.png');
     background-size: cover;
     background-repeat: no-repeat;
-} /* potrebbe essere un css di sara*/
+}
 
 /*Css sara?*/
 .contatti{
@@ -442,7 +365,7 @@ display: none;
     width:fit-content;
     padding: 0.7vw 3vw;
     margin: auto;
-} /* questo potrebbe non avere più senso */
+}
 .sfondoForm{
     background-image: url('immagini/contatti/vector.png');
     background-size: cover;
@@ -469,19 +392,19 @@ display: none;
     right: -3vw;
     max-width: calc(100% + 50px);
     height: auto;
-} /*taglia il fiore a destra */
+}
 .cut-img-left{
     position: relative;
     left: -3vw;
     max-width: calc(100% + 50px);
     height: auto;
-} /*taglia il fiore a sisnitra */
+}
 .overflow-hidden {
     overflow: hidden;
 }
 .overflow-hidden-x{
     overflow-x:clip ;
-} /* uno di questi 2 non serve */
+}
 .divVector{
     height: 100%;
     background-size: contain;
@@ -491,8 +414,7 @@ display: none;
 }
 .divVector-sm{
     display: none;
-} /* servono per girare l'onda quando va su telefono */
-
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -508,8 +430,7 @@ display: none;
 .grid-container >.grid-item{
     border: 1vh solid white;
     border-radius: 1vh;
-
-} /*servono per la griglia del gioco delle carte, ma anche per la griglia dei prodotti*/
+}
 
 .s1{
     width: 20%;left: 75%;top:70%;transform: rotate(-8deg);
@@ -538,10 +459,6 @@ display: none;
     right: 10%;
     top:-200%
 }
-.quizBox{
-    border-top-left-radius: 3vh;
-    border-bottom-left-radius: 3vh
-}
 
 
 
@@ -554,32 +471,6 @@ display: none;
 	-webkit-animation: roll-out-left 0.6s ease-in both;
 	        animation: roll-out-left 0.6s ease-in both;
 }
-.roll-out-right {
-    -webkit-animation: roll-out-right 0.6s ease-in both;
-    animation: roll-out-right 0.6s ease-in both;
-}
-.roll-in-left {
-    -webkit-animation: roll-in-left 0.6s ease-out both;
-    animation: roll-in-left 0.6s ease-out both;
-}
-.roll-in-right {
-    -webkit-animation: roll-in-right 0.6s ease-out both;
-    animation: roll-in-right 0.6s ease-out both;
-} /* classi per le animazioni delle immagini che vengono sparate via*/
-
-.slider img{
-    width: 30vw;
-    border-radius: 30px;
-    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-    aspect-ratio: 1;
-    object-fit: cover;
-}
-#sliderPC{
-    display: block;
-}
-#sliderMobile{
-    display: none;
-} /* rendono responsive lo slider*/
 
 
 /* navbar */
@@ -647,19 +538,10 @@ button{
     -webkit-animation: jello-horizontal 0.9s both;
     animation: jello-horizontal 0.9s both;
     cursor: pointer;
-}  /* questi saranno da sistemare nelle media query*/
+}
 /*fine footer*/
 
-/*una serie di animazioni che venongono usate*/
-@keyframes move-rtl {
-    0%{
-       transform: translateX(0);
-    }
-    100%{
-        transform: translateX(-100%);
-    }
-
-}
+/* animazioni per il jello*/
 @-webkit-keyframes jello-horizontal {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
@@ -720,126 +602,36 @@ button{
         transform: scale3d(1, 1, 1);
     }
 }
-@-webkit-keyframes roll-out-left {
+/* KEYFRAME ROLL OUT GALLERY CAROUSEL **/
+
+
+ @-webkit-keyframes roll-out-left {
     0% {
       -webkit-transform: translateX(0) rotate(0deg);
               transform: translateX(0) rotate(0deg);
       opacity: 1;
     }
     100% {
-      -webkit-transform: translateX(-1000px) rotate(-140deg);
-              transform: translateX(-1000px) rotate(-140deg);
+      -webkit-transform: translateX(-1000px) rotate(-540deg);
+              transform: translateX(-1000px) rotate(-540deg);
       opacity: 0;
     }
   }
-@keyframes roll-out-left {
+  @keyframes roll-out-left {
     0% {
       -webkit-transform: translateX(0) rotate(0deg);
               transform: translateX(0) rotate(0deg);
       opacity: 1;
     }
     100% {
-      -webkit-transform: translateX(-1000px) rotate(-140deg);
-              transform: translateX(-1000px) rotate(-140deg);
+      -webkit-transform: translateX(-1000px) rotate(-540deg);
+              transform: translateX(-1000px) rotate(-540deg);
       opacity: 0;
     }
   }
-@-webkit-keyframes roll-in-left {
-    0% {
-        -webkit-transform: translateX(-800px) rotate(-140deg);
-        transform: translateX(-800px) rotate(-140deg);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-}
-@keyframes roll-in-left {
-    0% {
-        -webkit-transform: translateX(-800px) rotate(-140deg);
-        transform: translateX(-800px) rotate(-140deg);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-}
-@-webkit-keyframes roll-out-right {
-    0% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: translateX(1000px) rotate(160deg);
-        transform: translateX(1000px) rotate(160deg);
-        opacity: 0;
-    }
-}
-@keyframes roll-out-right {
-    0% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: translateX(1000px) rotate(160deg);
-        transform: translateX(1000px) rotate(160deg);
-        opacity: 0;
-    }
-}
-@-webkit-keyframes roll-in-right {
-    0% {
-        -webkit-transform: translateX(800px) rotate(160deg);
-        transform: translateX(800px) rotate(160deg);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-}
-@keyframes roll-in-right {
-    0% {
-        -webkit-transform: translateX(800px) rotate(160deg);
-        transform: translateX(800px) rotate(160deg);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-/* -----------------------------------------------------------------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------*/
-/* ----------------------------------------------INIZIO MEDIA QUERY-------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------*/
-
+  
+/* inizio media queryyyy */
 @media screen and (max-width: 767px){
-    .wrapper {
-        height: 32px;
-    }
-    .scroll p {
-        font-size: 32px;
-    } /*ridimensiona i wrapper per le scritte che si muovono */
-    .pt-10{
-        padding-top: 2vh;
-    }
-    .pb-10{
-        padding-bottom: 2vh;
-    }
     .grid-border{
         padding-left: 30px;
         padding-right: 30px;
@@ -851,22 +643,8 @@ button{
     .grid-border-right{
         padding-right: 30px;
     }
-    /*questi 3 sopra sono da rivedere*/
-
     .center-sm{
         margin: auto;
-    }
-
-    /*index css*/
-
-    .quizBox{
-        border-top-left-radius: 0vh;
-        border-bottom-left-radius: 3vh;
-        border-bottom-right-radius: 3vh;
-    }
-    .grid-container >.grid-item{
-        border: 2px solid white;
-        border-radius: 5px;
     }
     .pbackground{
         background-image: url('immagini/shop/pBackground.png');
@@ -886,6 +664,7 @@ button{
     .background-sm{
         height: 40vh;
     }
+
     .divVector{
         display: none;
     }
@@ -937,9 +716,6 @@ button{
         display: block;
 
     }
-
-    /*inizo css shop*/
-
     .stickershop{
         width: 50%; left: 55%;top: -5%; position: absolute
     }
@@ -953,7 +729,12 @@ button{
     #background1{
         height: 50vh;
     }
-
+    .pt-10{
+        padding-top: 2vh;
+    }
+    .pb-10{
+        padding-bottom: 2vh;
+    }
     #text-hide{
         display: none;
     }
@@ -978,22 +759,6 @@ button{
         top: -20px;
         left: -20px;
     }
-
-    /** css gallery **/
-    #sliderPC{
-        display: none;
-    }
-    #sliderMobile{
-        display: block;
-    }
-    .slider img{
-        width: 70vw;
-        border-radius: 30px;
-        box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-        aspect-ratio: 1;
-        object-fit: cover;
-    }
-    /* da qui in poi non si capisce come sono divisi i css :-)*/
 
     /*css calza*/
 
