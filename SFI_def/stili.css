@@ -228,6 +228,49 @@ body{
     background-repeat: no-repeat;
     background-position-y: 50%;
 }
+/** scritte che scorrono **/
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    overflow: hidden;
+}
+.scroll {
+    white-space: nowrap;
+    margin: 0 0;
+}
+.scroll div {
+    display: flex;
+    gap: 1em;
+}
+.scroll p {
+    font-size: 48px;
+    margin-bottom: 0;
+    line-height: 10px;
+}
+.RightToLeft {
+    animation: RightToLeft 30s infinite linear;
+}
+@keyframes  RightToLeft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+.LeftToRight {
+    animation: LeftToRight 30s infinite linear;
+}
+@keyframes  LeftToRight {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+/** fine scritte che scorrono **/
 .littleStar {
     width: 4%;
     right: -30%;
