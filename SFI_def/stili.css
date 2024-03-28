@@ -632,6 +632,13 @@ button{
   
 /* inizio media queryyyy */
 @media screen and (max-width: 767px){
+    .wrapper {
+        height: 32px;
+    }
+    .scroll p {
+        font-size: 32px;
+    } /*ridimensiona i wrapper per le scritte che si muovono */
+
     .grid-border{
         padding-left: 30px;
         padding-right: 30px;
