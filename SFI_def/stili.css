@@ -1,6 +1,21 @@
 @import "font/stylesheet.css";
 
 /** css generali **/
+#overlay{
+    display: none;
+    opacity:0.8;
+    background-color:black;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+    background-image: url("immagini/index/vittoria.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
 .grid-border{
     padding-left: 80px;
     padding-right: 80px;
