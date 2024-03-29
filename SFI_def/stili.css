@@ -820,7 +820,7 @@ button{
     .gbackground{
         background-image: url('immagini/calza/gBackground.png');
         height: 100%;
-        background-size: cover;
+        background-size: 110%;
         position: relative;
         background-position-x: center;
         background-repeat: no-repeat;
@@ -829,6 +829,12 @@ button{
     .gscrittaGia {
         width: 10%;
         left: 1%;
+    }
+    .gsfondoForm{
+        background-image: url('immagini/calza/sfondoVmobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
     }
     /* fine css calza*/
 
