@@ -8,8 +8,8 @@
     position:fixed;
     width:100%;
     height:100%;
-    top:0px;
-    left:0px;
+    top:0;
+    left:0;
     z-index:1000;
     background-image: url("immagini/index/vittoria.png");
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@ body{
 
 /*Css calza*/
 .firstDiv {
-    height: 70vh;
+    height: 66vh;
 }
 .secondDiv {
     height: 110vh;
@@ -163,58 +163,20 @@ body{
     background-repeat: no-repeat;
     background-position-y: 50%;
 }
-/** scritte che scorrono **/
-.wrapper {
-    display: flex;
-    align-items: center;
-    height: 48px;
-    overflow: hidden;
-}
-.scroll {
-    white-space: nowrap;
-    margin: 0 0;
-}
-.scroll div {
-    display: flex;
-    gap: 1em;
-}
-.scroll p {
-    font-size: 48px;
-    margin-bottom: 0;
-    line-height: 10px;
-}
-.RightToLeft {
-    animation: RightToLeft 30s infinite linear;
-}
-@keyframes  RightToLeft {
-    from {
-        transform: translateX(0%);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
-.LeftToRight {
-    animation: LeftToRight 30s infinite linear;
-}
-@keyframes  LeftToRight {
-    from {
-        transform: translateX(-50%);
-    }
-    to {
-        transform: translateX(0%);
-    }
-}
-/** fine scritte che scorrono **/
 .littleStar {
     width: 4%;
     right: -30%;
-    top:180%;
+    bottom: -10%;
 }
 .gSticker {
-    width: 40%;
-    right: -160%;
-    top:5%;
+    width: 35%;
+    right: -135%;
+    top: -15%;
+}
+.gstar1 {
+    width: 15%;
+    right: -25%;
+    top: -10%;
 }
 .gsfondoForm{
     background-image: url('immagini/calza/sfondoRosa.png');
@@ -272,7 +234,51 @@ body{
     left: 40%;
     top: 290%;
 }
+/* fine css calza*/
 
+/** scritte che scorrono **/
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    overflow: hidden;
+}
+.scroll {
+    white-space: nowrap;
+    margin: 0 0;
+}
+.scroll div {
+    display: flex;
+    gap: 1em;
+}
+.scroll p {
+    font-size: 48px;
+    margin-bottom: 0;
+    line-height: 10px;
+}
+.RightToLeft {
+    animation: RightToLeft 30s infinite linear;
+}
+@keyframes  RightToLeft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+.LeftToRight {
+    animation: LeftToRight 30s infinite linear;
+}
+@keyframes  LeftToRight {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+/** fine scritte che scorrono **/
 
 /*fiore robi- Css robi?*/
 
@@ -466,7 +472,7 @@ display: none;
     width: 20%;left: 85%;top:70%; transform: rotate(-12deg);
 }
 .s4{
-    width: 30%;right: -20%;top:0%; z-index: 999
+    width: 30%;right: -20%;top:0; z-index: 999
 }
 .indexStar1{
     width: 10%;
@@ -499,11 +505,12 @@ display: none;
 
 /* navbar */
 .logo{
-    width: 7vw;
+    width: 70px;
 }
 .navbar{
     background-color: #ECF447;
     border-bottom:4px solid #F21DB9;
+    height: 10vh;
 }
 .navbar a{
     font-size: 1.3vw;
@@ -548,11 +555,15 @@ button{
 }
 .footer p{
     font-weight: 200;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
 }
 .footer h1 {
     font-size: 3vw;
     font-weight: 900;
+}
+.footer h3 {
+    font-size: 2vw;
+    font-weight: 600;
 }
 .icona{
     width:55px;
@@ -796,8 +807,30 @@ button{
 
     /*css calza*/
     .gSticker {
-        width: 10%;
+        width: 30%;
+        right: 10%;
+        top: 85%;
     }
+    .littleStar {
+        width: 8%;
+        left: 10%;
+        bottom: -20%;
+        transform: rotate(215deg);
+    }
+    .gbackground{
+        background-image: url('immagini/calza/gBackground.png');
+        height: 100%;
+        background-size: cover;
+        position: relative;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-position-y: center;
+    }
+    .gscrittaGia {
+        width: 10%;
+        left: 1%;
+    }
+    /* fine css calza*/
 
     /*css navbar*/
     .sidebar{
@@ -873,11 +906,29 @@ button{
 
     /*css footer*/
     .icona{
-        width:35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
     }
     #freccia{
         transform: rotate(-90deg) scaleX(-1);
+    }
+    .footer p{
+        font-weight: 200;
+        font-size: 4vw;
+        margin-top: 10px;
+    }
+    .footer h1 {
+        font-size: 6vw;
+        font-weight: 900;
+    }
+    .footer h3 {
+        font-size: 4vw;
+        margin-top: 10px;
+    }
+    .icona:hover{
+        -webkit-animation: jello-horizontal 0.9s both;
+        animation: jello-horizontal 0.9s both;
+        cursor: pointer;
     }
     /*fine css footer*/
 }
