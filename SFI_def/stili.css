@@ -1,6 +1,21 @@
 @import "font/stylesheet.css";
 
 /** css generali **/
+#overlay{
+    display: none;
+    opacity:0.8;
+    background-color:black;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+    background-image: url("immagini/index/vittoria.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
 .grid-border{
     padding-left: 80px;
     padding-right: 80px;
@@ -12,6 +27,7 @@
 .grid-border-right{
     padding-right: 80px;
 }
+
 .schoolbell{
     font-family: Schoolbell, sans-serif;
 }
@@ -24,14 +40,11 @@
 .bolder{
     font-weight: bolder;
 }
-.italic{
-    font-style: italic;
-}
 p{
     font-size: clamp(12px,1.5vw,20px)
 }
 h1{
-    font-size: clamp(36px, 4vw,84px);
+    font-size: clamp(24px, 4vw,84px);  /* no bueno questo*/
 }
 h2{
     font-size: clamp(28px, 4vw,48px);
@@ -117,7 +130,7 @@ body{
     height: 7vh;
 }
 .title{
-    font-size: clamp(42px, 5vw, 72px);
+    font-size: clamp(36px, 6vw, 72px);
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
 }
@@ -150,6 +163,49 @@ body{
     background-repeat: no-repeat;
     background-position-y: 50%;
 }
+/** scritte che scorrono **/
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    overflow: hidden;
+}
+.scroll {
+    white-space: nowrap;
+    margin: 0 0;
+}
+.scroll div {
+    display: flex;
+    gap: 1em;
+}
+.scroll p {
+    font-size: 48px;
+    margin-bottom: 0;
+    line-height: 10px;
+}
+.RightToLeft {
+    animation: RightToLeft 30s infinite linear;
+}
+@keyframes  RightToLeft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+.LeftToRight {
+    animation: LeftToRight 30s infinite linear;
+}
+@keyframes  LeftToRight {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+/** fine scritte che scorrono **/
 .littleStar {
     width: 4%;
     right: -30%;
@@ -251,24 +307,15 @@ body{
 .star3{
 display: none;
 }
-.sockshop{
-    position: relative;
-}
-.sockshop:hover{
-    position: relative;
-    width: 100%;
-    border-radius: 100%/75% 50% 75% 50%;
-    position: relative;
-    overflow: hidden;
 
+.tech1{
+    object-fit: cover;
+    width: 100%;
 }
-.sockshop:before{
-    content: "";
-    position: absolute;
-    width: 50%; /* Larghezza del collo dell'anfora */
-    top: 80%; /* Posizionamento in alto per creare il collo */
-    left: 50%; /* Posizionamento orizzontale */
-    border-radius: 100%;
+.shape1{
+    display: none;
+    object-fit: cover;
+    width: 80%;
 }
 .stickershop{
     width: 50%; left: 55%;top: -50%; position: absolute;
@@ -353,6 +400,14 @@ display: none;
 }
 
 /** index css**/
+.quizBox{
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+}
+.gameBox{
+    width: 75%;
+    border-radius: 16px;
+}
 .flower{
     width: 90%;
 }
@@ -440,36 +495,11 @@ display: none;
 	-webkit-animation: roll-out-left 0.6s ease-in both;
 	        animation: roll-out-left 0.6s ease-in both;
 }
-.roll-out-right {
-    -webkit-animation: roll-out-right 0.6s ease-in both;
-    animation: roll-out-right 0.6s ease-in both;
-}
-.roll-in-left {
-    -webkit-animation: roll-in-left 0.6s ease-out both;
-    animation: roll-in-left 0.6s ease-out both;
-}
-.roll-in-right {
-    -webkit-animation: roll-in-right 0.6s ease-out both;
-    animation: roll-in-right 0.6s ease-out both;
-}
-.slider img{
-    width: 30vw;
-    border-radius: 30px;
-    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-    aspect-ratio: 1;
-    object-fit: cover;
-}
-#sliderPC{
-    display: block;
-}
-#sliderMobile{
-    display: none;
-}
 
 
 /* navbar */
 .logo{
-    width: 8vw;
+    width: 7vw;
 }
 .navbar{
     background-color: #ECF447;
@@ -599,121 +629,43 @@ button{
 /* KEYFRAME ROLL OUT GALLERY CAROUSEL **/
 
 
-@-webkit-keyframes roll-out-left {
+ @-webkit-keyframes roll-out-left {
     0% {
       -webkit-transform: translateX(0) rotate(0deg);
               transform: translateX(0) rotate(0deg);
       opacity: 1;
     }
     100% {
-      -webkit-transform: translateX(-1000px) rotate(-140deg);
-              transform: translateX(-1000px) rotate(-140deg);
+      -webkit-transform: translateX(-1000px) rotate(-540deg);
+              transform: translateX(-1000px) rotate(-540deg);
       opacity: 0;
     }
   }
-@keyframes roll-out-left {
+  @keyframes roll-out-left {
     0% {
       -webkit-transform: translateX(0) rotate(0deg);
               transform: translateX(0) rotate(0deg);
       opacity: 1;
     }
     100% {
-      -webkit-transform: translateX(-1000px) rotate(-140deg);
-              transform: translateX(-1000px) rotate(-140deg);
+      -webkit-transform: translateX(-1000px) rotate(-540deg);
+              transform: translateX(-1000px) rotate(-540deg);
       opacity: 0;
     }
   }
-
-@-webkit-keyframes roll-in-left {
-    0% {
-        -webkit-transform: translateX(-800px) rotate(-140deg);
-        transform: translateX(-800px) rotate(-140deg);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-}
-@keyframes roll-in-left {
-    0% {
-        -webkit-transform: translateX(-800px) rotate(-140deg);
-        transform: translateX(-800px) rotate(-140deg);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes roll-out-right {
-    0% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: translateX(1000px) rotate(160deg);
-        transform: translateX(1000px) rotate(160deg);
-        opacity: 0;
-    }
-}
-@keyframes roll-out-right {
-    0% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: translateX(1000px) rotate(160deg);
-        transform: translateX(1000px) rotate(160deg);
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes roll-in-right {
-    0% {
-        -webkit-transform: translateX(800px) rotate(160deg);
-        transform: translateX(800px) rotate(160deg);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-}
-@keyframes roll-in-right {
-    0% {
-        -webkit-transform: translateX(800px) rotate(160deg);
-        transform: translateX(800px) rotate(160deg);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-
-
-
-
+  
 /* inizio media queryyyy */
 @media screen and (max-width: 767px){
-    .grid-border{
-        padding-left: 30px;
-        padding-right: 30px;
+    .wrapper {
+        height: 32px;
     }
-    .grid-border-left{
-        padding-left: 30px;
+
+    .scroll p {
+        font-size: 32px;
 
     }
-    .grid-border-right{
+    .grid-border-sm{
+        padding-left: 30px;
         padding-right: 30px;
     }
     .center-sm{
@@ -748,6 +700,15 @@ button{
         background-repeat: no-repeat;
         position: relative;
         top:-1vh
+    }
+    .quizBox{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .gameBox{
+        width: 100%;
+        border-radius: 16px;
     }
     .s1{
         width: 25%;left: 8%;top: -60%
@@ -831,21 +792,6 @@ button{
         position: absolute;
         top: -20px;
         left: -20px;
-    }
-
-    /** css gallery **/
-    #sliderPC{
-        display: none;
-    }
-    #sliderMobile{
-        display: block;
-    }
-    .slider img{
-        width: 70vw;
-        border-radius: 30px;
-        box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-        aspect-ratio: 1;
-        object-fit: cover;
     }
 
     /*css calza*/
