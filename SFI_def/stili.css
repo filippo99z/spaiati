@@ -47,7 +47,7 @@ h1{
     font-size: clamp(24px, 4vw,84px);  /* no bueno questo*/
 }
 h2{
-    font-size: clamp(28px, 4vw,48px);
+    font-size: clamp(22px, 3vw,56px);
 }
 body{
     background-color: #EFB5F2;
@@ -63,6 +63,9 @@ body{
 }
 .yellow{
     background-color: #ECF447;
+}
+.transparent{
+    background-color: rgba(0,0,0,0.5);
 }
 .fucsia{
     background-color: #F21DB9
@@ -448,7 +451,9 @@ display: none;
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 10px;
+
+    width: 100%;
 }
 .grid-item {
     aspect-ratio: 1;
@@ -460,6 +465,9 @@ display: none;
 .grid-container >.grid-item{
     border: 1vh solid white;
     border-radius: 1vh;
+}
+.border-rounded{
+    border-radius:20px;
 }
 
 .s1{
@@ -505,7 +513,7 @@ display: none;
 
 /* navbar */
 .logo{
-    width: 70px;
+    height: 8vh;
 }
 .navbar{
     background-color: #ECF447;
@@ -717,6 +725,13 @@ button{
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
+    .grid-container >.grid-item{
+        border: 1vw solid white;
+        border-radius: 5px;
+    }
+    .border-rounded{
+        border-radius:10px;
+    }
     .gameBox{
         width: 100%;
         border-radius: 16px;
@@ -839,6 +854,9 @@ button{
     /* fine css calza*/
 
     /*css navbar*/
+    .logo{
+        height: 6vh;
+    }
     .sidebar{
         background-color: #ECF447;
         min-width: 100vw;
@@ -847,9 +865,7 @@ button{
         color: #F21DB9;
         font-size: 2.5vh;
     }
-    .logo{
-        width: 16vw;
-    }
+
     .navbar-nav .nav-link.active{
         color: #F21DB9;
         border: 0px solid #F21DB9;
