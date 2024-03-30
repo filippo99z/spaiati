@@ -149,7 +149,6 @@ body{
 .width {
     width: 100%;
 }
-
 /*Css calza*/
 .firstDiv {
     height: 66vh;
@@ -210,32 +209,101 @@ body{
 .gtrestelle {
     width: 20%;
     left: 10%;
-    bottom: -25%;
+    bottom: -20%;
 }
 .gtryme {
     width: 40%;
     left: -50%;
-    top: -30%;
+    top: -20%;
 }
 .gscrittaVi {
-    width: 65%;
-    left: 45%;
+    width: 40%;
+    right: -140%;
     bottom: -18%;
 }
 .gstellineBelline {
-    width: 12%;
-    left: 45%;
-    top: 217%;
+    width: 20%;
+    left: -10%;
+    top: 5%;
 }
 .gscrittaGia2 {
-    width: 11%;
-    right: 5%;
-    top: 273%;
+    width: 20%;
+    right: 15%;
+    top: 65%;
 }
 .gscrittaGia3 {
-    width: 18%;
-    left: 40%;
-    top: 290%;
+    width: 40%;
+    left: -10%;
+    top: 35%;
+}
+.gduestelline {
+    width: 10%;
+    left: 5%;
+    top: 3%;
+}
+.gpiccolaStella1 {
+    width: 3%;
+    left: 25%;
+    bottom: 4%;
+}
+.gpiccolaStella2 {
+    width: 3%;
+    right: 1%;
+    bottom: 35%;
+}
+.gscrittaBlu {
+    width: 30%;
+    right: -2%;
+    bottom: 15%;
+}
+.gkeepgoing {
+    width: 80%;
+    right: 8%;
+    top: 55%;
+}
+.gnonfarti {
+    width: 70%;
+    right: 20%;
+    top: 15%;
+}
+/*quiz calza*/
+.gcontatti{
+    background-color: #FE6C0C;
+    border: 5px solid #ECF447;
+    border-radius: 3vh;
+    padding:30px 2vw;
+    margin: auto;
+}
+.ginput{
+    background-color: #f8f4db;
+    border: none;
+    border-radius: 2.5vh;
+    font-size: 16px;
+    width: 100%;
+    padding: 1vw 1vw;
+    margin-bottom: 2vh;
+}
+.gmessaggio{
+    background-color: #f8f4db;
+    border: none;
+    border-radius: 2.5vh;
+    font-size: 24px;
+    width: 100%;
+    padding: 1vw 1vw;
+    margin-bottom: 2vh;
+    height: 22vh;
+    resize:none
+}
+.gfreccia1{
+    width: 20%;
+    left: 4%;
+    bottom: 15%;
+}
+.gfreccia2{
+    width: 20%;
+    right: 4%;
+    bottom: 15%;
+    transform: rotate(180deg);
 }
 /* fine css calza*/
 
@@ -390,6 +458,10 @@ display: none;
     width:fit-content;
     padding: 0.7vw 3vw;
     margin: auto;
+}
+.bottoneForm:active {
+    transform: translateY(7px);
+    box-shadow: 2px 2px 0 rgba(0,0,0,1);
 }
 .sfondoForm{
     background-image: url('immagini/contatti/vector.png');
