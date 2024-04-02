@@ -584,8 +584,35 @@ display: none;
  /*** CSS GALLERY ***/
 
 .roll-out-left {
-	-webkit-animation: roll-out-left 0.6s ease-in both;
-	        animation: roll-out-left 0.6s ease-in both;
+    -webkit-animation: roll-out-left 0.6s ease-in both;
+    animation: roll-out-left 0.6s ease-in both;
+}
+.roll-out-right {
+    -webkit-animation: roll-out-right 0.6s ease-in both;
+    animation: roll-out-right 0.6s ease-in both;
+}
+.roll-in-left {
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+    animation: roll-in-left 0.6s ease-out both;
+}
+.roll-in-right {
+    -webkit-animation: roll-in-right 0.6s ease-out both;
+    animation: roll-in-right 0.6s ease-out both;
+}
+
+.slider img{
+    width: 30vw;
+    border-radius: 30px;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+#sliderPC{
+    display: block;
+}
+#sliderMobile{
+    display: none;
 }
 
 
@@ -733,8 +760,8 @@ button{
       opacity: 1;
     }
     100% {
-      -webkit-transform: translateX(-1000px) rotate(-540deg);
-              transform: translateX(-1000px) rotate(-540deg);
+      -webkit-transform: translateX(-1000px) rotate(-140deg);
+              transform: translateX(-1000px) rotate(-140deg);
       opacity: 0;
     }
   }
@@ -745,12 +772,83 @@ button{
       opacity: 1;
     }
     100% {
-      -webkit-transform: translateX(-1000px) rotate(-540deg);
-              transform: translateX(-1000px) rotate(-540deg);
+      -webkit-transform: translateX(-1000px) rotate(-140deg);
+              transform: translateX(-1000px) rotate(-140deg);
       opacity: 0;
     }
   }
-  
+@-webkit-keyframes roll-in-left {
+    0% {
+        -webkit-transform: translateX(-800px) rotate(-140deg);
+        transform: translateX(-800px) rotate(-140deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+@keyframes roll-in-left {
+    0% {
+        -webkit-transform: translateX(-800px) rotate(-140deg);
+        transform: translateX(-800px) rotate(-140deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes roll-out-right {
+    0% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(1000px) rotate(160deg);
+        transform: translateX(1000px) rotate(160deg);
+        opacity: 0;
+    }
+}
+@keyframes roll-out-right {
+    0% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(1000px) rotate(160deg);
+        transform: translateX(1000px) rotate(160deg);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes roll-in-right {
+    0% {
+        -webkit-transform: translateX(800px) rotate(160deg);
+        transform: translateX(800px) rotate(160deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+@keyframes roll-in-right {
+    0% {
+        -webkit-transform: translateX(800px) rotate(160deg);
+        transform: translateX(800px) rotate(160deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
 /* inizio media queryyyy */
 @media screen and (max-width: 767px){
     .wrapper {
@@ -930,7 +1028,19 @@ button{
         height: 100%;
     }
     /* fine css calza*/
-
+    .slider img{
+        width: 100%;
+        border-radius: 30px;
+        box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+    #sliderPC{
+        display: none;
+    }
+    #sliderMobile{
+        display: block;
+    }
     /*css navbar*/
     .logo{
         height: 6vh;
