@@ -143,6 +143,12 @@ body{
 .pt-10{
     padding-top: 10vh
 }
+.pt-20 {
+    padding-top: 20vh;
+}
+.pb-20 {
+    padding-bottom: 20vh;
+}
 .mt-10 {
     margin-top: 10vh;
 }
