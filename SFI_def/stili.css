@@ -8,14 +8,14 @@
     position:fixed;
     width:100%;
     height:100%;
-    top:0px;
-    left:0px;
+    top:0;
+    left:0;
     z-index:1000;
     background-image: url("immagini/index/vittoria.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
-}  /** div che compare solo quando il giocatore vince **/
+}
 .grid-border{
     padding-left: 80px;
     padding-right: 80px;
@@ -27,7 +27,6 @@
 .grid-border-right{
     padding-right: 80px;
 }
-/** questi tre sono da rivedere **/
 
 .schoolbell{
     font-family: Schoolbell, sans-serif;
@@ -41,20 +40,14 @@
 .bolder{
     font-weight: bolder;
 }
-.italic{
-    font-style: italic;
-}
 p{
     font-size: clamp(12px,1.5vw,20px)
 }
 h1{
-    font-size: clamp(36px, 4vw,84px);
+    font-size: clamp(24px, 4vw,84px);  /* no bueno questo*/
 }
 h2{
-    font-size: clamp(28px, 4vw,48px);
-}
-.tCard{
-    font-size: 100%;
+    font-size: clamp(22px, 3vw,56px);
 }
 body{
     background-color: #EFB5F2;
@@ -70,6 +63,9 @@ body{
 }
 .yellow{
     background-color: #ECF447;
+}
+.transparent{
+    background-color: rgba(0,0,0,0.5);
 }
 .fucsia{
     background-color: #F21DB9
@@ -134,19 +130,182 @@ body{
     background-color: #F3B385;
 }
 .banner{
-    height: 100px;
-    display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
+    height: 7vh;
 }
-.banner p{
-    text-transform: uppercase;
-    font-size: 100px;
-    white-space: nowrap;
-    padding: 0 1rem;
-    animation: move-rtl 6000ms linear infinite;
+.title{
+    font-size: clamp(36px, 6vw, 72px);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
 }
-
+.pb-10{
+    padding-bottom: 10vh
+}
+.pt-10{
+    padding-top: 10vh
+}
+.mt-10 {
+    margin-top: 10vh;
+}
+.width {
+    width: 100%;
+}
+/*Css calza*/
+.firstDiv {
+    height: 66vh;
+}
+.secondDiv {
+    height: 110vh;
+}
+.gbackground{
+    background-image: url('immagini/calza/gBackground.png');
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    background-position-x: 12vh;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+.littleStar {
+    width: 4%;
+    right: -30%;
+    bottom: -10%;
+}
+.gSticker {
+    width: 35%;
+    right: -135%;
+    top: -15%;
+}
+.gstar1 {
+    width: 15%;
+    right: -25%;
+    top: -10%;
+}
+.gsfondoForm{
+    background-image: url('immagini/calza/sfondoRosa.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.gdivVector{
+    background-image: url('immagini/calza/ondaArancio.png');
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: right center;
+}
+.gbackground2{
+    background-image: url('immagini/calza/calziniSpeciali.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.gscrittaGia {
+    position: absolute;
+    left: 78%;
+    width: 75%;
+    top: 90%;
+}
+.gtrestelle {
+    width: 20%;
+    left: 10%;
+    bottom: -20%;
+}
+.gtryme {
+    width: 40%;
+    left: -50%;
+    top: -20%;
+}
+.gscrittaVi {
+    width: 40%;
+    right: -140%;
+    bottom: -18%;
+}
+.gstellineBelline {
+    width: 20%;
+    left: -10%;
+    top: 5%;
+}
+.gscrittaGia2 {
+    width: 20%;
+    right: 15%;
+    top: 65%;
+}
+.gscrittaGia3 {
+    width: 40%;
+    left: -10%;
+    top: 35%;
+}
+.gduestelline {
+    width: 10%;
+    left: 5%;
+    top: 3%;
+}
+.gpiccolaStella1 {
+    width: 3%;
+    left: 25%;
+    bottom: 4%;
+}
+.gpiccolaStella2 {
+    width: 3%;
+    right: 1%;
+    bottom: 35%;
+}
+.gscrittaBlu {
+    width: 30%;
+    right: -2%;
+    bottom: 15%;
+}
+.gkeepgoing {
+    width: 80%;
+    right: 8%;
+    top: 55%;
+}
+.gnonfarti {
+    width: 70%;
+    right: 20%;
+    top: 15%;
+}
+/*quiz calza*/
+.gcontatti{
+    background-color: #FE6C0C;
+    border: 5px solid #ECF447;
+    border-radius: 3vh;
+    padding:30px 2vw;
+    margin: auto;
+}
+.ginput{
+    background-color: #f8f4db;
+    border: none;
+    border-radius: 2.5vh;
+    font-size: 16px;
+    width: 100%;
+    padding: 1vw 1vw;
+    margin-bottom: 2vh;
+}
+.gmessaggio{
+    background-color: #f8f4db;
+    border: none;
+    border-radius: 2.5vh;
+    font-size: 24px;
+    width: 100%;
+    padding: 1vw 1vw;
+    margin-bottom: 2vh;
+    height: 22vh;
+    resize:none
+}
+.gfreccia1{
+    width: 20%;
+    left: 4%;
+    bottom: 15%;
+}
+.gfreccia2{
+    width: 20%;
+    right: 4%;
+    bottom: 15%;
+    transform: rotate(180deg);
+}
+/* fine css calza*/
 
 /** scritte che scorrono **/
 .wrapper {
@@ -192,6 +351,7 @@ body{
 }
 /** fine scritte che scorrono **/
 
+/* HEAD*/
 .title{
     font-size: clamp(42px, 5vw, 72px);
     font-family: 'Poppins', sans-serif;
@@ -298,6 +458,8 @@ body{
     left: 40%;
     top: 290%;
 }
+/*
+>>>>>>> 44148288201e5ab937696318fd1b9ecd438c9dd5*/
 /*fiore robi- Css robi?*/
 
 .pbackground{
@@ -331,6 +493,7 @@ body{
 .star3{
 display: none;
 }
+
 .tech1{
     object-fit: cover;
     width: 100%;
@@ -359,6 +522,7 @@ display: none;
 .textshop1{
     width: 13%;top:20%;left: 5%
 }
+
 .price-position{
     width: 50%;
     position: absolute;
@@ -373,7 +537,7 @@ display: none;
     background-image: url('immagini/contatti/vector.png');
     background-size: cover;
     background-repeat: no-repeat;
-} /* potrebbe essere un css di sara*/
+}
 
 /*Css sara?*/
 .contatti{
@@ -413,7 +577,11 @@ display: none;
     width:fit-content;
     padding: 0.7vw 3vw;
     margin: auto;
-} /* questo potrebbe non avere più senso */
+}
+.bottoneForm:active {
+    transform: translateY(7px);
+    box-shadow: 2px 2px 0 rgba(0,0,0,1);
+}
 .sfondoForm{
     background-image: url('immagini/contatti/vector.png');
     background-size: cover;
@@ -432,6 +600,14 @@ display: none;
 }
 
 /** index css**/
+.quizBox{
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+}
+.gameBox{
+    width: 75%;
+    border-radius: 16px;
+}
 .flower{
     width: 90%;
 }
@@ -440,19 +616,19 @@ display: none;
     right: -3vw;
     max-width: calc(100% + 50px);
     height: auto;
-} /*taglia il fiore a destra */
+}
 .cut-img-left{
     position: relative;
     left: -3vw;
     max-width: calc(100% + 50px);
     height: auto;
-} /*taglia il fiore a sisnitra */
+}
 .overflow-hidden {
     overflow: hidden;
 }
 .overflow-hidden-x{
     overflow-x:clip ;
-} /* uno di questi 2 non serve */
+}
 .divVector{
     height: 100%;
     background-size: contain;
@@ -462,12 +638,13 @@ display: none;
 }
 .divVector-sm{
     display: none;
-} /* servono per girare l'onda quando va su telefono */
-
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 10px;
+
+    width: 100%;
 }
 .grid-item {
     aspect-ratio: 1;
@@ -479,39 +656,43 @@ display: none;
 .grid-container >.grid-item{
     border: 1vh solid white;
     border-radius: 1vh;
-
-} /*servono per la griglia del gioco delle carte, ma anche per la griglia dei prodotti*/
+}
+.border-rounded{
+    border-radius:20px;
+}
 
 .s1{
-    width: 20%;left: 75%;top:70%;transform: rotate(-8deg);
+    width: 15%;left: 50%;bottom:10%;transform: rotate(-8deg);
 }
 .s2{
-    width: 20%;left: 75%;top:70%;transform: rotate(12deg);
+    width: 15%;left: 75%;bottom:0%;transform: rotate(12deg);
 }
 .s3{
-    width: 20%;left: 85%;top:70%; transform: rotate(-12deg);
+    width: 15%;left: 45%;bottom:0%; transform: rotate(-12deg);
 }
 .s4{
-    width: 30%;right: -20%;top:0%; z-index: 999
+    width: 19%;right: 38%;top:0; z-index:999;
 }
 .indexStar1{
     width: 10%;
-    left: 90%;
-    top:-100%
+    left: 55%;
+    top:10%
 }
 .indexStar2{
     width: 4%;
-    left: -10%;
-    top:-25vh
+    left: 35%;
+    top:20%
 }
 .indexStar3{
-    width: 20%;
-    right: 10%;
-    top:-200%
+    width: 10%;
+    right: 50%;
+    top:0%
 }
-.quizBox{
-    border-top-left-radius: 3vh;
-    border-bottom-left-radius: 3vh
+.t2{
+    width: 20%;
+    right: 50%;
+    bottom:10%;
+    z-index: 999;
 }
 
 
@@ -568,8 +749,8 @@ display: none;
  /*** CSS GALLERY ***/
 
 .roll-out-left {
-	-webkit-animation: roll-out-left 0.6s ease-in both;
-	        animation: roll-out-left 0.6s ease-in both;
+    -webkit-animation: roll-out-left 0.6s ease-in both;
+    animation: roll-out-left 0.6s ease-in both;
 }
 .roll-out-right {
     -webkit-animation: roll-out-right 0.6s ease-in both;
@@ -582,7 +763,7 @@ display: none;
 .roll-in-right {
     -webkit-animation: roll-in-right 0.6s ease-out both;
     animation: roll-in-right 0.6s ease-out both;
-} /* classi per le animazioni delle immagini che vengono sparate via*/
+}
 
 .slider img{
     width: 30vw;
@@ -591,21 +772,23 @@ display: none;
     aspect-ratio: 1;
     object-fit: cover;
 }
+
 #sliderPC{
     display: block;
 }
 #sliderMobile{
     display: none;
-} /* rendono responsive lo slider*/
+}
 
 
 /* navbar */
 .logo{
-    width: 8vw;
+    height: 8vh;
 }
 .navbar{
     background-color: #ECF447;
     border-bottom:4px solid #F21DB9;
+    height: 10vh;
 }
 .navbar a{
     font-size: 1.3vw;
@@ -650,11 +833,15 @@ button{
 }
 .footer p{
     font-weight: 200;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
 }
 .footer h1 {
     font-size: 3vw;
     font-weight: 900;
+}
+.footer h3 {
+    font-size: 2vw;
+    font-weight: 600;
 }
 .icona{
     width:55px;
@@ -664,19 +851,10 @@ button{
     -webkit-animation: jello-horizontal 0.9s both;
     animation: jello-horizontal 0.9s both;
     cursor: pointer;
-}  /* questi saranno da sistemare nelle media query*/
+}
 /*fine footer*/
 
-/*una serie di animazioni che venongono usate*/
-@keyframes move-rtl {
-    0%{
-       transform: translateX(0);
-    }
-    100%{
-        transform: translateX(-100%);
-    }
-
-}
+/* animazioni per il jello*/
 @-webkit-keyframes jello-horizontal {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
@@ -737,7 +915,10 @@ button{
         transform: scale3d(1, 1, 1);
     }
 }
-@-webkit-keyframes roll-out-left {
+/* KEYFRAME ROLL OUT GALLERY CAROUSEL **/
+
+
+ @-webkit-keyframes roll-out-left {
     0% {
       -webkit-transform: translateX(0) rotate(0deg);
               transform: translateX(0) rotate(0deg);
@@ -749,7 +930,7 @@ button{
       opacity: 0;
     }
   }
-@keyframes roll-out-left {
+  @keyframes roll-out-left {
     0% {
       -webkit-transform: translateX(0) rotate(0deg);
               transform: translateX(0) rotate(0deg);
@@ -833,57 +1014,22 @@ button{
         opacity: 1;
     }
 }
-
-/* -----------------------------------------------------------------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------*/
-/* ----------------------------------------------INIZIO MEDIA QUERY-------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------*/
-/* -----------------------------------------------------------------------------------------------------------------*/
-
+/* inizio media queryyyy */
 @media screen and (max-width: 767px){
     .wrapper {
         height: 32px;
     }
+
     .scroll p {
         font-size: 32px;
-    } /*ridimensiona i wrapper per le scritte che si muovono */
-    .pt-10{
-        padding-top: 2vh;
+
     }
-    .pb-10{
-        padding-bottom: 2vh;
-    }
-    .grid-border{
+    .grid-border-sm{
         padding-left: 30px;
         padding-right: 30px;
     }
-    .grid-border-left{
-        padding-left: 30px;
-
-    }
-    .grid-border-right{
-        padding-right: 30px;
-    }
-    /*questi 3 sopra sono da rivedere*/
-
     .center-sm{
         margin: auto;
-    }
-
-    /*index css*/
-
-    .quizBox{
-        border-top-left-radius: 0vh;
-        border-bottom-left-radius: 3vh;
-        border-bottom-right-radius: 3vh;
-    }
-    .grid-container >.grid-item{
-        border: 2px solid white;
-        border-radius: 5px;
     }
     .pbackground{
         background-image: url('immagini/shop/pBackground.png');
@@ -903,6 +1049,7 @@ button{
     .background-sm{
         height: 40vh;
     }
+
     .divVector{
         display: none;
     }
@@ -914,32 +1061,48 @@ button{
         position: relative;
         top:-1vh
     }
+    .quizBox{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .grid-container >.grid-item{
+        border: 1vw solid white;
+        border-radius: 5px;
+    }
+    .border-rounded{
+        border-radius:10px;
+    }
+    .gameBox{
+        width: 100%;
+        border-radius: 16px;
+    }
     .s1{
-        width: 25%;left: 8%;top: -60%
+        width: 30vw;left: 5%;top:40vw
     }
     .s2{
-        width: 25%;left: 70%;top:-45vw
+        width: 25vw;left: 70%;top:40vw;padding: 0px;
     }
     .s3{
-        width: 25%;left: 8%;top:-60vw;
+        width: 30vw;left: 5%;top:30vw;
     }
     .s4{
-        width: 30%;right: 0%;top:70%;z-index: 999
+        width: 40vw;right: 0%;top:40%;z-index: 999
     }
     .indexStar1{
         width: 20%;
-        left: 10%;
-        top:-40vh;
+        left: 5%;
+        top:2%;
     }
     .indexStar2{
-        width: 4%;
-        left: -10%;
-        top:80%
+        width: 15vw;
+        left: 70%;
+        top:0%
     }
     .indexStar3{
         width: 20%;
-        right: 10%;
-        top:-200%
+        left: 10%;
+        top:0%
     }
     .star1{
         width: 10%; right: 35%; top: 20%;
@@ -954,9 +1117,6 @@ button{
         display: block;
 
     }
-
-    /*inizo css shop*/
-
     .stickershop{
         width: 50%; left: 55%;top: -5%; position: absolute
     }
@@ -970,7 +1130,12 @@ button{
     #background1{
         height: 50vh;
     }
-
+    .pt-10{
+        padding-top: 2vh;
+    }
+    .pb-10{
+        padding-bottom: 2vh;
+    }
     #text-hide{
         display: none;
     }
@@ -996,28 +1161,55 @@ button{
         left: -20px;
     }
 
-    /** css gallery **/
+    /*css calza*/
+    .gSticker {
+        width: 30%;
+        right: 10%;
+        top: 85%;
+    }
+    .littleStar {
+        width: 8%;
+        left: 10%;
+        bottom: -20%;
+        transform: rotate(215deg);
+    }
+    .gbackground{
+        background-image: url('immagini/calza/gBackground.png');
+        height: 100%;
+        background-size: 110%;
+        position: relative;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-position-y: center;
+    }
+    .gscrittaGia {
+        width: 10%;
+        left: 1%;
+    }
+    .gsfondoForm{
+        background-image: url('immagini/calza/sfondoVmobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    /* fine css calza*/
+    .slider img{
+        width: 100%;
+        border-radius: 30px;
+        box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
     #sliderPC{
         display: none;
     }
     #sliderMobile{
         display: block;
     }
-    .slider img{
-        width: 70vw;
-        border-radius: 30px;
-        box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-        aspect-ratio: 1;
-        object-fit: cover;
-    }
-    /* da qui in poi non si capisce come sono divisi i css :-)*/
-
-    /*css calza*/
-    .gSticker {
-        width: 10%;
-    }
-
     /*css navbar*/
+    .logo{
+        height: 6vh;
+    }
     .sidebar{
         background-color: #ECF447;
         min-width: 100vw;
@@ -1026,9 +1218,7 @@ button{
         color: #F21DB9;
         font-size: 2.5vh;
     }
-    .logo{
-        width: 16vw;
-    }
+
     .navbar-nav .nav-link.active{
         color: #F21DB9;
         border: 0px solid #F21DB9;
@@ -1091,11 +1281,29 @@ button{
 
     /*css footer*/
     .icona{
-        width:35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
     }
     #freccia{
         transform: rotate(-90deg) scaleX(-1);
+    }
+    .footer p{
+        font-weight: 200;
+        font-size: 4vw;
+        margin-top: 10px;
+    }
+    .footer h1 {
+        font-size: 6vw;
+        font-weight: 900;
+    }
+    .footer h3 {
+        font-size: 4vw;
+        margin-top: 10px;
+    }
+    .icona:hover{
+        -webkit-animation: jello-horizontal 0.9s both;
+        animation: jello-horizontal 0.9s both;
+        cursor: pointer;
     }
     /*fine css footer*/
 }

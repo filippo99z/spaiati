@@ -63,7 +63,6 @@ function slideOut() {
             }, 600);
         }
     }
-
 }
 function slideIn() {
     if (counter>0) {

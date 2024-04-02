@@ -14,7 +14,7 @@
 </head>
 <body>
 <!--- navbar -->
-<nav class="navbar navbar-expand-md sticky-top px-md-5 px-4">
+<nav class="navbar navbar-expand-md sticky-top grid-border grid-border-sm">
     <div class="container-fluid px-0">
         <a class="navbar-brand logo py-0" href="index.html"><img class="logo" src="immagini/logo.svg" alt="logo"></a>
         <button class="navbar-toggler shadow-none border-0 rounded-circle custom-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -64,20 +64,18 @@
 
 <!--- contenuto -->
 <!--- primo div -->
-<div class=" container-fluid ">
+<div class=" container-fluid">
     <div class="row firstDiv">
-        <div class="col-md-5 grid-border-left d-flex flex-column align-self-center">
-            <h1 class="inter bolder tPurple pt-10 position-relative title" >
+        <div class="col-md-5 grid-border-left d-flex flex-column align-self-center position-relative grid-border-sm">
+            <h1 class="inter bolder tPurple title" >
                 CHE CALZA SEI?
-
-                <img src="immagini/shop/s1.png" alt="" class="position-absolute star1 d-none d-lg-block">
-                <img src="immagini/calza/LittleStar.png" alt="" class="position-absolute littleStar z-2">
-                <img src="immagini/calza/gSticker.png" alt="" class="position-absolute gSticker z-3">
-
             </h1>
+            <img src="immagini/shop/s1.png" alt="" class="position-absolute gstar1 d-none d-lg-block">
+            <img src="immagini/calza/LittleStar.png" alt="" class="position-absolute littleStar z-2">
+            <img src="immagini/calza/gSticker.png" alt="" class="position-absolute gSticker z-3">
             <p class="mb-md-0 pt-md-3 tBlack fst-italic fw-semibold">
                 Benvenuti nel nostro mondo di calzini unici e personalizzati!</p>
-            <p class="mb-md-0 pt-md-3 tBlack pb-10">
+            <p class="mb-md-0 pt-md-3 tBlack">
                 <span>
                     Hai mai desiderato possedere un paio di calzini che riflettono davvero la tua personalità? <br>Beh, è il momento perfetto per scoprirlo! E sei poi ti piace non dimenticarti di aggiungerla al carrello!
                 </span>
@@ -91,8 +89,22 @@
 </div>
 
 <!--- banner -->
-<div class="yellow banner"></div>
-<div class="fucsia banner"></div>
+<div class="container-fluid wrapper w-100 p-0 m-0 yellow">
+    <div class="scroll ">
+        <div class="RightToLeft  inter bolder">
+            <p>TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ!</p>
+            <p>TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ!</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid wrapper w-100 p-0 m-0 fucsia">
+    <div class="scroll ">
+        <div class="LeftToRight tWhite inter bolder">
+            <p>TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ!</p>
+            <p>TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ!</p>
+        </div>
+    </div>
+</div>
 
 <!--- secondo div -->
 <div class="container-fluid purple">
@@ -111,21 +123,25 @@
                 </p>
                 <img src="immagini/calza/trestelle.png" alt="" class="position-absolute gtrestelle">
                 <img src="immagini/calza/scrittaGia.png" alt="" class="position-absolute gscrittaGia">
+                <img src="immagini/calza/scrittaVi.png" alt="" class="position-absolute gscrittaVi">
             </div>
         </div>
 
         <div class="col-md-7 d-flex justify-content-center align-items-center gsfondoForm py-5">
-            <div class="formContainer position-relative">
+            <div class="formContainer position-relative pb-10">
                 <img src="immagini/calza/tryme.png" alt="" class="position-absolute gtryme">
-                <div class="contatti">
-                    <input class="input" type="text" placeholder="Nome">
-                    <input class="input" type="text" placeholder="Cognome">
-                    <input class="input" type="email" placeholder="Email">
-                    <input class="input" type="number" placeholder="Telefono">
-                    <textarea class="messaggio" name="messaggio" placeholder="Messaggio..." maxlength="300"></textarea>
-                    <div class="bottoneForm">Invia</div>
+                <div class="gcontatti">
+                    <div class="gmessaggio text-center position-relative">
+                        <p class="tBlack inter">Sei più un tipo da colazione salata o dolce?</p>
+                        <img src="immagini/calza/freccia.png" alt="" class="gfreccia1 position-absolute">
+                        <img src="immagini/calza/freccia.png" alt="" class="gfreccia2 position-absolute">
+                    </div>
+                    <input class="ginput" type="text" placeholder="Nome">
+                    <input class="ginput" type="text" placeholder="Cognome">
+                    <input class="ginput" type="email" placeholder="Email">
+                    <input class="ginput" type="number" placeholder="Telefono">
+                    <div class="bottoneForm">Scopri la tua calza</div>
                 </div>
-                <img src="immagini/calza/scrittaVi.png" alt="" class="position-absolute gscrittaVi">
             </div>
         </div>
     </div>
@@ -142,16 +158,16 @@
             <div style="background-image: url('immagini/calza/ondaArancio-sm.png');" class="divVector-sm"></div>
         </div>
 
-        <div class="col-md-6 grid-border-left py-4 py-md-0 orange z-0">
+        <div class="col-md-6 grid-border-left py-4 py-md-0 orange z-0 position-relative">
             <img src="immagini/calza/stellineBelline.png" alt="" class="position-absolute gstellineBelline">
+            <img src="immagini/calza/scrittaGia2.png" class="position-absolute gscrittaGia2" alt="">
             <h2 class="h1 inter tPurple pt-md-5 mt-md-5 fw-bold"> ECCO I TUOI CALZINI PERSONALIZZATI!</h2>
             <p class="p inter tBlack py-md-5 py-3 my-0 my-md-2 me-md-5 pe-5">
                 Non sono solo calzini, sono un'opera d'arte per i tuoi piedi. Preparati a innamorarti di comfort e stile, tutto racchiuso in un paio di calzini che sono letteralmente fatti su misura per te!
                 <br><br>Non aspettare, mettili nel carrello adesso e trasforma ogni passo in una divertente avventura di stile!
             </p>
-            <img src="immagini/calza/scrittaGia2.png" class="position-absolute gscrittaGia2" alt="">
-            <div class="mb-md-5 pb-md-5">
-                <div class="bottone px-md-4 py-md-2 px-2 py-1 btn-yellow tBlack position-relative">
+            <div class="mb-md-5 pb-md-5 position-relative d-flex justify-content-center pe-5 me-5">
+                <div class="bottone px-md-4 py-md-2 px-2 py-1 btn-yellow tBlack">
                     COMPRA!
                 </div>
                 <img src="immagini/calza/scrittaGia3.png" class="position-absolute gscrittaGia3" alt="">
@@ -164,23 +180,38 @@
 <!--- quarto div -->
 <div class="container-fluid">
 <div class="row">
-    <img src="immagini/calza/ondaRosa.png" class="width">
-<div class="col-8 container-fluid px-0 position-relative">
-    <h2 class="h1 tPurple">NON È STATO UN COLPO DI FULMINE?</h2>
-    <h3 class="tPurple"> ESPLORA ALTRI TESORI NEL NOSTRO SHOP!</h3>
-    <p>Se per qualche motivo i tuoi piedi non hanno fatto scintille con la prima scelta di calzini personalizzati, niente paura! Nel nostro negozio, c'è un tesoro di opzioni che aspettano di essere scoperte.
+    <img src="immagini/calza/ondaRosa.png" class="width pe-0 ps-0">
+
+    <div class="col-2 container-fluid position-relative">
+        <img src="immagini/calza/keepgoing.png" alt="" class="position-absolute gkeepgoing">
+    </div>
+
+    <div class="col-8 container-fluid px-0 position-relative">
+    <h2 class="h1 tPurple text-center pt-10">NON È STATO UN COLPO DI FULMINE?</h2>
+    <h3 class="tPurple text-center"> ESPLORA ALTRI TESORI NEL NOSTRO SHOP!</h3>
+    <p class="p pt-3">Se per qualche motivo i tuoi piedi non hanno fatto scintille con la prima scelta di calzini personalizzati, niente paura! Nel nostro negozio, c'è un tesoro di opzioni che aspettano di essere scoperte.<br><br>
         Sbircia tra le altre gemme di stile, dai calzini più eccentrici alle creazioni classiche. C'è qualcosa per tutti i gusti, e chi sa, il tuo paio perfetto potrebbe aspettarti proprio dietro l'angolo!
-        Non accontentarti, divertiti a esplorare.
+        <br><br>Non accontentarti, divertiti a esplorare.
     </p>
+    <img src="immagini/shop/s1.png" alt="" class="position-absolute gduestelline d-none d-lg-block">
+    <img src="immagini/calza/LittleStar.png" alt="" class="position-absolute gpiccolaStella2">
+    <div class="d-flex justify-content-center pb-10 pt-3">
     <div class="bottone px-md-4 py-md-2 px-2 py-1 btn-yellow tBlack position-relative">
         PASSA DAL NOSTRO SHOP!
     </div>
-</div>
+        <img src="immagini/calza/LittleStar.png" alt="" class="position-absolute gpiccolaStella1">
+        <img src="immagini/calza/scrittaBlu.png" alt="" class="position-absolute gscrittaBlu">
+    </div>
+    </div>
+
+    <div class="col-2 container-fluid position-relative">
+        <img src="immagini/calza/nonfarti.png" alt="" class="position-absolute gnonfarti">
+    </div>
 </div>
 </div>
 
 <!--- footer -->
-<div class="footer p-md-5 p-3 m-0 w-100">
+<div class="footer py-4 grid-border grid-border-sm m-0 w-100">
 
     <div class="row text-center">
         <div class="col-12 comba"><h1>SOCKFUSION INNOVATIONS</h1></div>
@@ -189,8 +220,8 @@
 
     <div class="row mt-3">
         <div class="col-md-3 col-6">
-            <p>
-                Contatti
+            <p class="fw-bolder">
+                Contattaci
             </p>
             <p class="small">
                 Copyright<br>
@@ -239,8 +270,8 @@
             </div>
         </div>
 
-        <div class="col-md-3 ">
-            <p class="schoolbell text-md-end text-center">Tanto chi lo guarda il footer nel 2023?</p>
+        <div class="col-md-3">
+            <h3 class="schoolbell text-md-end text-center">Tanto chi lo guarda il footer nel 2023?</h3>
         </div>
     </div>
 
