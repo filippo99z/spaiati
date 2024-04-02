@@ -737,15 +737,82 @@ display: none;
     top:5%;
 }
 
+.sticker_piccolo2 {
+    width:15%;
+    right: 15%;
+    top: -50%;
+}
+
 .Cbackground{
     background-image: url('immagini/trama/img_sezione_BG.png');
     height: 100%;
+    width: 80%;
     background-size: cover;
-    position: relative;
-    background-position-x: 12vh;
     background-repeat: no-repeat;
-    background-position-y: 50%;
+    position: relative;
+    z-index: 2;
 }
+
+.read_here {
+    width: 30%;
+    right: 50%;
+    top: 5%;
+}
+
+.click_here {
+    width: 15%;
+    right: 25%;
+    bottom: 30%;
+}
+
+.stellina_1 {
+    width: 3.8%;
+    right: 15%;
+    bottom: 43%;
+}
+
+.stellina_2 {
+    width: 3.8%;
+    bottom: 7%;
+}
+
+.mandaci_foto {
+    width: 30%;
+    right: 30%;
+    bottom: 5%;
+}
+
+.total_background{
+    background-image: url('immagini/trama/scritta_striscia_D.png');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+.stickerRosa_total {
+    background-image: url('immagini/trama/sticker-rosa.png');
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 4;
+}
+
+.stickerBlu_total {
+    background-image: url('immagini/trama/sticker-blu.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    position: relative;
+    z-index: 4;
+}
+
+.Wsticker {
+    padding: 25% 10% 25% 20%;
+}
+
+
  /*** CSS GALLERY ***/
 
 .roll-out-left {
