@@ -9,6 +9,9 @@
     <link href="stili.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="script.js"></script>
+
+    <script src="https://cdn.metroui.org.ua/current/metro.js"></script>
+
 </head>
 <body>
 <nav class="navbar navbar-expand-md sticky-top grid-border">
@@ -101,11 +104,16 @@
 <!--- sezione immagini che si spostano -->
 <div class="container-fluid px-0">
     <div class="row m-0">
-        <div class="col-12 grid-border py-5 ">
-            <h2 class="inter bolder tPurple pb-5">
+        <div class="col-12  py-5 px-0">
+            <h2 class="inter bolder tPurple pb-5 grid-border grid-border-sm">
                 #EXPLORE THE GALLERY
             </h2>
-            <img src="immagini/gallery/exploreProva.png" width="100%">
+            <div class="container-fluid position-relative" style="height: 80vh;overflow-x: hidden;overflow-y: hidden">
+                <img src="immagini/gallery/prova1.png" data-role="draggable" style="width: 30%;position: relative;left: 20%; top:10%;transform:rotate(10deg)" >
+                <img src="immagini/gallery/prova1.png" data-role="draggable" style="width: 30%;position: relative;left: 18%; top:10%;transform:rotate(-10deg)" >
+                <img src="immagini/gallery/prova1.png" data-role="draggable" style="width: 30%;position: relative;left: 20%; top:10%; transform:rotate(-25deg)" >
+                <img src="immagini/gallery/prova1.png" data-role="draggable" style="width: 30%;position: relative;left: 60%; top:10%;transform:rotate(-12deg)" >
+            </div>
         </div>
     </div>
     <img src="immagini/gallery/Vector.png"  width="100%">
@@ -173,6 +181,7 @@
                 CARICA FOTO
 
             </div>
+
             <div class="row mt-5">
                 <div class="col-12 d-flex justify-content-center">
                         <img class="m-2 icona" src="immagini/facebook.png" >
@@ -182,6 +191,14 @@
         </div>
     </div>
 </div>
+
+<div class="container-fluid position-relative" style="height: 80vh;overflow-x: hidden">
+    <img src="immagini/gallery/prova1.png" data-role="draggable" style="width: 30%;position: relative;left: 20%; transform:rotate(10deg)" >
+    <img src="immagini/gallery/prova1.png" data-role="draggable" style="width: 30%;position: relative;left: 18%; transform:rotate(-10deg)" >
+    <img src="immagini/gallery/prova1.png" data-role="draggable" style="width: 30%;position: relative;left: 20%; top:10%; transform:rotate(-30deg)" >
+    <img src="immagini/gallery/prova1.png" data-role="draggable" style="width: 30%;position: relative;left: 60%; transform:rotate(-12deg)" >
+</div>
+
 
 <div class="footer p-md-5 p-3 m-0 w-100">
 

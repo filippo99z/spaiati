@@ -1,6 +1,7 @@
 var counter =0;
 var counterSm = 0;
 var cards = [];
+
 function gira(element){
     let counter = document.getElementById("counter").textContent;
     console.log(counter);
@@ -129,3 +130,4 @@ function slideInSm() {
         counterSm--;
     }
 }
+
