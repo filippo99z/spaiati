@@ -321,11 +321,23 @@ display: none;
     display: none;
 }
 
+/* css prodotto singolo */
+
+.backgroundprodotto{
+    background-image: url("immagini/prodotto/scritta.png");
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+
 .sfondoForm{
     background-image: url('immagini/contatti/vector.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 /*Css sara?*/
 .contatti{
