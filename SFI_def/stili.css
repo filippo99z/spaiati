@@ -752,11 +752,12 @@ display: none;
 .Cbackground{
     background-image: url('immagini/trama/img_sezione_BG.png');
     height: 100%;
-    width: 80%;
-    background-size: cover;
+    width: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     position: relative;
     z-index: 2;
+
 }
 
 .read_here {
