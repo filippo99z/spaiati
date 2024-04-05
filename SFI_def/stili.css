@@ -132,6 +132,9 @@ body{
 .banner{
     height: 7vh;
 }
+.border-fucsia{
+    border: 3px solid #F21DB9;
+}
 .title{
     font-size: clamp(36px, 6vw, 72px);
     font-family: 'Poppins', sans-serif;
