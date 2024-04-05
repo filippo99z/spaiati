@@ -721,7 +721,19 @@ display: none;
 
 /** fine index **/
 
-
+#carousel-md{
+    display: block;
+}
+#carousel-sm{
+    display: none;
+}
+.thumbnail{
+    transition: transform .2s;
+}
+.thumbnail:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
 /** CSS Trama **/
 
 .onda {
@@ -1248,6 +1260,12 @@ button{
         position: absolute;
         top: -20px;
         left: -20px;
+    }
+    #carousel-md{
+        display: none;
+    }
+    #carousel-sm{
+        display: block;
     }
 
     /*css calza*/

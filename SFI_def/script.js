@@ -130,4 +130,26 @@ function slideInSm() {
         counterSm--;
     }
 }
+function change(foto){
+    let swap;
 
+    let thumbnail = document.getElementById("thumbanil_active");
+    swap = thumbnail.src;
+    thumbnail.src= foto.src;
+    foto.src = swap;
+}
+
+function addP(bottone){
+    let counter = document.getElementById("p_counter").textContent;
+        if(bottone.id == "less"){
+            if (counter !=1){
+                counter--;
+                document.getElementById("p_counter").innerHTML = counter;
+            }
+        }else{
+            counter++;
+            document.getElementById("p_counter").innerHTML = counter;
+        }
+
+
+}
