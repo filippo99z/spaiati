@@ -736,7 +736,7 @@ display: none;
 }
 /** CSS Trama **/
 
-.onda {
+.wave {
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -752,25 +752,25 @@ display: none;
     background-position: center;
 }
 
-.stelline_3 {
+.stars_3 {
     width: 15%;
     left: 80%;
     top: -40%;
 }
 
-.stelline_2 {
+.stars_2 {
     width: 12%;
     left: 5%;
     bottom: 10%;
 }
 
-.sticker_piccolo {
+.XSsticker {
     width:30%;
     left: 95%;
     top:5%;
 }
 
-.sticker_piccolo2 {
+.XSsticker2 {
     width:15%;
     right: 15%;
     top: -50%;
@@ -795,25 +795,25 @@ display: none;
 
 .click_here {
     width: 15%;
-    right: 25%;
-    bottom: 30%;
+    right: 30%;
+    bottom: 33%;
 }
 
-.stellina_1 {
+.star_1 {
     width: 3.8%;
     right: 15%;
     bottom: 43%;
 }
 
-.stellina_2 {
+.starr_2 {
     width: 3.8%;
     bottom: 7%;
 }
 
-.mandaci_foto {
+.send_pic {
     width: 30%;
-    right: 30%;
-    bottom: 5%;
+    right: 15%;
+    bottom: 10%;
 }
 
 .total_background{
@@ -842,10 +842,60 @@ display: none;
     z-index: 4;
 }
 
-.Wsticker {
-    padding: 25% 10% 25% 20%;
+.Lpink_sticker {
+    top:0;
+    aspect-ratio: 1;
+    background-image: url('immagini/trama/sticker-rosa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
+.Lblue_sticker {
+    top:80%;
+    aspect-ratio:1;
+    right:80px;
+    height:100%;
+    background-image: url('immagini/trama/sticker-blu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.WPsticker {
+    padding: 25% 20% 25% 20%;
+}
+
+.WBsticker {
+    padding: 20% 28% 25% 20%;
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .wave {
+        margin-left: -2vh;
+    }
+    .XSsticker {
+        width:40%;
+        left: 95%;
+        top:5%;
+    }
+    .stars_3 {
+        width: 18%;
+        left: 75%;
+        top: -33%;
+    }
+
+    .stars_2 {
+        width: 15%;
+        left: 5%;
+        bottom: 10%;
+    }
+
+    .pb-20 {
+        padding-bottom: 10vh;
+    }
+}
 
  /*** CSS GALLERY ***/
 
