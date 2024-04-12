@@ -166,14 +166,15 @@
         right: 10%;
         top: 85%;
     }
-
     .littleStar {
         width: 8%;
         left: 10%;
         bottom: -20%;
         transform: rotate(215deg);
     }
-
+    .firstDiv {
+        height: auto;
+    }
     .gbackground {
         background-image: url('immagini/calza/gBackground.png');
         height: 100%;
@@ -181,7 +182,7 @@
         position: relative;
         background-position-x: center;
         background-repeat: no-repeat;
-        background-position-y: center;
+        background-position-y: 0vh;
     }
 
     .gscrittaGia {
@@ -194,5 +195,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         height: 100%;
+    }
+    #che_calza_sei{
+        height: 50vh;
     }
 }
