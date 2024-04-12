@@ -1,0 +1,198 @@
+.firstDiv {
+    height: 66vh;
+}
+.secondDiv {
+    height: 110vh;
+}
+.gbackground{
+    background-image: url('immagini/calza/gBackground.png');
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    background-position-x: 12vh;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+.littleStar {
+    width: 4%;
+    right: -30%;
+    bottom: -10%;
+}
+.gSticker {
+    width: 35%;
+    right: -135%;
+    top: -15%;
+}
+.gstar1 {
+    width: 15%;
+    right: -25%;
+    top: -10%;
+}
+.gsfondoForm{
+    background-image: url('immagini/calza/sfondoRosa.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.gdivVector{
+    background-image: url('immagini/calza/ondaArancio.png');
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: right center;
+}
+.gbackground2{
+    background-image: url('immagini/calza/calziniSpeciali.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.gscrittaGia {
+    position: absolute;
+    left: 78%;
+    width: 75%;
+    top: 90%;
+}
+.gtrestelle {
+    width: 20%;
+    left: 10%;
+    bottom: -20%;
+}
+.gtryme {
+    width: 40%;
+    left: -50%;
+    top: -20%;
+}
+.gscrittaVi {
+    width: 40%;
+    right: -140%;
+    bottom: -18%;
+}
+.gstellineBelline {
+    width: 20%;
+    left: -10%;
+    top: 5%;
+}
+.gscrittaGia2 {
+    width: 20%;
+    right: 15%;
+    top: 65%;
+}
+.gscrittaGia3 {
+    width: 40%;
+    left: -10%;
+    top: 35%;
+}
+.gduestelline {
+    width: 10%;
+    left: 5%;
+    top: 3%;
+}
+.gpiccolaStella1 {
+    width: 3%;
+    left: 25%;
+    bottom: 4%;
+}
+.gpiccolaStella2 {
+    width: 3%;
+    right: 1%;
+    bottom: 35%;
+}
+.gscrittaBlu {
+    width: 30%;
+    right: -2%;
+    bottom: 15%;
+}
+.gkeepgoing {
+    width: 80%;
+    right: 8%;
+    top: 55%;
+}
+.gnonfarti {
+    width: 70%;
+    right: 20%;
+    top: 15%;
+}
+/*quiz calza*/
+.gcontatti{
+    background-color: #FE6C0C;
+    border: 5px solid #ECF447;
+    border-radius: 3vh;
+    padding:30px 2vw;
+    margin: auto;
+}
+.ginput{
+    background-color: #f8f4db;
+    border: none;
+    border-radius: 2.5vh;
+    font-size: 16px;
+    width: 100%;
+    padding: 1vw 1vw;
+    margin-bottom: 2vh;
+}
+.gmessaggio{
+    background-color: #f8f4db;
+    border: none;
+    border-radius: 2.5vh;
+    font-size: 24px;
+    width: 100%;
+    padding: 1vw 1vw;
+    margin-bottom: 2vh;
+    height: 22vh;
+    resize:none
+}
+.gfreccia1{
+    width: 20%;
+    left: 4%;
+    bottom: 15%;
+}
+.gfreccia2 {
+    width: 20%;
+    right: 4%;
+    bottom: 15%;
+    transform: rotate(180deg);
+}
+/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------MEDIA QUERY---------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+    .gSticker {
+        width: 30%;
+        right: 10%;
+        top: 85%;
+    }
+
+    .littleStar {
+        width: 8%;
+        left: 10%;
+        bottom: -20%;
+        transform: rotate(215deg);
+    }
+
+    .gbackground {
+        background-image: url('immagini/calza/gBackground.png');
+        height: 100%;
+        background-size: 110%;
+        position: relative;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-position-y: center;
+    }
+
+    .gscrittaGia {
+        width: 10%;
+        left: 1%;
+    }
+
+    .gsfondoForm {
+        background-image: url('immagini/calza/sfondoVmobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+}

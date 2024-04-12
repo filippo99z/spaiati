@@ -1,0 +1,359 @@
+@import "font/stylesheet.css";
+.grid-border{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.grid-border-left{
+    padding-left: 80px;
+
+}
+.grid-border-right{
+    padding-right: 80px;
+}
+
+.schoolbell{
+    font-family: Schoolbell, sans-serif;
+}
+.comba{
+    font-family: Comba, sans-serif;;
+}
+.inter{
+    font-family: Poppins, sans-serif;
+}
+.bolder{
+    font-weight: bolder;
+}
+p{
+    font-size: clamp(12px,1.5vw,20px)
+}
+h1{
+    font-size: clamp(24px, 4vw,84px);  /* no bueno questo*/
+}
+h2{
+    font-size: clamp(22px, 3vw,56px);
+}
+body{
+    background-color: #EFB5F2;
+}
+.purple{
+    background-color: #6204BF;
+}
+.blu{
+    background-color: #3D46F2;
+}
+.orange{
+    background-color: #FE6C0C;
+}
+.yellow{
+    background-color: #ECF447;
+}
+.transparent{
+    background-color: rgba(0,0,0,0.5);
+}
+.fucsia{
+    background-color: #F21DB9
+}
+.fucsia-sm{
+    background-color: transparent;
+}
+.tWhite{
+    color: #f8f4db;
+}
+.tBlack{
+    color: #262626;
+}
+.tYellow{
+    color: #ECF447;
+}
+.tPurple{
+    color:#6204BF;
+}
+.tBlue{
+    color: #3D46F2;
+}
+.tOrange{
+    color:#FE6C0C;
+}
+.tFucsia{
+    color:#F21DB9;
+}
+.bottone{
+    border-radius: clamp(15px,2vw,20px);
+    font-family: Poppins, sans-serif;
+    box-shadow: 5px 5px 0 rgba(0,0,0,1);
+    font-size: clamp(16px, 2vw, 24px);
+    margin: 0;
+    width:fit-content;
+    font-weight: 600;
+    cursor: pointer;
+}
+.bottone:active {
+    transform: translateY(7px);
+    box-shadow: 2px 2px 0 rgba(0,0,0,1);
+}
+.btn-purple{
+    border: 5px solid #6204BF;
+    background-color: #D3B3F5;
+
+}
+.btn-yellow{
+    border: 5px solid #ECF447;
+    background-color: #F6F7BA;
+}
+.btn-blue{
+    border: 5px solid #3D46F2;
+    background-color: #C2C5FF;
+}
+.btn-fucsia{
+    border: 5px solid #F21DB9;
+    background-color: #F997FF;
+}
+.btn-orange{
+    border: 5px solid #FE6C0C;
+    background-color: #F3B385;
+}
+.banner{
+    height: 7vh;
+}
+.border-fucsia{
+    border: 3px solid #F21DB9;
+}
+.title{
+    font-size: clamp(36px, 6vw, 72px);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+.pb-10{
+    padding-bottom: 10vh
+}
+.pt-10{
+    padding-top: 10vh
+}
+.pt-20 {
+    padding-top: 20vh;
+}
+.pb-20 {
+    padding-bottom: 20vh;
+}
+.mt-10 {
+    margin-top: 10vh;
+}
+.width {
+    width: 100%;
+}
+
+
+/* navbar */
+.logo{
+    height: 8vh;
+}
+.navbar{
+    background-color: #ECF447;
+    border-bottom:4px solid #F21DB9;
+    height: 10vh;
+}
+.navbar a{
+    font-size: 1.3vw;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    color: #F21DB9;
+}
+.navbar-nav .nav-link.active{
+    color: #F21DB9;
+    border-bottom: 2px solid #F21DB9;
+    padding-bottom: 0;
+}
+.custom-toggler .navbar-toggler-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("immagini/toggler.png");
+    background-size: 40px;
+}
+button{
+    background-color: transparent;
+}
+.close-btn{
+    width: 40px !important;
+}
+.offcanvas-header{
+    border-bottom:4px solid #F21DB9;
+    background-color: #ECF447;
+}
+.navbar a:hover {
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+    color: #F21DB9;
+}
+/*fine navbar*/
+
+/*footer*/
+.footer{
+    background-color: #ECF447;
+    border-top: 4px solid #F21DB9;
+    color: #F21DB9;
+
+}
+.footer p{
+    font-weight: 200;
+    font-size: 1.4vw;
+}
+.footer h1 {
+    font-size: 3vw;
+    font-weight: 900;
+}
+.footer h3 {
+    font-size: 2vw;
+    font-weight: 600;
+}
+.icona{
+    width:55px;
+    height: 55px;
+}
+.icona:hover{
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+    cursor: pointer;
+}
+/*fine footer*/
+/*SCRITTE CHE SCORRONO*/
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    overflow: hidden;
+}
+.scroll {
+    white-space: nowrap;
+    margin: 0 0;
+}
+.scroll div {
+    display: flex;
+    gap: 1em;
+}
+.scroll p {
+    font-size: 48px;
+    margin-bottom: 0;
+    line-height: 10px;
+}
+.RightToLeft {
+    animation: RightToLeft 30s infinite linear;
+}
+@keyframes  RightToLeft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+.LeftToRight {
+    animation: LeftToRight 30s infinite linear;
+}
+
+.border-rounded{
+    border-radius:10px;
+}
+@keyframes  LeftToRight {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------MEDIA QUERY---------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 767px){
+    .wrapper {
+        height: 32px;
+    }
+    .scroll p {
+        font-size: 32px;
+    }
+    .grid-border-sm{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .center-sm{
+        margin: auto;
+    }
+    .background-sm{
+        height: 40vh;
+    }
+    /*css navbar*/
+    .logo{
+        height: 6vh;
+    }
+    .sidebar{
+        background-color: #ECF447;
+        min-width: 100vw;
+    }
+    .sidebar a{
+        color: #F21DB9;
+        font-size: 2.5vh;
+    }
+
+    .navbar-nav .nav-link.active{
+        color: #F21DB9;
+        border: 0px solid #F21DB9;
+        padding-bottom: 8px;
+    }
+    hr{
+        color: #F21DB9;
+    }
+    #carrello{
+        align-items: center;
+        background-color: #EFB5F2;
+        border-radius: 30px;
+        border: 2px solid #F21DB9;
+        bottom: 0%;
+        margin-top: 3vh;
+        margin-left: 30vw;
+        margin-right: 30vw;
+        box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+
+    }
+    .navbar a:hover {
+        -webkit-animation: none;
+        animation: none;
+        color: #F21DB9;
+    }
+    .hero{
+        height: 50vh;
+    }
+    /*css footer*/
+    .icona{
+        width: 45px;
+        height: 45px;
+    }
+    #freccia{
+        transform: rotate(-90deg) scaleX(-1);
+    }
+    .footer p{
+        font-weight: 200;
+        font-size: 4vw;
+        margin-top: 10px;
+    }
+    .footer h1 {
+        font-size: 6vw;
+        font-weight: 900;
+    }
+    .footer h3 {
+        font-size: 4vw;
+        margin-top: 10px;
+    }
+    .icona:hover{
+        -webkit-animation: jello-horizontal 0.9s both;
+        animation: jello-horizontal 0.9s both;
+        cursor: pointer;
+    }
+    /*fine css footer*/
+
+
+}

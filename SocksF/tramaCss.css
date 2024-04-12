@@ -1,0 +1,158 @@
+.wave {
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: -1vh;
+    background-image: url('immagini/trama/onda.png');
+}
+
+.img_First {
+    background-image: url('immagini/trama/calza_trama.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.stars_3 {
+    width: 15%;
+    left: 80%;
+    top: -40%;
+}
+
+.stars_2 {
+    width: 12%;
+    left: 5%;
+    bottom: 10%;
+}
+
+.XSsticker {
+    width:30%;
+    left: 95%;
+    top:5%;
+}
+
+.XSsticker2 {
+    width:15%;
+    right: 15%;
+    top: -50%;
+}
+
+.Cbackground{
+    background-image: url('immagini/trama/img_sezione_BG.png');
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+
+}
+
+.read_here {
+    width: 30%;
+    right: 50%;
+    top: 5%;
+}
+
+.click_here {
+    width: 15%;
+    right: 30%;
+    bottom: 33%;
+}
+
+.star_1 {
+    width: 3.8%;
+    right: 15%;
+    bottom: 43%;
+}
+
+.starr_2 {
+    width: 3.8%;
+    bottom: 7%;
+}
+
+.send_pic {
+    width: 30%;
+    right: 15%;
+    bottom: 10%;
+}
+
+.total_background{
+    background-image: url('immagini/trama/scritta_striscia_D.png');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+.stickerRosa_total {
+    background-image: url('immagini/trama/sticker-rosa.png');
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 4;
+}
+
+.stickerBlu_total {
+    background-image: url('immagini/trama/sticker-blu.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    position: relative;
+    z-index: 4;
+}
+
+.Lpink_sticker {
+    top:0;
+    aspect-ratio: 1;
+    background-image: url('immagini/trama/sticker-rosa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Lblue_sticker {
+    top:80%;
+    aspect-ratio:1;
+    right:80px;
+    height:100%;
+    background-image: url('immagini/trama/sticker-blu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.WPsticker {
+    padding: 25% 20% 25% 20%;
+}
+
+.WBsticker {
+    padding: 20% 28% 25% 20%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {  /* perché pure 1200px? */
+
+    .wave {
+        margin-left: -2vh;
+    }
+    .XSsticker {
+        width:40%;
+        left: 95%;
+        top:5%;
+    }
+    .stars_3 {
+        width: 18%;
+        left: 75%;
+        top: -33%;
+    }
+
+    .stars_2 {
+        width: 15%;
+        left: 5%;
+        bottom: 10%;
+    }
+
+    .pb-20 {
+        padding-bottom: 10vh;
+    }
+}

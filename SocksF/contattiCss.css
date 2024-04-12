@@ -1,0 +1,71 @@
+.contatti{
+    background-color: #EFB5F2;
+    border: 5px solid #ECF447;
+    border-radius: 3vh;
+    padding:30px 2vw;
+    margin: auto;
+}
+.input{
+    background-color: #f8f4db;
+    border: none;
+    border-radius: 2.5vh;
+    font-size: 16px;
+    width: 100%;
+    padding: 1vw 1vw;
+    margin-bottom: 2vh;
+}
+.messaggio{
+    background-color: #f8f4db;
+    border: none;
+    border-radius: 2.5vh;
+    font-size: 16px;
+    width: 100%;
+    padding: 1vw 1vw;
+    margin-bottom: 2vh;
+    height: 22vh;
+    resize:none
+}
+.bottoneForm{
+    background-color: #f8f4db;
+    border-radius: 2.5vh;
+    color: #262626;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width:fit-content;
+    padding: 0.7vw 3vw;
+    margin: auto;
+}
+.bottoneForm:active {
+    transform: translateY(7px);
+    box-shadow: 2px 2px 0 rgba(0,0,0,1);
+}
+.sfondoForm{
+    background-image: url('immagini/contatti/vector.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.formContainer{
+    width: 60%;
+    margin-left: 15vw;
+    margin-top: 10vh
+}
+.contattiS1{
+    position: absolute;
+    left:-70%;
+    top:-5%;
+    width: 55%
+}
+
+/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------MEDIA QUERY---------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 767px){
+    /* ---------------------------DA FARE-----------------------------------------------*/
+
+
+}

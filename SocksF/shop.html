@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="stili.css" rel="stylesheet" type="text/css">
+    <link href="shopCss.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md sticky-top grid-border grid-border-sm">
+    <div class="container-fluid px-0">
+        <a class="navbar-brand logo py-0" href="index.html"><img class="logo" src="immagini/logo.svg" alt="logo"></a>
+        <button class="navbar-toggler shadow-none border-0 rounded-circle custom-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header py-2">
+                <h5 class="offcanvas-title logo " id="offcanvasNavbarLabel"><img class="logo" src="immagini/logo.png" alt="logo"></h5>
+                <button type="button" class="shadow-none border-0 py-1 px-2 " data-bs-dismiss="offcanvas" aria-label="Close" >
+                    <img src="immagini/close.png" class="close-btn">
+                </button>
+            </div>
+            <div class="offcanvas-body align-text-center p-0 flex">
+                <ul class="navbar-nav justify-content-center flex-grow-1">
+                    <li class="nav-item mx-md-2 mx-3">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <hr class="my-1">
+                    <li class="nav-item mx-md-2 mx-3">
+                        <a class="nav-link " href="trama.html">TRAMA</a>
+                    </li>
+                    <hr class="my-1">
+                    <li class="nav-item mx-md-2 mx-3">
+                        <a class="nav-link " href="shop.html">PRODOTTI</a>
+                    </li>
+                    <hr class="my-1">
+                    <li class="nav-item mx-md-2 mx-3">
+                        <a class="nav-link" href="calza.html">CHE CALZA SEI?</a>
+                    </li>
+                    <hr class="my-1">
+                    <li class="nav-item mx-md-2 mx-3">
+                        <a class="nav-link"  href="gallery.html">#ONYOURFEET</a>
+                    </li>
+                    <hr class="my-1">
+                    <li class="nav-item mx-md-2 mx-3">
+                        <a class="nav-link" href="contatti.html">CONTATTI</a>
+                    </li>
+                    <hr class="my-1">
+                </ul>
+                <ul class="navbar-nav justify-content-end mx-md-0 mx-3 py-md-0 py-2" id="carrello">
+                    <li><svg fill="#F21DB9" height="35px" width="35px" version="1.1" id="XMLID_269_" xmlns="http://www.w3.org/2000/svg" viewBox="-2.4 -2.4 28.80 28.80" xml:space="preserve" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.24000000000000005"></g><g id="SVGRepo_iconCarrier"> <g id="shop-cart"> <g> <circle cx="9" cy="21" r="2"></circle> </g> <g> <circle cx="19" cy="21" r="2"></circle> </g> <g> <path d="M21,18H7.2l-4-16H0V0h4.8l0.8,3H24l-3.2,11H8.3l0.5,2H21V18z M7.8,12h11.5l2-7H6L7.8,12z"></path> </g> </g> </g></svg></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- contenuto -->
+<div class=" container-fluid ">
+    <div class="row">
+        <div class="col-md-6 grid-border grid-border-sm ">
+            <h1 class="inter bolder tBlue pt-10 position-relative" >
+                I NOSTRI <br>PRODOTTI
+
+                <img src="immagini/shop/s1.png" alt="" class="position-absolute star1">
+
+            </h1>
+            <p class="mb-md-0 pt-md-3 tBlack pb-10" >
+                <span id="text-hide"> Benvenuto nel cuore del nostro universo di stile, dove l'originalità si fonde con la comodità. Nel nostro shop, ti attende una collezione eclettica di calze stravaganti, progettate per esprimere la tua personalità in ogni passo.
+                <br><br>
+                Inizia il tuo viaggio di shopping e scopri la varietà di calze uniche che abbiamo da offrire! </span>
+                <span id="text-hide2" >Inizia il tuo viaggio di shopping e scopri la varietà di calze uniche che abbiamo da offrire, mi raccomando, ricordati di pagare!</span>
+            </p>
+
+        </div>
+        <div class="col-md-6 px-md-0 px-0" id="background1">
+            <div class="pbackground">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid wrapper w-100 p-0 m-0 yellow">
+    <div class="scroll ">
+        <div class="RightToLeft  inter bolder">
+            <p>SCONTI SCONTI SCONTI SCONTI SCONTI SCONTI SCONTI SCONTI SCONTI SCONTI SCONTI SCONTI</p>
+            <p>SCONTI SCONTI SCONTI SCONTI SCONTI SCONTI SCONTI SCONTI SCONTI SCONTI SCONTI SCONTI</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid wrapper w-100 p-0 m-0 blu">
+    <div class="scroll ">
+        <div class="LeftToRight tWhite inter bolder">
+            <p>COMPRA ORA! COMPRA ORA! COMPRA ORA! COMPRA ORA! COMPRA ORA! COMPRA ORA! COMPRA ORA!</p>
+            <p>COMPRA ORA! COMPRA ORA! COMPRA ORA! COMPRA ORA! COMPRA ORA! COMPRA ORA! COMPRA ORA!</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pVector" >
+    <div style="position:relative;">
+        <h2 class="py-md-5 tYellow" style="text-align: center" > SCOPRI LA NOSTRA COLLEZIONE</h2>
+        <img src="immagini/shop/stelleshop.png" class="starshop" >
+        <img src="immagini/shop/scritta1.png" alt="" class="textshop1 position-absolute" >
+    </div>
+    <div class="row px-md-5 px-4" >
+        <div class="col-md-3 col-6 my-3 my-md-0 ps-0  px-md-2">
+            <div class="bottone btn-purple py-2" style="width: 100%; text-align: center">
+                SUPERPOTERI
+            </div>
+        </div>
+        <div class="col-md-3 col-6 my-3 my-md-0 pe-0  px-md-2">
+            <div class="bottone btn-purple py-2" style="width: 100%;text-align: center">
+                TECH
+            </div>
+        </div>
+        <div class="col-md-3 col-6 ps-0 px-md-2">
+            <div class="bottone btn-purple py-2" style="width: 100%;text-align: center">
+                COMFORT
+            </div>
+        </div>
+        <div class="col-md-3 col-6 pe-0  px-md-2">
+            <div class="bottone btn-purple py-2" style="width: 100%;text-align: center">
+                MYSTERY BOX
+            </div>
+        </div>
+    </div>
+    <div class="row px-md-5 px-4 d-flex justify-content-between pt-md-5">
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4 mt-5 mt-md-0">
+
+            <div class="grid-item mt-md-5 " style="position: relative" >
+                <a href="#" onmouseover="document.getElementById('tech1').style.display = 'none'; document.getElementById('shape1').style.display = 'inline';" onmouseout="document.getElementById('shape1').style.display = 'none'; document.getElementById('tech1').style.display = 'inline';">
+                    <img src="immagini/shop/tech1.png" id="tech1" class="imgshop">
+                    <img src="immagini/shop/forma.png" id="shape1" class="shape1">
+                </a>
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0 mt-5 mt-md-0">
+            <div class="grid-item mt-md-5 " style="position: relative" >
+                <img src="immagini/shop/volare.png"  class="imgshop">
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4 ">
+            <div class="grid-item mt-md-5" style="position: relative" >
+                <img src="immagini/shop/razzi.png"  class="imgshop">
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+
+
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
+            <div class="grid-item mt-md-5 " style="position: relative" >
+                <img src="immagini/shop/astuccio.png"  class="imgshop">
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4">
+            <div class="grid-item mt-md-5 " style="position: relative" >
+                <img src="immagini/shop/tempo.png"  class="imgshop">
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
+            <div class="grid-item mt-md-5 " style="position: relative" >
+                <img src="immagini/shop/torcia.png"  class="imgshop">
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+
+
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4">
+            <div class="grid-item mt-md-5" style="position: relative" >
+                <img src="immagini/shop/music.png"  class="imgshop">
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
+            <div class="grid-item mt-md-5 " style="position: relative" >
+                <img src="immagini/shop/temperatura.png"  class="imgshop">
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4">
+            <div class="grid-item mt-md-5 " style="position: relative" >
+                <img src="immagini/shop/molla.png"  class="imgshop">
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
+            <div class="grid-item mt-md-5 " style="position: relative" >
+                <img src="immagini/shop/elegante.png"  class="imgshop">
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4">
+            <div class="grid-item mt-md-5 " style="position: relative" >
+                <img src="immagini/shop/mysterys.png"  class="imgshop">
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
+            <div class="grid-item mt-md-5 " style="position: relative" >
+                <img src="immagini/shop/mysteryl.png"  class="imgshop">
+                <img src="immagini/shop/stellina.png" class="price-position">
+
+            </div>
+            <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+        </div>
+    </div>
+    <div class="row" style="position: relative">
+        <div class="col-md-6 px-md-0 overflow-hidden-x text-center px-0">
+            <img src="immagini/shop/s3.png" class="star3">
+
+            <img class="pbackground2" src="immagini/shop/pBackground2.png">
+
+        </div>
+
+        <div class="col-md-6 px-md-5 d-flex align-items-center px-4">
+            <div class="pe-md-5 ">
+                <h1 class="inter bolder" style="padding-top: 10vh; position: relative">
+                    CHE CALZA <br>SEI?
+                    <img src="immagini/shop/stickershop.png" alt="" class="stickershop">
+
+                </h1>
+                <p class="mb-md-0 py-md-3 py-3">
+                    Indeciso su quali acquisti fare?<br>
+                    Scopri la vera calza che fa per te
+                    e corri ad aggiungerla al carrello!
+                    <br><br>
+                    Cosa aspetti? Clicca sul bottone!
+                </p>
+                <div class="bottone mt-md-3 btn-yellow mb-4" style="margin: auto;">
+                    FAI IL TEST
+                </div>
+                <img src="immagini/shop/s2.png" class="star2" alt="">
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--footer-->
+<div class="footer p-md-5 p-3 m-0 w-100" style="z-index: 9999;position: relative">
+
+    <div class="row text-center">
+        <div class="col-12 comba"><h1>SOCKFUSION INNOVATIONS</h1></div>
+    </div>
+
+
+    <div class="row mt-3">
+        <div class="col-md-3 col-6">
+            <p>
+                Contatti
+            </p>
+            <p class="small">
+                Copyright<br>
+                Privacy policy<br>
+                Cookies policy
+            </p>
+        </div>
+
+        <div class="col-md-6 col-6 d-flex  justify-content-center ">
+            <div class="m-0 p-0">
+                <div class="row">
+                    <div class="col-md-12 col-6">
+                        <p  id="seguici" class="schoolbell" style="display: inline-block;" >Seguici:</p>
+                        <img id="freccia" src="immagini/freccia.png" width="60px">
+                    </div>
+                    <div class="col-md-12 col-6">
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <img class="m-2 icona" src="immagini/facebook.png" >
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <img class="m-2 icona" src="immagini/instagram.png">
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <img class="m-2 icona" src="immagini/telegram.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="row">
+                  <div class="col-md-12 col-4">
+                    <p class="schoolbell" style="display: inline-block;" >Seguici:</p>
+                    <img src="immagini/freccia.png" width="60px">
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center ">
+                    <img class="m-2 icona" src="immagini/facebook.png" >
+                  </div>
+                  <div class="col-md-4 col-12 d-flex justify-content-center">
+                    <img class="m-2 icona" src="immagini/instagram.png">
+                  </div>
+                  <div class="col-md-4 col-12 d-flex justify-content-center">
+                    <img class="m-2 icona" src="immagini/telegram.png">
+                  </div>
+                </div> -->
+
+            </div>
+        </div>
+
+        <div class="col-md-3 ">
+            <p class="schoolbell text-md-end text-center">Tanto chi lo guarda il footer nel 2023?</p>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

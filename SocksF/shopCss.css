@@ -1,0 +1,123 @@
+.pbackground{
+    background-image: url('immagini/shop/pBackground.png');
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    background-position-x: 12vh;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+.pbackground2{
+    width: 100%;
+    position: relative;
+    left: -2vh;
+    bottom: -3vw;
+}
+.pVector{
+    background-image: url('immagini/shop/pVector.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.star1 {
+    width: 18%;
+    right: -25%;
+    top: 20%;
+}
+.star2{
+    width: 10%; right: -25%;top: -20%;
+}
+.star3{
+    display: none;
+}
+
+.imgshop{
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.grid-item {
+    aspect-ratio: 1;
+    text-align: center;
+    cursor: pointer;
+}
+.shape1{
+    display: none;
+    object-fit: cover;
+    width: 80%;
+}
+.stickershop{
+    width: 50%; left: 55%;top: -50%; position: absolute;
+}
+.starshop{
+    width: 10%;position: absolute; left: 80%; top: 10px;
+}
+.textshop1{
+    width: 13%;top:20%;left: 5%
+}
+
+.price-position{
+    width: 50%;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+}
+#text-hide2{
+    display: none;
+}
+.overflow-hidden-x{
+    overflow-x:clip ;
+}
+
+/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------MEDIA QUERY---------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 767px){
+    .pbackground{
+        background-image: url('immagini/shop/pBackground.png');
+        height: 100%;
+        background-size:110%;
+        position: relative;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-position-y: 0vh;
+    }
+    .pbackground2{
+        width: 110%;
+        position: relative;
+        margin: auto;
+        align-content: center;
+    }
+    .star1{
+        width: 10%; right: 35%; top: 20%;
+    }
+    .star2{
+        width: 10%; right: -25%;top: 20%;
+    }
+    .star3{
+        width: 5%;
+        top: -80%;
+        left: -50%;
+        display: block;
+
+    }
+    .stickershop{
+        width: 50%; left: 55%;top: -5%; position: absolute
+    }
+    .textshop1{
+        display: none;
+    }
+    .starshop{
+        width: 10%;position: absolute; left: 90%; top: 10%;
+    }
+    #background1{
+        height: 50vh;
+    }
+    .pVector{
+        background-image:none;
+    }
+}
