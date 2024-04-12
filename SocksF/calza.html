@@ -11,6 +11,7 @@
   <link href="stili.css" rel="stylesheet" type="text/css"><!-- foglio di stile che definisce navabr footer da non modificare-->
   <link href="calzaCss.css" rel="stylesheet" type="text/css">
   <link href="contattiCss.css" rel="stylesheet" type="text/css">
+  <script src="script.js"></script>
   <!-- creare e aggiungere un foglio di stile unico per la propria pagina e collegarlo come quello sopra-->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -132,16 +133,31 @@
     <div class="col-md-7 d-flex justify-content-center align-items-center gsfondoForm py-5">
       <div class="formContainer position-relative pb-10">
         <img src="immagini/calza/tryme.png" alt="" class="position-absolute gtryme">
+        <div class="progress">
+          <div id="bar" class="progress-bar progress-bar-striped" role="progressbar" style="width: 16.7%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
         <div class="gcontatti">
           <div class="gmessaggio text-center position-relative">
-            <p class="tBlack inter">Sei più un tipo da colazione salata o dolce?</p>
-            <img src="immagini/calza/freccia.png" alt="" class="gfreccia1 position-absolute">
-            <img src="immagini/calza/freccia.png" alt="" class="gfreccia2 position-absolute">
+            <p class="tBlack inter" id="question">Sei più un tipo da colazione salata o dolce?</p>
+            <img src="immagini/calza/freccia.png" alt="" class="gfreccia1 position-absolute" onclick="quizBack()">
+            <img src="immagini/calza/freccia.png" alt="" class="gfreccia2 position-absolute" onclick="quizNext()">
           </div>
-          <input class="ginput" type="text" placeholder="Nome">
-          <input class="ginput" type="text" placeholder="Cognome">
-          <input class="ginput" type="email" placeholder="Email">
-          <input class="ginput" type="number" placeholder="Telefono">
+          <div class="gquiz">
+            <input class="form-check-input gcheck" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1" id="a1">Salata come una torta di patate</label>
+          </div>
+          <div class="gquiz">
+            <input class="form-check-input gcheck" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2" id="a2">Dolce come una ciambella ricoperta di zucchero</label>
+          </div>
+          <div class="gquiz">
+            <input class="form-check-input gcheck" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label" for="exampleRadios3" id="a3">Una colazione mista, come un brunch gourmet</label>
+          </div>
+          <div class="gquiz">
+            <input class="form-check-input gcheck" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+            <label class="form-check-label" for="exampleRadios4" id="a4">Nessuna delle precedenti, preferisco il pranzo!</label>
+          </div>
           <div class="bottoneForm">Scopri la tua calza</div>
         </div>
       </div>

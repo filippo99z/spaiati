@@ -1,6 +1,9 @@
 var counter =0;
 var counterSm = 0;
 var cards = [];
+var questions =["Sei più un tipo da colazione salata o dolce?", "Quale animale pensi descriva meglio la tua personalità?", "Il tuo superpotere ideale sarebbe:", "Qual è la tua stagione preferita?", "Scegli un colore che ti descrive meglio:", "Quale genere musicale rappresenta meglio la tua vita?"];
+var answers =["Salata come una torta di patate", "Dolce come una ciambella ricoperta di zucchero", "Una colazione mista, come un brunch gourmet", "Nessuna delle precedenti, preferisco il pranzo!", "Leopardo - elegante e indipendente", "Papero - socievole e vivace", "Gufo - saggio e riflessivo", "Pinguino - sempre pronto per una festa", "Invisibilità", "Teletrasporto","Lettura del pensiero","Capacità di volare","Primavera - rinascita e fioriture","Estate - sole, mare, e relax","Autunno - colori caldi e accoglienti","Inverno - neve e atmosfera natalizia","Rosso - audace e appassionato","Blu - calmo e riflessivo","Giallo - allegro e ottimista","Nero - elegante e misterioso","Rock","Pop","Jazz","Elettronica"];
+var quizcounter = 0;
 
 function gira(element){
     let counter = document.getElementById("counter").textContent;
@@ -152,4 +155,43 @@ function addP(bottone){
         }
 
 
+}
+
+function quizNext(){
+    if (quizcounter < questions.length -1) {
+        console.log("hai premuto")
+        quizcounter++;
+        console.log(questions[quizcounter])
+        document.getElementById("question").innerHTML = questions[quizcounter];
+        console.log(answers[(quizcounter*4)+1]);
+        document.getElementById("a1").innerHTML = answers[(quizcounter*4)];
+        document.getElementById("a2").innerHTML = answers[(quizcounter*4)+1];
+        document.getElementById("a3").innerHTML = answers[(quizcounter*4)+2];
+        document.getElementById("a4").innerHTML = answers[(quizcounter*4)+3];
+        document.getElementById("exampleRadios1").checked = false;
+        document.getElementById("exampleRadios2").checked = false;
+        document.getElementById("exampleRadios3").checked = false;
+        document.getElementById("exampleRadios4").checked = false;
+        document.getElementById("bar").style.width=16.7*quizcounter +1+"%";
+
+    }
+}
+function quizBack(){
+    if (quizcounter > 0) {
+
+        console.log("hai premuto")
+        quizcounter--;
+        console.log(questions[quizcounter])
+        document.getElementById("question").innerHTML = questions[quizcounter];
+        console.log(answers[(quizcounter*4)+1]);
+        document.getElementById("a1").innerHTML = answers[(quizcounter*4)];
+        document.getElementById("a2").innerHTML = answers[(quizcounter*4)+1];
+        document.getElementById("a3").innerHTML = answers[(quizcounter*4)+2];
+        document.getElementById("a4").innerHTML = answers[(quizcounter*4)+3];
+        document.getElementById("exampleRadios1").checked = false;
+        document.getElementById("exampleRadios2").checked = false;
+        document.getElementById("exampleRadios3").checked = false;
+        document.getElementById("exampleRadios4").checked = false;
+        document.getElementById("bar").style.width=16.7*quizcounter +"%";
+    }
 }
