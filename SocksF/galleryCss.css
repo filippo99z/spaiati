@@ -133,9 +133,9 @@
 }
 
 .carousel-cell {
-    width: 25%;
-    height: 120vh;
-    margin-right: 30vh;
+
+    height: 1050px;
+    margin-right: 10vh;
 
     border-radius: 5px;
     counter-increment: carousel-cell;
