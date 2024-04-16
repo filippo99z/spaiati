@@ -157,6 +157,7 @@ function addP(bottone){
 
 }
 
+
 function quizNext(){
     if (quizcounter < questions.length -1) {
         console.log("hai premuto")
@@ -195,3 +196,4 @@ function quizBack(){
         document.getElementById("bar").style.width=16.7*quizcounter +"%";
     }
 }
+
