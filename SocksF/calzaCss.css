@@ -238,16 +238,16 @@
         position: relative;
         background-position-x: center;
         background-repeat: no-repeat;
-        background-position-y: 0vh;
+        background-position-y: 0;
     }
     .gscrittaGia {
         width: 10%;
         left: 1%;
     }
     .gscrittaVi {
-        width: 40%;
-        right: 0%;
-        bottom: -21%;
+        width: 43%;
+        right: 10%;
+        bottom: -245%;
     }
     .purple {
         background-color: #EFB5F2;
@@ -275,6 +275,6 @@
     /*quiz calza*/
     .gformContainer{
         width: 100%;
-        margin: 0 1vh;
+        margin: 2vh 1vh;
     }
 }
