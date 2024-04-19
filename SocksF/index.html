@@ -13,9 +13,17 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="confetti.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
 </head>
-<body>
+<body style="overflow-x: hidden">
+<script>
+    AOS.init({offset:200,
+        duration:1000}
+    );
+</script>
 <nav class="navbar navbar-expand-md sticky-top grid-border grid-border-sm">
     <div class="container-fluid px-0">
         <a class="navbar-brand logo py-0" href="index.html"><img class="logo" src="immagini/logo.svg" alt="logo"></a>
@@ -115,7 +123,7 @@
     <div class="row d-flex align-items-center mt-3 position-relative">
         <img src="immagini/index/star1.png" alt="" class="position-absolute indexStar1">
         <img src="immagini/index/s1.png" class="s1" style="position: absolute; " alt="">
-        <div class="col-md-7 grid-border-left grid-border-sm pe-md-0  order-md-1 order-2" style="position: relative">
+        <div class="col-md-7 grid-border-left grid-border-sm pe-md-0  order-md-1 order-2"  style="position: relative">
 
             <h2 class="inter tPurple bolder position-relative">CALZINI MAI VISTI
 
@@ -127,11 +135,10 @@
 
             <div class="bottone btn-yellow px-4  py-2 center-sm" >
                 COMPRA ORA!
-
             </div>
         </div>
 
-        <div class="col-md-5 px-0 d-flex justify-content-end overflow-hidden order-md-2 order-1">
+        <div class="col-md-5 px-0 d-flex justify-content-end overflow-hidden order-md-2 order-1" data-aos="fade-left">
             <img class="me-md-0 cut-img-right flower"src="immagini/index/img1.png" alt="">
         </div>
     </div>
@@ -139,7 +146,7 @@
     <div class="row d-flex align-items-center my-md-0 my-3 position-relative">
         <img src="immagini/index/star2.png" alt="" class="position-absolute indexStar2">
         <img src="immagini/index/s2.png" class="s2" style="position: absolute; " alt="">
-        <div class="col-md-5 px-0 d-flex justify-content-start overflow-hidden">
+        <div class="col-md-5 px-0 d-flex justify-content-start overflow-hidden" data-aos="fade-right">
             <img class="me-md-0 cut-img-left flower"src="immagini/index/img2.png" alt="">
         </div>
 
@@ -182,7 +189,7 @@
                 SCOPRI
             </div>
         </div>
-        <div class="col-md-5 px-0 d-flex justify-content-end overflow-hidden order-md-2 order-1">
+        <div class="col-md-5 px-0 d-flex justify-content-end overflow-hidden order-md-2 order-1" data-aos="fade-left">
             <img class="me-md-0 cut-img-right flower"src="immagini/index/img3.png" alt="">
         </div>
     </div>
