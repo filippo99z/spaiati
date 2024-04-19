@@ -63,7 +63,9 @@
 
 <div class="container-fluid" >
   <div class="row">
-    <div class="col-md-5 px-4">
+    <div class="col-md-5 px-4 position-relative">
+      <img src="immagini/shop/s1.png" class="position-absolute" style="width: 20%;left: 70%;top:6%">
+      <img src="immagini/calza/LittleStar.png" class="position-absolute" style="width: 6%;left: 92%;top:60%">
       <div style="margin-top: 10vh;position: relative" class="px-md-5">
         <h1 class="title" style="color: #6204BF;">
           SE HAI BISOGNO DI NOI ...
@@ -76,31 +78,38 @@
       <div class="d-flex justify-content-center" style="margin-top: 7vh; margin-left:5vw;">
         <div class="bottone px-4 py-2 btn-purple" style="position: relative">
           012 345 67 89
-          <img src="immagini/contatti/stella2.png" alt="puoi compilare il form" style="position: absolute; top: -100%;left:-65%;width: 70%;">
+          <img src="immagini/contatti/stella2.png" alt="puoi chiamarci" class="pulse-on-hover" style="position: absolute; top: -100%;left:-65%;width: 70%;">
         </div>
 
       </div>
       <div class="ps-md-5" style="margin-top: 10vh;padding-bottom: 9vh; position: relative">
         <div class="bottone px-4  py-2 btn-purple" style="position:relative;">
           info@sockfusion.it
-          <img src="immagini/contatti/stella3.png" alt="puoi compilare il form" style="position: absolute; top: -40px;left:95%;width: 65%;">
+          <img src="immagini/contatti/stella3.png" class="pulse-on-hover" alt="puoi compilare il form" style="position: absolute; top: -40px;left:95%;width: 65%;">
         </div>
 
       </div>
 
     </div>
-    <div class="col-md-7 d-flex justify-content-end align-items-center sfondoForm grid-border-right">
+    <div class="col-md-7 align-items-center sfondoForm grid-border grid-border-sm">
 
       <div class="formContainer" style="position: relative">
-        <img src="immagini/contatti/stella1.png" class="contattiS1 mobile"alt="puoi compilare il form">
-        <div class="contatti">
-          <input class="input" type="text" placeholder="Nome">
-          <input class="input" type="text" placeholder="Cognome">
-          <input class="input" type="email" placeholder="Email">
-          <input class="input" type="number" placeholder="Telefono">
+        <img src="immagini/contatti/stella1.png" class="contattiS1 mobile roll" alt="puoi compilare il form">
+       <form>
+
+        <div class="contatti ">
+          <input class="input form-control" type="text" placeholder="Nome" required="true">
+          <input class="input form-control" type="text" placeholder="Cognome" required="true">
+          <input class="input form-control" type="email" placeholder="Email" required="true">
+          <input class="input form-control" type="number" placeholder="Telefono" required="true">
           <textarea class="messaggio" name="messaggio" placeholder="Messaggio..." maxlength="300"></textarea>
-          <div class="bottoneForm">Invia</div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="bottoneForm ">Invia</button>
+          </div>
+
         </div>
+       </form>
+
         <p class="schoolbell text-center mt-md-2 mt-3 mb-md-2" style="color: #f8f4db;">*candidature noiose o inutili lamentele non verranno prese in considerazione :)</p>
       </div>
 
@@ -111,16 +120,28 @@
 
   </div>
 </div>
-<div class="yellow mx-0" style="height: 7vh">
-
+<div class="container-fluid wrapper w-100 p-0 m-0 yellow">
+  <div class="scroll ">
+    <div class="RightToLeft  inter bolder">
+      <p>PUOI VENIRE A TROVARCI! PUOI VENIRE A TROVARCI! PUOI VENIRE A TROVARCI! PUOI VENIRE A TROVARCI! </p>
+      <p>PUOI VENIRE A TROVARCI! PUOI VENIRE A TROVARCI! PUOI VENIRE A TROVARCI! PUOI VENIRE A TROVARCI! </p>
+    </div>
+  </div>
 </div>
-<div class="blu" style="height: 7vh"></div>
+<div class="container-fluid wrapper w-100 p-0 m-0 blu">
+  <div class="scroll ">
+    <div class="LeftToRight tWhite inter bolder">
+      <p>PUOI VENIRE A TROVARCI! PUOI VENIRE A TROVARCI! PUOI VENIRE A TROVARCI! PUOI VENIRE A TROVARCI! </p>
+      <p>PUOI VENIRE A TROVARCI! PUOI VENIRE A TROVARCI! PUOI VENIRE A TROVARCI! PUOI VENIRE A TROVARCI! </p>
+    </div>
+  </div>
+</div>
 <div class="container-fluid px-0 fucsia" style="position: relative">
   <div id="mappa" class="px-md-5 px-4 text-center">
     <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1yPvHnSZTBTYkeDJvtxtHf_N1a9lZcR8&ehbc=2E312F&noprof=1" width="95%" height="600px" style="border:#ECF447 5px solid; border-radius: 3vh;" class="my-5"></iframe>
   </div>
   <img src="immagini/contatti/Vector3.png" style="width: 100%;">
-  <img src="immagini/contatti/sticker1.png" style="position: absolute;bottom:50px;left: 80%;width: 18%">
+  <img src="immagini/contatti/sticker1.png" class="grow-rotate-on-hover" style="position: absolute;bottom:50px;left: 80%;width: 18%">
 </div>
 <!--- footerr non toccare-->
 <div class="footer p-md-5 p-3 m-0 w-100" style="z-index: 1000; position: relative;">

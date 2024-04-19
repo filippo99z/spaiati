@@ -34,7 +34,8 @@
     font-weight: bold;
     width:fit-content;
     padding: 0.7vw 3vw;
-    margin: auto;
+    border: transparent;
+
 }
 .bottoneForm:active {
     transform: translateY(7px);
@@ -66,6 +67,8 @@
 
 @media screen and (max-width: 767px){
     /* ---------------------------DA FARE-----------------------------------------------*/
-
+    .sfondoForm{
+        background-image:url("immagini/contatti/vector2.png");
+    }
 
 }
