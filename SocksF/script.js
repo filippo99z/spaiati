@@ -159,6 +159,7 @@ function addP(bottone){
 
 
 function quizNext(){
+
     if (quizcounter < questions.length -1) {
         console.log("hai premuto")
         quizcounter++;
@@ -176,6 +177,7 @@ function quizNext(){
         document.getElementById("bar").style.width=16.7*quizcounter +1+"%";
 
     }
+    displayButton();
 }
 function quizBack(){
     if (quizcounter > 0) {
@@ -195,5 +197,19 @@ function quizBack(){
         document.getElementById("exampleRadios4").checked = false;
         document.getElementById("bar").style.width=16.7*quizcounter +"%";
     }
+    displayButton();
 }
 
+function displayButton (){
+    if (quizcounter==5) {
+        let button = document.getElementsByClassName("gbottoneForm");
+
+        console.log(button)
+        button[0].style.display = "block";
+    }else{
+        let button = document.getElementsByClassName("gbottoneForm");
+
+
+        button[0].style.display = "none";
+    }
+}
