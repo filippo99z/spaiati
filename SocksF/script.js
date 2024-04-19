@@ -133,9 +133,9 @@ function slideInSm() {
         counterSm--;
     }
 }
+
 function change(foto){
     let swap;
-
     let thumbnail = document.getElementById("thumbanil_active");
     swap = thumbnail.src;
     thumbnail.src= foto.src;
@@ -153,8 +153,6 @@ function addP(bottone){
             counter++;
             document.getElementById("p_counter").innerHTML = counter;
         }
-
-
 }
 
 
