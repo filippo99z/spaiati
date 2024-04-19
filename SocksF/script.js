@@ -150,6 +150,4 @@ function addP(bottone){
             counter++;
             document.getElementById("p_counter").innerHTML = counter;
         }
-
-
 }
