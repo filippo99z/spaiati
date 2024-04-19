@@ -326,8 +326,38 @@ button{
     -webkit-transform: scale(1.1) rotate(4deg);
     transform: scale(1.1) rotate(4deg);
 }
-/*shine*/
-
+/*effetto pulsato e rimpicciolito*/
+@-webkit-keyframes pulse-shrink-on-hover {
+    to {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+@keyframes pulse-shrink-on-hover {
+    to {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+.pulse-shrink-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.pulse-shrink-on-hover:hover, .pulse-shrink-on-hover:focus, .pulse-shrink-on-hover:active {
+    -webkit-animation-name: pulse-shrink-on-hover;
+    animation-name: pulse-shrink-on-hover;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
 /*effetto grow - icone social*/
 .grow {
     transition: all .2s ease-in-out;
