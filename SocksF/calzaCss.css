@@ -1,5 +1,6 @@
 :root {
     --bs-bg-warning: #FE6C0C;
+    --component-active-color: #FE6C0C;
 }
 .firstDiv {
     height: 66vh;
@@ -139,6 +140,10 @@
     height: 20px;
     width: 20px;
     cursor: pointer;
+}
+input[type="radio"]:checked {
+    background-color: #6204BF;
+    border-color: #6204BF;
 }
 .gProgress {
     accent-color: #FE6C0C;

@@ -174,7 +174,7 @@ function quizNext(){
         document.getElementById("exampleRadios2").checked = false;
         document.getElementById("exampleRadios3").checked = false;
         document.getElementById("exampleRadios4").checked = false;
-        document.getElementById("bar").style.width=16.7*quizcounter +1+"%";
+        document.getElementById("bar").style.width=16.7*(quizcounter+1)+"%";
 
     }
     displayButton();
@@ -195,7 +195,7 @@ function quizBack(){
         document.getElementById("exampleRadios2").checked = false;
         document.getElementById("exampleRadios3").checked = false;
         document.getElementById("exampleRadios4").checked = false;
-        document.getElementById("bar").style.width=16.7*quizcounter +"%";
+        document.getElementById("bar").style.width=16.7*(quizcounter+1) +"%";
     }
     displayButton();
 }
