@@ -131,6 +131,15 @@
         opacity: 1;
     }
 }
+
+.carousel-cell {
+
+    height: 850px;
+    margin-right: 10vh;
+
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
 @media screen and (max-width: 767px){
 
     .divVector{
@@ -159,3 +168,4 @@
     }
 
 }
+

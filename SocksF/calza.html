@@ -11,6 +11,7 @@
   <link href="stili.css" rel="stylesheet" type="text/css"><!-- foglio di stile che definisce navabr footer da non modificare-->
   <link href="calzaCss.css" rel="stylesheet" type="text/css">
   <link href="contattiCss.css" rel="stylesheet" type="text/css">
+  <script src="script.js"></script>
   <!-- creare e aggiungere un foglio di stile unico per la propria pagina e collegarlo come quello sopra-->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -32,7 +33,7 @@
       <div class="offcanvas-body align-text-center p-0 flex">
         <ul class="navbar-nav justify-content-center flex-grow-1">
           <li class="nav-item mx-md-2 mx-3">
-            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
           </li>
           <hr class="my-1">
           <li class="nav-item mx-md-2 mx-3">
@@ -44,7 +45,7 @@
           </li>
           <hr class="my-1">
           <li class="nav-item mx-md-2 mx-3">
-            <a class="nav-link" href="calza.html">CHE CALZA SEI?</a>
+            <a class="nav-link active" href="calza.html">CHE CALZA SEI?</a>
           </li>
           <hr class="my-1">
           <li class="nav-item mx-md-2 mx-3">
@@ -69,22 +70,22 @@
 <div class=" container-fluid">
   <div class="row firstDiv">
     <div class="col-md-5 grid-border-left d-flex flex-column align-self-center position-relative grid-border-sm">
-      <h1 class="inter bolder tPurple title" >
+      <h1 class="inter bolder tPurple title position-relative">
         CHE CALZA SEI?
       </h1>
       <img src="immagini/shop/s1.png" alt="" class="position-absolute gstar1 d-none d-lg-block">
       <img src="immagini/calza/LittleStar.png" alt="" class="position-absolute littleStar z-2">
-      <img src="immagini/calza/gSticker.png" alt="" class="position-absolute gSticker z-3">
-      <p class="mb-md-0 pt-md-3 tBlack fst-italic fw-semibold">
+      <img src="immagini/calza/gSticker.png" alt="" class="position-absolute gSticker z-3 roll">
+      <p class="mb-md-0 pt-md-3 tBlack fst-italic fw-semibold inter">
         Benvenuti nel nostro mondo di calzini unici e personalizzati!</p>
-      <p class="mb-md-0 pt-md-3 tBlack">
+      <p class="mb-md-0 pt-md-3 tBlack inter">
                 <span>
                     Hai mai desiderato possedere un paio di calzini che riflettono davvero la tua personalità? <br>Beh, è il momento perfetto per scoprirlo! E sei poi ti piace non dimenticarti di aggiungerla al carrello!
                 </span>
       </p>
 
     </div>
-    <div class="col-md-7 px-md-0 px-0" id="che calza sei?">
+    <div class="col-md-7 px-md-0 px-0" id="che_calza_sei">
       <div class="gbackground"></div>
     </div>
   </div>
@@ -92,7 +93,7 @@
 
 <!--- banner -->
 <div class="container-fluid wrapper w-100 p-0 m-0 yellow">
-  <div class="scroll ">
+  <div class="scroll">
     <div class="RightToLeft  inter bolder">
       <p>TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ!</p>
       <p>TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ! TENTA IL QUIZ!</p>
@@ -111,7 +112,7 @@
 <!--- secondo div -->
 <div class="container-fluid purple">
   <div class="row">
-    <div class="col-md-5 px-4 d-flex flex-column align-self-center">
+    <div class="col-md-5 px-4 d-flex flex-column align-self-center gsfondoForm-sm" id="gsfondo">
       <div class="px-md-5 position-relative">
         <h2 class="h1 tYellow fw-bold pb-4">
           IL QUIZZONE DEL MOMENTO
@@ -123,26 +124,41 @@
 
           Rispondi al quiz ora e fai un passo avanti verso il tuo stile personalizzato!
         </p>
-        <img src="immagini/calza/trestelle.png" alt="" class="position-absolute gtrestelle">
-        <img src="immagini/calza/scrittaGia.png" alt="" class="position-absolute gscrittaGia">
+        <img src="immagini/calza/trestelle.png" alt="" class="position-absolute gtrestelle d-none d-lg-block">
+        <img src="immagini/calza/scrittaGia.png" alt="" class="position-absolute gscrittaGia d-none d-lg-block">
         <img src="immagini/calza/scrittaVi.png" alt="" class="position-absolute gscrittaVi">
       </div>
     </div>
 
     <div class="col-md-7 d-flex justify-content-center align-items-center gsfondoForm py-5">
-      <div class="formContainer position-relative pb-10">
-        <img src="immagini/calza/tryme.png" alt="" class="position-absolute gtryme">
+      <div class="gformContainer position-relative pb-10">
+        <img src="immagini/calza/tryme.png" alt="" class="position-absolute gtryme d-none d-lg-block pulse-on-hover">
+        <div class="progress">
+          <div id="bar" class="progress-bar progress-bar-striped gProgress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
         <div class="gcontatti">
           <div class="gmessaggio text-center position-relative">
-            <p class="tBlack inter">Sei più un tipo da colazione salata o dolce?</p>
-            <img src="immagini/calza/freccia.png" alt="" class="gfreccia1 position-absolute">
-            <img src="immagini/calza/freccia.png" alt="" class="gfreccia2 position-absolute">
+            <p class="tBlack inter" id="question">Sei più un tipo da colazione salata o dolce?</p>
+            <img src="immagini/calza/freccia.png" alt="" class="gfreccia1 position-absolute" onclick="quizBack()">
+            <img src="immagini/calza/freccia.png" alt="" class="gfreccia2 position-absolute" onclick="quizNext()">
           </div>
-          <input class="ginput" type="text" placeholder="Nome">
-          <input class="ginput" type="text" placeholder="Cognome">
-          <input class="ginput" type="email" placeholder="Email">
-          <input class="ginput" type="number" placeholder="Telefono">
-          <div class="bottoneForm">Scopri la tua calza</div>
+          <div class="gquiz d-inline-flex align-items-center">
+            <input class="form-check-input gcheck m-0 me-2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1" id="a1">Salata come una torta di patate</label>
+          </div>
+          <div class="gquiz d-inline-flex align-items-center">
+            <input class="form-check-input gcheck m-0 me-2" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2" id="a2">Dolce come una ciambella ricoperta di zucchero</label>
+          </div>
+          <div class="gquiz d-inline-flex align-items-center">
+            <input class="form-check-input gcheck m-0 me-2" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label" for="exampleRadios3" id="a3">Una colazione mista, come un brunch gourmet</label>
+          </div>
+          <div class="gquiz d-inline-flex align-items-center">
+            <input class="form-check-input gcheck m-0 me-2" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+            <label class="form-check-label" for="exampleRadios4" id="a4">Nessuna delle precedenti, preferisco il pranzo!</label>
+          </div>
+          <div class="gbottoneForm">Scopri la tua calza</div>
         </div>
       </div>
     </div>
@@ -182,32 +198,33 @@
 <!--- quarto div -->
 <div class="container-fluid">
   <div class="row">
-    <img src="immagini/calza/ondaRosa.png" class="width pe-0 ps-0">
+    <img src="immagini/calza/ondaRosa.png" alt="" class="width pe-0 ps-0 d-none d-lg-block">
+    <img src="immagini/calza/ondaRosa-sm.png" alt="" class="width pe-0 ps-0 d-lg-none">
 
     <div class="col-2 container-fluid position-relative">
-      <img src="immagini/calza/keepgoing.png" alt="" class="position-absolute gkeepgoing">
+      <img src="immagini/calza/keepgoing.png" alt="" class="position-absolute gkeepgoing roll">
     </div>
 
     <div class="col-8 container-fluid px-0 position-relative">
-      <h2 class="h1 tPurple text-center pt-10">NON È STATO UN COLPO DI FULMINE?</h2>
+      <h2 class="h1 tPurple text-center pt-10 fw-bold">NON È STATO UN COLPO DI FULMINE?</h2>
       <h3 class="tPurple text-center"> ESPLORA ALTRI TESORI NEL NOSTRO SHOP!</h3>
-      <p class="p pt-3">Se per qualche motivo i tuoi piedi non hanno fatto scintille con la prima scelta di calzini personalizzati, niente paura! Nel nostro negozio, c'è un tesoro di opzioni che aspettano di essere scoperte.<br><br>
+      <p class="p pt-3 px-5 inter">Se per qualche motivo i tuoi piedi non hanno fatto scintille con la prima scelta di calzini personalizzati, niente paura! Nel nostro negozio, c'è un tesoro di opzioni che aspettano di essere scoperte.<br><br>
         Sbircia tra le altre gemme di stile, dai calzini più eccentrici alle creazioni classiche. C'è qualcosa per tutti i gusti, e chi sa, il tuo paio perfetto potrebbe aspettarti proprio dietro l'angolo!
         <br><br>Non accontentarti, divertiti a esplorare.
       </p>
       <img src="immagini/shop/s1.png" alt="" class="position-absolute gduestelline d-none d-lg-block">
-      <img src="immagini/calza/LittleStar.png" alt="" class="position-absolute gpiccolaStella2">
-      <div class="d-flex justify-content-center pb-10 pt-3">
-        <div class="bottone px-md-4 py-md-2 px-2 py-1 btn-yellow tBlack position-relative">
+      <img src="immagini/calza/LittleStar.png" alt="" class="position-absolute gpiccolaStella2 d-none d-lg-block">
+      <div class="d-flex justify-content-center pb-10 pt-4 position-relative">
+        <div class="bottone px-md-4 py-md-2 px-2 py-1 btn-yellow tBlack">
           PASSA DAL NOSTRO SHOP!
         </div>
-        <img src="immagini/calza/LittleStar.png" alt="" class="position-absolute gpiccolaStella1">
-        <img src="immagini/calza/scrittaBlu.png" alt="" class="position-absolute gscrittaBlu">
+        <img src="immagini/calza/LittleStar.png" alt="" class="position-absolute gpiccolaStella1 d-none d-lg-block">
+        <img src="immagini/calza/scrittaBlu.png" alt="" class="position-absolute gscrittaBlu d-none d-lg-block">
       </div>
     </div>
 
     <div class="col-2 container-fluid position-relative">
-      <img src="immagini/calza/nonfarti.png" alt="" class="position-absolute gnonfarti">
+      <img src="immagini/calza/nonfarti.png" alt="" class="position-absolute gnonfarti grow-rotate-on-hover">
     </div>
   </div>
 </div>
@@ -242,13 +259,13 @@
           <div class="col-md-12 col-6">
             <div class="row">
               <div class="col-md-4 col-12">
-                <img class="m-2 icona" src="immagini/facebook.png" >
+                <img class="m-2 icona grow" src="immagini/facebook.png" >
               </div>
               <div class="col-md-4 col-12">
-                <img class="m-2 icona" src="immagini/instagram.png">
+                <img class="m-2 icona grow" src="immagini/instagram.png">
               </div>
               <div class="col-md-4 col-12">
-                <img class="m-2 icona" src="immagini/telegram.png">
+                <img class="m-2 icona grow" src="immagini/telegram.png">
               </div>
             </div>
           </div>
