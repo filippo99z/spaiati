@@ -86,6 +86,7 @@
     position:relative;
 }
 
+/** non li ho usati
 .stickerRosa_total {
     background-image: url('immagini/trama/sticker-rosa.png');
     background-size: cover;
@@ -102,8 +103,11 @@
     background-clip: border-box;
     position: relative;
     z-index: 4;
-}
+} **/
 
+.c-height {
+    height: 140vh;
+}
 .Lpink_sticker {
     top:0;
     aspect-ratio: 1;
@@ -130,7 +134,108 @@
     padding: 20% 28% 25% 20%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {  /* perché pure 1200px? */
+@media screen and (max-width: 768px) {
+
+    .pt-10 {
+        padding-top: 5vh;
+    }
+
+    .pb-20 {
+        padding-bottom: 8vh;
+    }
+
+    .pt-20 {
+        padding-top: 10vh;
+    }
+
+    .stars_3 {
+        width: 15%;
+        left: 80%;
+        top: -25%;
+    }
+
+    .stars_2 {
+        width: 12%;
+        left: 60%;
+        bottom: 7%;
+    }
+
+    .XSsticker {
+        width: 40%;
+        left: 7%;
+        top: 80%;
+    }
+
+    .XSsticker2 {
+        display: none;
+    }
+
+    .wave {
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 0;
+        background-image: url('immagini/trama/wave_hor.png');
+        top: -4%;
+    }
+
+    .star_1 {
+        width: 3.8%;
+        right: 10%;
+        bottom: 45%;
+    }
+
+    .starr_2 {
+        width: 3.8%;
+        bottom: 7%;
+        margin-left: 6vh;
+    }
+
+    .mobile {
+        margin-left: 4vh;
+    }
+
+    .send_pic {
+        width: 30%;
+        right: 15%;
+        bottom: 6%;
+    }
+
+    .Lpink_sticker {
+        top:0;
+        aspect-ratio: 1;
+        background-image: url('immagini/trama/sticker-rosa.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 5vh;
+    }
+
+    .WPsticker {
+        padding: 19% 18% 25% 20%;
+    }
+
+    .WBsticker {
+        padding: 20% 20% 25% 25%;
+    }
+
+    .bottone {
+        position: absolute;
+        bottom: 22%;
+        left: 30%
+    }
+    .click_here {
+        width: 15%;
+        right: 19%;
+        bottom: 30%;
+    }
+
+    .c-height {
+        height: 115vh;
+    }
+
+}
+/**stavo facendo il tablet ma non serve
+@media screen and (min-width: 769px) and (max-width: 1200px) {
 
     .wave {
         margin-left: -2vh;
@@ -155,4 +260,4 @@
     .pb-20 {
         padding-bottom: 10vh;
     }
-}
+}**/
