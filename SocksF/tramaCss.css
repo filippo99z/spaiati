@@ -232,6 +232,10 @@
     .c-height {
         height: 115vh;
     }
+    .Cbackground{
+        height: 50vh;
+        background-position: center;
+    }
 
 }
 /**stavo facendo il tablet ma non serve
