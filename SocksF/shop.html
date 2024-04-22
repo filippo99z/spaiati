@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link href="stili.css" rel="stylesheet" type="text/css">
     <link href="shopCss.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
@@ -108,28 +109,28 @@
     </div>
     <div class="row px-md-5 px-4" >
         <div class="col-md-3 col-6 my-3 my-md-0 ps-0  px-md-2">
-            <div class="bottone btn-purple py-2" style="width: 100%; text-align: center">
+            <div class="bottone btn-purple py-2" style="width: 100%; text-align: center" onclick="filter(this)" id="superpower" click="not">
                 SUPERPOTERI
             </div>
         </div>
         <div class="col-md-3 col-6 my-3 my-md-0 pe-0  px-md-2">
-            <div class="bottone btn-purple py-2" style="width: 100%;text-align: center">
+            <div class="bottone btn-purple py-2" style="width: 100%;text-align: center" onclick="filter(this)" id="tech" click="not">
                 TECH
             </div>
         </div>
         <div class="col-md-3 col-6 ps-0 px-md-2">
-            <div class="bottone btn-purple py-2" style="width: 100%;text-align: center">
+            <div class="bottone btn-purple py-2" style="width: 100%;text-align: center" onclick="filter(this)" id="comfort" click="not">
                 COMFORT
             </div>
         </div>
         <div class="col-md-3 col-6 pe-0  px-md-2">
-            <div class="bottone btn-purple py-2" style="width: 100%;text-align: center">
+            <div class="bottone btn-purple py-2" style="width: 100%;text-align: center" onclick="filter(this)" id="mystery" click="not">
                 MYSTERY BOX
             </div>
         </div>
     </div>
-    <div class="row px-md-5 px-4 d-flex justify-content-between pt-md-5">
-        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4 mt-5 mt-md-0">
+    <div class="row px-md-5 px-4 d-flex justify-content-left pt-md-5">
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4 mt-5 mt-md-0 tech">
 
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('tech1').style.display = 'none'; document.getElementById('shape1').style.display = 'inline';" onmouseout="document.getElementById('shape1').style.display = 'none'; document.getElementById('tech1').style.display = 'inline';">
@@ -141,8 +142,8 @@
             </div>
             <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
         </div>
-        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0 mt-5 mt-md-0">
-            <div class="grid-item mt-md-5 " style="position: relative" >
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0 mt-5 mt-md-0 superpower">
+            <div class="grid-item mt-md-5  " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('volare').style.display = 'none'; document.getElementById('shape2').style.display = 'inline';" onmouseout="document.getElementById('shape2').style.display = 'none'; document.getElementById('volare').style.display = 'inline';">
                     <img src="immagini/shop/volare.png" id="volare" class="imgshop">
                     <img src="immagini/shop/forma2.png" id="shape2" class="shape1">
@@ -152,8 +153,8 @@
             </div>
             <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
         </div>
-        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4 ">
-            <div class="grid-item mt-md-5" style="position: relative" >
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4 tech">
+            <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('razzi').style.display = 'none'; document.getElementById('shape3').style.display = 'inline';" onmouseout="document.getElementById('shape3').style.display = 'none'; document.getElementById('razzi').style.display = 'inline';">
                     <img src="immagini/shop/razzi.png" id="razzi" class="imgshop">
                     <img src="immagini/shop/forma3.png" id="shape3" class="shape1">
@@ -165,7 +166,7 @@
         </div>
 
 
-        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0 comfort">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('astuccio').style.display = 'none'; document.getElementById('shape4').style.display = 'inline';" onmouseout="document.getElementById('shape4').style.display = 'none'; document.getElementById('astuccio').style.display = 'inline';">
                     <img src="immagini/shop/astuccio.png" id="astuccio" class="imgshop">
@@ -176,7 +177,7 @@
             </div>
             <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
         </div>
-        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4">
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4 tech">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('tempo').style.display = 'none'; document.getElementById('shape5').style.display = 'inline';" onmouseout="document.getElementById('shape5').style.display = 'none'; document.getElementById('tempo').style.display = 'inline';">
                     <img src="immagini/shop/tempo.png" id="tempo" class="imgshop">
@@ -187,7 +188,7 @@
             </div>
             <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
         </div>
-        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0 tech">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('torcia').style.display = 'none'; document.getElementById('shape6').style.display = 'inline';" onmouseout="document.getElementById('shape6').style.display = 'none'; document.getElementById('torcia').style.display = 'inline';">
                     <img src="immagini/shop/torcia.png" id="torcia" class="imgshop">
@@ -200,8 +201,8 @@
         </div>
 
 
-        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4">
-            <div class="grid-item mt-md-5" style="position: relative" >
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4 tech">
+            <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('music').style.display = 'none'; document.getElementById('shape7').style.display = 'inline';" onmouseout="document.getElementById('shape7').style.display = 'none'; document.getElementById('music').style.display = 'inline';">
                     <img src="immagini/shop/music.png" id="music" class="imgshop">
                     <img src="immagini/shop/forma7.png" id="shape7" class="shape1">
@@ -211,7 +212,7 @@
             </div>
             <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
         </div>
-        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0 comfort">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('temperatura').style.display = 'none'; document.getElementById('shape8').style.display = 'inline';" onmouseout="document.getElementById('shape8').style.display = 'none'; document.getElementById('temperatura').style.display = 'inline';">
                     <img src="immagini/shop/temperatura.png" id="temperatura" class="imgshop">
@@ -222,7 +223,7 @@
             </div>
             <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
         </div>
-        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4">
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4 superpower">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('molla').style.display = 'none'; document.getElementById('shape9').style.display = 'inline';" onmouseout="document.getElementById('shape9').style.display = 'none'; document.getElementById('molla').style.display = 'inline';">
                     <img src="immagini/shop/molla.png" id="molla" class="imgshop">
@@ -234,7 +235,7 @@
             <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
         </div>
 
-        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0 comfort">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('elegante').style.display = 'none'; document.getElementById('shape10').style.display = 'inline';" onmouseout="document.getElementById('shape10').style.display = 'none'; document.getElementById('elegante').style.display = 'inline';">
                     <img src="immagini/shop/elegante.png" id="elegante" class="imgshop">
@@ -245,7 +246,7 @@
             </div>
             <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
         </div>
-        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4">
+        <div class="col-md-4 px-md-5 col-6 ps-0 pe-4 mystery">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <img src="immagini/shop/mysterys.png"  class="imgshop">
                 <img src="immagini/shop/stellina.png" class="price-position">
@@ -253,7 +254,7 @@
             </div>
             <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
         </div>
-        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0">
+        <div class="col-md-4 px-md-5 col-6 ps-4 pe-0 mystery">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <img src="immagini/shop/mysteryl.png"  class="imgshop">
                 <img src="immagini/shop/stellina.png" class="price-position">

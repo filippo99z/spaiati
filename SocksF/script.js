@@ -5,6 +5,8 @@ var questions =["Sei più un tipo da colazione salata o dolce?", "Quale animale 
 var answers =["Salata come una torta di patate", "Dolce come una ciambella ricoperta di zucchero", "Una colazione mista, come un brunch gourmet", "Nessuna delle precedenti, preferisco il pranzo!", "Leopardo - elegante e indipendente", "Papero - socievole e vivace", "Gufo - saggio e riflessivo", "Pinguino - sempre pronto per una festa", "Invisibilità", "Teletrasporto","Lettura del pensiero","Capacità di volare","Primavera - rinascita e fioriture","Estate - sole, mare, e relax","Autunno - colori caldi e accoglienti","Inverno - neve e atmosfera natalizia","Rosso - audace e appassionato","Blu - calmo e riflessivo","Giallo - allegro e ottimista","Nero - elegante e misterioso","Rock","Pop","Jazz","Elettronica"];
 var quizcounter = 0;
 
+let click = false;
+
 function gira(element){
     let counter = document.getElementById("counter").textContent;
     console.log(counter);
@@ -209,5 +211,30 @@ function displayButton (){
 
 
         button[0].style.display = "none";
+    }
+}
+
+function filter(button){
+    let check = button.getAttribute("click");
+    if(check =="not"){
+        button.classList.replace("btn-yellow", "btn-purple");
+        button.setAttribute("click","yep");
+    }else{
+        button.classList.replace("btn-purple", "btn-yellow");
+        button.setAttribute("click","not");
+    }
+
+
+
+
+    let className = button.getAttribute('id');
+       let arr = document.getElementsByClassName(className);
+       for(let i=0;i<arr.length;i++){
+           if(arr[i].style.display == "none"){
+               arr[i].style.display= "block";
+           }else{
+               arr[i].style.display= "none";
+           }
+
     }
 }
