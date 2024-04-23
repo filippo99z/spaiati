@@ -19,7 +19,7 @@
 }
 .pVector{
     background-image: url('immagini/shop/pVector.png');
-    background-size: contain;
+    background-size: unset;
     background-repeat: no-repeat;
 }
 .star1 {
