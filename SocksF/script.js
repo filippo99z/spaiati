@@ -215,26 +215,34 @@ function displayButton (){
 }
 
 function filter(button){
-    let check = button.getAttribute("click");
-    if(check =="not"){
-        button.classList.replace("btn-yellow", "btn-purple");
-        button.setAttribute("click","yep");
+
+    let check = button.getAttribute('active');
+
+
+    let buttonPressed = button.getAttribute('val');
+    console.log("hai cliccato su:"+buttonPressed);
+    let total = document.getElementsByClassName("products");
+    let target = document.getElementById(buttonPressed);
+
+    if(check === "none"){
+        for(let i=0;i<total.length;i++){
+            if(target!==total[i]){
+                total[i].classList.add('hidden');
+            }
+        }
+        console.log("hai cliccato per filtrare");
+        button.classList.replace("btn-purple","btn-yellow");
+        button.setAttribute("active","true");
     }else{
-        button.classList.replace("btn-purple", "btn-yellow");
-        button.setAttribute("click","not");
-    }
-
-
-
-
-    let className = button.getAttribute('id');
-       let arr = document.getElementsByClassName(className);
-       for(let i=0;i<arr.length;i++){
-           if(arr[i].style.display == "none"){
-               arr[i].style.display= "block";
-           }else{
-               arr[i].style.display= "none";
-           }
+        console.log("hai cliccato per togliere il  filtroo");
+        for(let i=0;i<total.length;i++){
+            console.log("ahaha");
+            total[i].classList.remove('hidden');
+        }
+        button.classList.replace("btn-yellow","btn-purple");
+        button.setAttribute("active","none");
 
     }
+
+
 }
