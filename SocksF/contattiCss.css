@@ -71,5 +71,11 @@
     .sfondoForm{
         background-image:url("immagini/contatti/vector2.png");
     }
+    .formContainer{
+        width: 80%;
+        left: 10%;
+        margin-top: 15vh
+    }
+
 
 }
