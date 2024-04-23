@@ -4,6 +4,7 @@
     border-radius: 3vh;
     padding:30px 2vw;
     margin: auto;
+
 }
 .input{
     background-color: #f8f4db;
@@ -22,7 +23,7 @@
     width: 100%;
     padding: 1vw 1vw;
     margin-bottom: 2vh;
-    height: 22vh;
+    height: 12vw;
     resize:none
 }
 .bottoneForm{
@@ -47,15 +48,15 @@
     background-repeat: no-repeat;
 }
 .formContainer{
-    width: 60%;
-    margin-left: 15vw;
+    width: 80%;
+    left: 20%;
     margin-top: 10vh
 }
 .contattiS1{
     position: absolute;
-    left:-70%;
+    left:-52%;
     top:-5%;
-    width: 55%
+    width: 40%
 }
 
 /* ------------------------------------------------------------------------------------------------------*/
