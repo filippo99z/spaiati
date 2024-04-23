@@ -88,8 +88,9 @@
         position: relative;
         background-position-x: center;
         background-repeat: no-repeat;
-        background-position-y: 0vh;
+        background-position-y: 0;
     }
+
     .pbackground2{
         width: 110%;
         position: relative;
@@ -119,12 +120,12 @@
         width: 10%;position: absolute; left: 90%; top: 10%;
     }
     #background1{
-        height: 50vh;
+        height: 45vh;
     }
     .pVector{
         background-image:none;
     }
     .firstDivP{
-        height: 66vh;
+        height: auto;
     }
 }
