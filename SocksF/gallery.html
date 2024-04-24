@@ -118,67 +118,8 @@
   </div>
 </div>
 <!--- sezione immagini che si spostano -->
-<div class="container-fluid px-0">
-  <div class="row m-0">
-    <div class="col-12  py-5 px-0">
-      <h2 class="inter bolder tPurple pb-5 grid-border grid-border-sm">
-        #EXPLORE THE GALLERY
-      </h2>
-      <div class="container-fluid position-relative" style="height: 80vh;overflow-x: hidden;overflow-y: hidden">
-        <img src="immagini/gallery/prova1.png" data-role="draggable" style="width: 30%;position: relative;left: 20%; top:10%;transform:rotate(10deg)" >
-        <img src="immagini/gallery/prova1.png" data-role="draggable" style="width: 30%;position: relative;left: 18%; top:10%;transform:rotate(-10deg)" >
-        <img src="immagini/gallery/prova1.png" data-role="draggable" style="width: 30%;position: relative;left: 20%; top:10%; transform:rotate(-25deg)" >
-        <img src="immagini/gallery/prova1.png" data-role="draggable" style="width: 30%;position: relative;left: 60%; top:10%;transform:rotate(-12deg)" >
-      </div>
-    </div>
-  </div>
-  <img src="immagini/gallery/Vector.png"  width="100%">
-</div>
 
-<!---sezione sliderrr-->
-<div class="container-fluid px-0 fucsia ">
-  <div class="row m-0" style=" overflow-x: hidden">
-    <div class="col-12" >
-      <h2 class="tYellow inter bolder  grid-border grid-border-sm">
-        #ONYOURFEET
-      </h2>
-      <p class="tYellow inter grid-border grid-border-sm">Ogni immagine racconta una storia di moda, un dettaglio alla volta.</p>
-      <div class="my-5" style="position: relative;width: fit-content;margin: auto" id="sliderPC">
-        <div class="slider" style="width:72vw;height: 30vw">
-          <img src="immagini/gallery/visor.png" id="roll1" alt="" style="position:absolute;z-index: 100">
-          <img src="immagini/gallery/gallery_cover.png" id="roll2" alt="" style="position:absolute;z-index: 99;left:7vw">
-          <img src="immagini/gallery/gallery_cover.png" id="roll3" alt="" style="position:absolute;z-index: 98;left:14vw">
-          <img src="immagini/gallery/gallery_cover.png" id="roll4" alt="" style="position:absolute;z-index: 97;left:21vw">
-          <img src="immagini/gallery/gallery_cover.png" id="roll5" alt="" style="position:absolute;z-index: 96;left:28vw">
-          <img src="immagini/gallery/gallery_cover.png" id="roll6" alt="" style="position:absolute;z-index: 95;left:35vw">
-          <img src="immagini/gallery/gallery_cover.png" id="roll7" alt="" style="position:absolute;z-index: 94;left:42vw">
-        </div>
-        <img src="immagini/gallery/leftButton.png" width="6%" style="position: absolute;left: -10%;top:44%; z-index: 1000;cursor: pointer" onclick="slideIn()">
-        <img src="immagini/gallery/rightButton.png" width="6%" style="position: absolute;right: -10%;top:44%;z-index: 1000;cursor: pointer" onclick="slideOut()">
-      </div>
-
-      <!-- slider da mobile  inzialmente nascosto-->
-      <div class="my-5" style="position: relative;width: fit-content;margin: auto" id="sliderMobile">
-        <div class="slider" style="width:72vw;height: 70vw">
-          <img src="immagini/gallery/visor.png" id="rollsm1" alt="" style="position:absolute;z-index: 100">
-          <img src="immagini/gallery/gallery_cover.png" id="rollsm2" alt="" style="position:absolute;z-index: 99; transform: rotate(3deg)">
-          <img src="immagini/gallery/gallery_cover.png" id="rollsm3" alt="" style="position:absolute;z-index: 98;transform: rotate(-2deg)">
-          <img src="immagini/gallery/gallery_cover.png" id="rollsm4" alt="" style="position:absolute;z-index: 97;transform: rotate(2deg)">
-          <img src="immagini/gallery/gallery_cover.png" id="rollsm5" alt="" style="position:absolute;z-index: 96;transform: rotate(-4deg)">
-          <img src="immagini/gallery/gallery_cover.png" id="rollsm6" alt="" style="position:absolute;z-index: 95;transform: rotate(3deg)">
-          <img src="immagini/gallery/gallery_cover.png" id="rollsm7" alt="" style="position:absolute;z-index: 94;transform: rotate(-3deg)">
-        </div>
-        <img src="immagini/gallery/leftButton.png" width="10%" style="position: absolute;left: -15%;top:40%; z-index: 1000" onclick="slideInSm()">
-        <img src="immagini/gallery/rightButton.png" width="10%" style="position: absolute;right: -15%;top:40%;z-index: 1000" onclick="slideOutSm()">
-      </div>
-      <!--- -->
-
-    </div>
-
-  </div>
-
-</div>
-<div class="carousel my-5 fucsia" style="position: relative; background-image: url('immagini/gallery/backgroundSlider.png');background-repeat: no-repeat;background-size: cover;height: 90vh"
+<div class="carousel my-0 blu" style="position: relative; background-image: url('immagini/gallery/backgroundSlider.png');background-repeat: no-repeat;background-size: cover;height: 90vh"
      data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": true}'>
   <div class="carousel-cell" style=" width: 600px;">
     <h2 class="tPurple inter bolder"> I NOSTRI DESIGNER</h2>
@@ -210,6 +151,50 @@
 
 
 </div>
+<!---sezione sliderrr-->
+<div class="container-fluid px-0 fucsia pt-4 ">
+  <div class="row m-0" style=" overflow-x: hidden">
+    <div class="col-12" >
+      <h2 class="tYellow inter bolder  grid-border grid-border-sm">
+        SCOPRI SOCKFUSION INNOVATIONS!
+      </h2>
+      <p class="tYellow inter grid-border grid-border-sm" id="description">Animali felici, calzini eccezionali: la nostra filosofia</p>
+      <div class="my-5" style="position: relative;width: fit-content;margin: auto" id="sliderPC">
+        <div class="slider" style="width:72vw;height: 30vw">
+          <img src="immagini/gallery/slide1.png" id="roll1" alt="" style="position:absolute;z-index: 100">
+          <img src="immagini/gallery/slide2.png" id="roll2" alt="" style="position:absolute;z-index: 99;left:7vw">
+          <img src="immagini/gallery/slide3.png" id="roll3" alt="" style="position:absolute;z-index: 98;left:14vw">
+          <img src="immagini/gallery/slide4.png" id="roll4" alt="" style="position:absolute;z-index: 97;left:21vw">
+          <img src="immagini/gallery/slide5.png" id="roll5" alt="" style="position:absolute;z-index: 96;left:28vw">
+          <img src="immagini/gallery/slide6.png" id="roll6" alt="" style="position:absolute;z-index: 95;left:35vw">
+          <img src="immagini/gallery/slide7.png" id="roll7" alt="" style="position:absolute;z-index: 94;left:42vw">
+        </div>
+        <img src="immagini/gallery/leftButton.png" width="6%" style="position: absolute;left: -10%;top:44%; z-index: 1000;cursor: pointer" onclick="slideIn()">
+        <img src="immagini/gallery/rightButton.png" width="6%" style="position: absolute;right: -10%;top:44%;z-index: 1000;cursor: pointer" onclick="slideOut()">
+      </div>
+
+      <!-- slider da mobile  inzialmente nascosto-->
+      <div class="my-5" style="position: relative;width: fit-content;margin: auto" id="sliderMobile">
+        <div class="slider" style="width:72vw;height: 70vw">
+          <img src="immagini/gallery/visor.png" id="rollsm1" alt="" style="position:absolute;z-index: 100">
+          <img src="immagini/gallery/gallery_cover.png" id="rollsm2" alt="" style="position:absolute;z-index: 99; transform: rotate(3deg)">
+          <img src="immagini/gallery/gallery_cover.png" id="rollsm3" alt="" style="position:absolute;z-index: 98;transform: rotate(-2deg)">
+          <img src="immagini/gallery/gallery_cover.png" id="rollsm4" alt="" style="position:absolute;z-index: 97;transform: rotate(2deg)">
+          <img src="immagini/gallery/gallery_cover.png" id="rollsm5" alt="" style="position:absolute;z-index: 96;transform: rotate(-4deg)">
+          <img src="immagini/gallery/gallery_cover.png" id="rollsm6" alt="" style="position:absolute;z-index: 95;transform: rotate(3deg)">
+          <img src="immagini/gallery/gallery_cover.png" id="rollsm7" alt="" style="position:absolute;z-index: 94;transform: rotate(-3deg)">
+        </div>
+        <img src="immagini/gallery/leftButton.png" width="10%" style="position: absolute;left: -15%;top:40%; z-index: 1000" onclick="slideInSm()">
+        <img src="immagini/gallery/rightButton.png" width="10%" style="position: absolute;right: -15%;top:40%;z-index: 1000" onclick="slideOutSm()">
+      </div>
+      <!--- -->
+
+    </div>
+
+  </div>
+
+</div>
+
 <!----SEZIONE CARICA LE FOTO-->
 <div class="container-fluid px-0" style="position: relative">
   <img src="immagini/contatti/Vector3.png" style="width: 100%; transform: rotate(180deg);">
@@ -238,11 +223,7 @@
     </div>
   </div>
 </div>
-
-
-
-
-<div class="footer p-md-5 p-3 m-0 w-100">
+<div class="footer py-4 grid-border grid-border-sm m-0 w-100">
 
   <div class="row text-center">
     <div class="col-12 comba"><h1>SOCKFUSION INNOVATIONS</h1></div>
@@ -251,8 +232,8 @@
 
   <div class="row mt-3">
     <div class="col-md-3 col-6">
-      <p>
-        Contatti
+      <p class="fw-bolder">
+        Contattaci
       </p>
       <p class="small">
         Copyright<br>
@@ -271,13 +252,13 @@
           <div class="col-md-12 col-6">
             <div class="row">
               <div class="col-md-4 col-12">
-                <img class="m-2 icona" src="immagini/facebook.png" >
+                <img class="m-2 icona grow" src="immagini/facebook.png" >
               </div>
               <div class="col-md-4 col-12">
-                <img class="m-2 icona" src="immagini/instagram.png">
+                <img class="m-2 icona grow" src="immagini/instagram.png">
               </div>
               <div class="col-md-4 col-12">
-                <img class="m-2 icona" src="immagini/telegram.png">
+                <img class="m-2 icona grow" src="immagini/telegram.png">
               </div>
             </div>
           </div>
@@ -301,10 +282,11 @@
       </div>
     </div>
 
-    <div class="col-md-3 ">
-      <p class="schoolbell text-md-end text-center">Tanto chi lo guarda il footer nel 2023?</p>
+    <div class="col-md-3">
+      <h3 class="schoolbell text-md-end text-center">Tanto chi lo guarda il footer nel 2023?</h3>
     </div>
   </div>
+
 
 </div>
 </body>
