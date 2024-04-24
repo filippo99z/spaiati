@@ -4,6 +4,7 @@ var cards = [];
 var questions =["Sei più un tipo da colazione salata o dolce?", "Quale animale pensi descriva meglio la tua personalità?", "Il tuo superpotere ideale sarebbe:", "Qual è la tua stagione preferita?", "Scegli un colore che ti descrive meglio:", "Quale genere musicale rappresenta meglio la tua vita?"];
 var answers =["Salata come una torta di patate", "Dolce come una ciambella ricoperta di zucchero", "Una colazione mista, come un brunch gourmet", "Nessuna delle precedenti, preferisco il pranzo!", "Leopardo - elegante e indipendente", "Papero - socievole e vivace", "Gufo - saggio e riflessivo", "Pinguino - sempre pronto per una festa", "Invisibilità", "Teletrasporto","Lettura del pensiero","Capacità di volare","Primavera - rinascita e fioriture","Estate - sole, mare, e relax","Autunno - colori caldi e accoglienti","Inverno - neve e atmosfera natalizia","Rosso - audace e appassionato","Blu - calmo e riflessivo","Giallo - allegro e ottimista","Nero - elegante e misterioso","Rock","Pop","Jazz","Elettronica"];
 var quizcounter = 0;
+let galleryDesc =["Animali felici, calzini eccezionali: la nostra filosofia","La nostra catena produttiva: etica, sostenibile, autentica","I nostri designer: mente creativa dietro ogni calza stravagante.","I nostri lavoratori: il cuore pulsante della nostra produzione.","Comprare le calze giuste non è mai stato così facile e conveniente.","Il nostro impegno: consegnarti le calze migliori nel modo più efficiente.","Condividere la gioia: un cliente felice mostra il suo amore per le nostre calze."]
 
 let click = false;
 
@@ -48,9 +49,11 @@ function checkWin(array){
 }
 
 function slideOut() {
+
     console.log("cliccato");
-    if(counter<7){
+    if(counter<6){
     counter++;
+    document.getElementById("description").innerHTML = galleryDesc[counter];
     console.log("slide out"+counter);
     let idPhoto = "roll"+counter
     let img =document.getElementById(idPhoto);
@@ -71,6 +74,7 @@ function slideOut() {
     }
 }
 function slideIn() {
+
     if (counter>0) {
         console.log("slide in"+counter);
 
@@ -88,10 +92,13 @@ function slideIn() {
 
         }
         counter--;
+        document.getElementById("description").innerHTML = galleryDesc[counter];
     }
 }
 
 function slideOutSm() {
+    document.getElementById("description").innerHTML = galleryDesc[counterSm];
+    console.log( galleryDesc[counterSm]);
     console.log("cliccato");
     if(counterSm<7){
         counterSm++;
@@ -116,6 +123,8 @@ function slideOutSm() {
 
 }
 function slideInSm() {
+    document.getElementById("description").innerHTML = galleryDesc[counterSm];
+    console.log( galleryDesc[counterSm]);
     if (counterSm>0) {
         console.log("slide in"+counterSm);
 
