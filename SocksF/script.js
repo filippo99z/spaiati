@@ -5,7 +5,12 @@ var questions =["Sei più un tipo da colazione salata o dolce?", "Quale animale 
 var answers =["Salata come una torta di patate", "Dolce come una ciambella ricoperta di zucchero", "Una colazione mista, come un brunch gourmet", "Nessuna delle precedenti, preferisco il pranzo!", "Leopardo - elegante e indipendente", "Papero - socievole e vivace", "Gufo - saggio e riflessivo", "Pinguino - sempre pronto per una festa", "Invisibilità", "Teletrasporto","Lettura del pensiero","Capacità di volare","Primavera - rinascita e fioriture","Estate - sole, mare, e relax","Autunno - colori caldi e accoglienti","Inverno - neve e atmosfera natalizia","Rosso - audace e appassionato","Blu - calmo e riflessivo","Giallo - allegro e ottimista","Nero - elegante e misterioso","Rock","Pop","Jazz","Elettronica"];
 var quizcounter = 0;
 let galleryDesc =["Animali felici, calzini eccezionali: la nostra filosofia","La nostra catena produttiva: etica, sostenibile, autentica","I nostri designer: mente creativa dietro ogni calza stravagante.","I nostri lavoratori: il cuore pulsante della nostra produzione.","Comprare le calze giuste non è mai stato così facile e conveniente.","Il nostro impegno: consegnarti le calze migliori nel modo più efficiente.","Condividere la gioia: un cliente felice mostra il suo amore per le nostre calze."]
-
+let buttons = {
+    superpower:false,
+    tech:false,
+    mystery:false,
+    comfort:false
+}
 let click = false;
 
 function gira(element){
@@ -226,13 +231,26 @@ function displayButton (){
 function filter(button){
 
     let check = button.getAttribute('active');
-
-
     let buttonPressed = button.getAttribute('val');
-    console.log("hai cliccato su:"+buttonPressed);
+
     let total = document.getElementsByClassName("products");
     let target = document.getElementById(buttonPressed);
+    console.log(buttons);
+    if( buttons[target.id]==="true"){
+        buttons[target.id]="none";
+    }else{
+        buttons[target.id]="true";
+        for (const attributo in buttons) {
 
+            if(attributo ===target.id ) {
+                buttons[target.id]="true";
+            }else{
+                buttons[target.id]="none";
+            }
+        }
+    }
+
+    console.log(buttons);
     if(check === "none"){
         for(let i=0;i<total.length;i++){
             if(target!==total[i]){
@@ -253,5 +271,31 @@ function filter(button){
 
     }
 
+}
+function filterButtons(button){
+    let buttonPressed = button.getAttribute('val');
+    let control = check(buttonPressed); //controlla se c'è un altro bottone attivo
+    if(control && !buttons[buttonPressed]){ //se c'è un altro bottne attivo diverso da quello cliccato entra
+        console.log("c'è un altro bottone attivo"); //in questo caso bisogna settare prima tutti i bottoni falsi e mettere quello selezionato true
+    }else{ // qui invece basta mettere true se il bottone è false o pttere false se il bottone è true!
+        console.log("nessun bottone attivo oppure hai cliccato su quello attivo");
+    }
+    if(!buttons[buttonPressed]){
+        buttons[buttonPressed] = true;
+    }else{
+        buttons[buttonPressed] = false;
+    }
 
+    console.log(buttons)
+}
+
+function check(){
+    let checked = false;
+    for (const attributo in buttons) {
+        if(buttons[attributo]){
+            checked  = true;
+            break;
+        }
+    }
+    return checked;
 }
