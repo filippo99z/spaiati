@@ -56,9 +56,29 @@
     position: absolute;
     left:-60%;
     top:-5%;
-    width: 170px /*sistemare*/
+    width: 50%;/*sistemare*/
+    z-index:999;
 }
 
+.s2{
+    width: 130px;
+}
+.s3{
+    width: 50%;
+    left: 90%;
+    top:-50%;
+}
+.buttonMail{
+    left: 0px;
+    top:45px
+}
+.buttonCell{
+    left: 110px;
+    top:45px
+}
+.mailInfo{
+    top:170%;
+}
 .stickerMap{
    position: absolute;
     bottom:50px;
@@ -81,14 +101,60 @@
     .formContainer{
         width: 80%;
         left: 10%;
-        margin-top: 15vh
+        margin-top: 20vh
+    }
+
+    .infoDiv{
+        height: 70vh;
+    }
+    .mailInfo{
+        top:200%;
+
+    }
+    .cellInfo{
+        left: 8vw;
+    }
+    .s2{
+        width: 100px;
+        top:20px
+    }
+    .buttonCell{
+        left: 80px;
+        top:45px
+    }
+
+    .contattiS1{
+        position: absolute;
+        left:-15%;
+        top:-25%;
+        width: 130px;/*sistemare*/
+        transform:rotate(-10deg);
     }
     .stickerMap{
         position: absolute;
         bottom:50px;
-        left: 55%;
-        width: 45%;
+        left: 75%;
+        width: 25%;
     }
 
+}
+@media screen and (max-width: 576px){
+    .formContainer{
+        width: 100%;
+        left: 0%;
+        margin-top: 15vh
+    }
+    .contattiS1{
 
+        left:0%;
+        top:-30%;
+        width: 130px;/*sistemare*/
+
+    }
+    .stickerMap{
+        position: absolute;
+        bottom:50px;
+        left: 65%;
+        width: 35%;
+    }
 }

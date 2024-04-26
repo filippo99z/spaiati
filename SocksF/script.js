@@ -270,7 +270,6 @@ function filter(button){
         button.setAttribute("active","none");
 
     }
-
 }
 function filterButtons(button){
     let buttonPressed = button.getAttribute('val');

@@ -9,9 +9,15 @@
     <link href="stili.css" rel="stylesheet" type="text/css">
     <link href="shopCss.css" rel="stylesheet" type="text/css">
     <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
+<script>
+    AOS.init({offset:200,
+        duration:1000}
+    );
+</script>
 <nav class="navbar navbar-expand-md sticky-top grid-border grid-border-sm">
     <div class="container-fluid px-0">
         <a class="navbar-brand logo py-0" href="index.html"><img class="logo" src="immagini/logo.svg" alt="logo"></a>
@@ -77,7 +83,7 @@
             </p>
 
         </div>
-        <div class="col-md-7 px-md-0 px-0" id="background1">
+        <div class="col-md-7 px-md-0 px-0" id="background1" data-aos="fade-left">
             <div class="pbackground">
 
             </div>
