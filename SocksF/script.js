@@ -8,8 +8,8 @@ let galleryDesc =["Animali felici, calzini eccezionali: la nostra filosofia","La
 let buttons = {
     superpower:false,
     tech:false,
-    mystery:false,
-    comfort:false
+    comfort:false,
+    mystery:false
 }
 let click = false;
 
@@ -277,15 +277,19 @@ function filterButtons(button){
     let control = check(buttonPressed); //controlla se c'è un altro bottone attivo
     if(control && !buttons[buttonPressed]){ //se c'è un altro bottne attivo diverso da quello cliccato entra
         console.log("c'è un altro bottone attivo"); //in questo caso bisogna settare prima tutti i bottoni falsi e mettere quello selezionato true
-    }else{ // qui invece basta mettere true se il bottone è false o pttere false se il bottone è true!
-        console.log("nessun bottone attivo oppure hai cliccato su quello attivo");
-    }
-    if(!buttons[buttonPressed]){
+        for (let k in buttons){
+            buttons[k] = false;
+        }
         buttons[buttonPressed] = true;
-    }else{
-        buttons[buttonPressed] = false;
-    }
 
+    }else{ // qui invece basta mettere true se il bottone è false o pttere false se il bottone è true!
+        if(buttons[buttonPressed]){
+            buttons[buttonPressed] = false
+        }else{
+            buttons[buttonPressed] = true
+        }
+    }
+    change();
     console.log(buttons)
 }
 
@@ -299,3 +303,41 @@ function check(){
     }
     return checked;
 }
+
+function change(){
+    for (let k in buttons){
+        if(buttons[k]===true){
+            console.log(k)
+            let element = document.getElementsByClassName(k)[0];
+            console.log(element);
+            element.classList.replace("btn-purple","btn-yellow");
+
+        }else{
+            let element = document.getElementsByClassName(k)[0];
+            element.classList.replace("btn-yellow","btn-purple");
+        }
+    }
+    hide();
+}
+
+function hide() {
+    let info =check();
+        if(info){
+        for (let id in buttons) {
+            if (buttons[id] === true) {
+                let ele = document.getElementById(id);
+                ele.classList.remove("hidden");
+            } else {
+                let ele = document.getElementById(id);
+                ele.classList.add("hidden");
+            }
+        }
+    }else{
+            for (let id in buttons){
+                let ele = document.getElementById(id);
+                ele.classList.remove("hidden");
+            }
+        }
+}
+
+
