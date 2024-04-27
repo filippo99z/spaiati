@@ -2,7 +2,7 @@ var counter =0;
 var counterSm = 0;
 var cards = [];
 var questions =["Sei più un tipo da colazione salata o dolce?", "Quale animale pensi descriva meglio la tua personalità?", "Il tuo superpotere ideale sarebbe:", "Qual è la tua stagione preferita?", "Scegli un colore che ti descrive meglio:", "Quale genere musicale rappresenta meglio la tua vita?"];
-var answers =["Salata come una torta di patate", "Dolce come una ciambella", "Una colazione mista, come un brunch", "Preferisco il pranzo!", "Leopardo - elegante e indipendente", "Papero - socievole e vivace", "Gufo - saggio e riflessivo", "Pinguino - sempre pronto per una festa", "Invisibilità", "Teletrasporto","Lettura del pensiero","Capacità di volare","Primavera - rinascita e fioriture","Estate - sole, mare, e relax","Autunno - colori caldi e accoglienti","Inverno - neve e atmosfera natalizia","Rosso - audace e appassionato","Blu - calmo e riflessivo","Giallo - allegro e ottimista","Nero - elegante e misterioso","Rock","Pop","Jazz","Elettronica"];
+var answers =["Salata come una torta di patate", "Dolce come una ciambella", "Una colazione mista, come un brunch", "Preferisco il pranzo!", "Leopardo - elegante e indipendente", "Papero - socievole e vivace", "Gufo - saggio e riflessivo", "Pinguino - grande festaiolo", "Invisibilità", "Teletrasporto","Lettura del pensiero","Capacità di volare","Primavera - rinascita e fioriture","Estate - sole, mare, e relax","Autunno - colori caldi e accoglienti","Inverno - neve e atmosfera natalizia","Rosso - audace e appassionato","Blu - calmo e riflessivo","Giallo - allegro e ottimista","Nero - elegante e misterioso","Rock","Pop","Jazz","Elettronica"];
 var quizcounter = 0;
 let galleryDesc =["Animali felici, calzini eccezionali: la nostra filosofia","La nostra catena produttiva: etica, sostenibile, autentica","I nostri designer: mente creativa dietro ogni calza stravagante.","I nostri lavoratori: il cuore pulsante della nostra produzione.","Comprare le calze giuste non è mai stato così facile e conveniente.","Il nostro impegno: consegnarti le calze migliori nel modo più efficiente.","Condividere la gioia: un cliente felice mostra il suo amore per le nostre calze."]
 let buttons = {
@@ -215,17 +215,9 @@ function quizBack(){
 }
 
 function displayButton (){
-    if (quizcounter==5) {
-        let button = document.getElementsByClassName("gbottoneForm");
-
-        console.log(button)
-        button[0].style.display = "block";
-    }else{
-        let button = document.getElementsByClassName("gbottoneForm");
-
-
-        button[0].style.display = "none";
-    }
+    if (quizcounter===5) {
+        document.getElementById('HideMe').style.display='block';}
+    else {document.getElementById('HideMe').style.display='none';}
 }
 
 function filter(button){
