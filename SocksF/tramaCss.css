@@ -7,20 +7,20 @@
     background-image: url('immagini/trama/onda.png');
 }
 
-.img_First {
+.img-First {
     background-image: url('immagini/trama/calza_trama.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.stars_3 {
+.stars-3 {
     width: 15%;
     left: 80%;
     top: -40%;
 }
 
-.stars_2 {
+.stars-2 {
     width: 12%;
     left: 5%;
     bottom: 10%;
@@ -38,47 +38,48 @@
     top: -50%;
 }
 
-.Cbackground{
-    background-image: url('immagini/trama/img_sezione_BG.png');
+.c-background{
+    background-image: url('immagini/trama/img_sezBG_complete.png');
     height: 100%;
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    position: relative;
+    position: absolute;
+    background-position: left center;
     z-index: 2;
-
+    left: 0;
 }
 
-.read_here {
+.read-here {
     width: 30%;
     right: 50%;
     top: 5%;
 }
 
-.click_here {
+.click-here {
     width: 15%;
     right: 30%;
-    bottom: 33%;
+    bottom: 31%;
 }
 
-.star_1 {
+.star-1 {
     width: 3.8%;
     right: 15%;
     bottom: 43%;
 }
 
-.starr_2 {
+.starr-2 {
     width: 3.8%;
     bottom: 7%;
 }
 
-.send_pic {
+.send-pic {
     width: 30%;
     right: 15%;
     bottom: 10%;
 }
 
-.total_background{
+.total-background{
     background-image: url('immagini/trama/scritta_striscia_D.png');
     width: 100%;
     background-size: cover;
@@ -86,37 +87,20 @@
     position:relative;
 }
 
-/** non li ho usati
-.stickerRosa_total {
-    background-image: url('immagini/trama/sticker-rosa.png');
-    background-size: cover;
-    height: auto;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 4;
-}
-
-.stickerBlu_total {
-    background-image: url('immagini/trama/sticker-blu.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    position: relative;
-    z-index: 4;
-} **/
-
 .c-height {
     height: 140vh;
 }
-.Lpink_sticker {
+
+.Lpink-sticker {
     top:0;
     aspect-ratio: 1;
     background-image: url('immagini/trama/sticker-rosa.png');
     background-size: contain;
     background-repeat: no-repeat;
+    width: 700px;
 }
 
-.Lblue_sticker {
+.Lblue-sticker {
     top:80%;
     aspect-ratio:1;
     right:80px;
@@ -124,17 +108,25 @@
     background-image: url('immagini/trama/sticker-blu.png');
     background-size: contain;
     background-repeat: no-repeat;
+    width: 600px;
 }
 
+
 .WPsticker {
-    padding: 25% 20% 25% 20%;
+    padding: 20% 20% 25% 20%;
 }
 
 .WBsticker {
-    padding: 20% 28% 25% 20%;
+    padding: 25% 25% 25% 25%;
 }
 
 @media screen and (max-width: 768px) {
+
+    .c-background{
+        height: 70vh;
+        background-position: center;
+        position: relative;
+    }
 
     .pt-10 {
         padding-top: 5vh;
@@ -148,22 +140,26 @@
         padding-top: 10vh;
     }
 
-    .stars_3 {
-        width: 15%;
+    .stars-3 {
+        width: 40px;
         left: 80%;
-        top: -25%;
+        top: -30%;
     }
 
-    .stars_2 {
-        width: 12%;
+    .stars-2 {
+        width: 40px;
         left: 60%;
-        bottom: 7%;
+        bottom: 5%;
     }
 
     .XSsticker {
-        width: 40%;
+        width: 130px;
         left: 7%;
         top: 80%;
+    }
+
+    .mobile-reverse {
+        flex-direction: column-reverse;
     }
 
     .XSsticker2 {
@@ -179,35 +175,51 @@
         top: -4%;
     }
 
-    .star_1 {
-        width: 3.8%;
-        right: 10%;
-        bottom: 45%;
+    .star-1 {
+        width: 15px;
+        right: 5%;
+        bottom: 40%;
     }
 
-    .starr_2 {
-        width: 3.8%;
-        bottom: 7%;
+    .starr-2 {
+        width: 15px;
+        bottom: 5%;
         margin-left: 6vh;
     }
 
-    .mobile {
+    .mobile-margin {
         margin-left: 4vh;
     }
 
-    .send_pic {
-        width: 30%;
+    .send-pic {
+        width: 120px;
         right: 15%;
-        bottom: 6%;
+        bottom: 3%;
     }
 
-    .Lpink_sticker {
+    .read-here {
+        width: 120px;
+        right: 50%;
+        top: 3%;
+    }
+    .Lpink-sticker {
         top:0;
         aspect-ratio: 1;
         background-image: url('immagini/trama/sticker-rosa.png');
         background-size: contain;
         background-repeat: no-repeat;
-        margin-right: 5vh;
+        width: 400px;
+    }
+
+    .Lblue-sticker {
+        top:80%;
+        aspect-ratio:1;
+        right:80px;
+        width: 350px;
+        background-image: url('immagini/trama/sticker-blu.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 6vh;
     }
 
     .WPsticker {
@@ -215,7 +227,7 @@
     }
 
     .WBsticker {
-        padding: 20% 20% 25% 25%;
+        padding: 18% 20% 25% 25%;
     }
 
     .bottone {
@@ -223,45 +235,78 @@
         bottom: 22%;
         left: 30%
     }
-    .click_here {
+    .click-here {
         width: 15%;
         right: 19%;
         bottom: 30%;
     }
 
-    .c-height {
-        height: 115vh;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+    .stars-3 {
+        width: 60px;
+        left: 75%;
+        top: -40%;
     }
-    .Cbackground{
-        height: 50vh;
-        background-position: center;
+
+    .stars-2 {
+        width: 50px;
+        left: 15%;
+        bottom: 5%;
+    }
+
+    .star-1 {
+        width: 18px;
+        right: 5%;
+        bottom: 40%;
+    }
+
+    .starr-2 {
+        width: 18px;
+        bottom: 5%;
+        margin-left: 6vh;
+    }
+
+    .send-pic {
+        width: 130px;
+        right: 11%;
+        bottom: 3%;
+    }
+
+    .read-here {
+        width: 130px;
+        right: 50%;
+        top: 10%;
+    }
+    .pb-20 {
+        padding-bottom: 12vh;
+    }
+    .Lpink-sticker {
+        top:0;
+        aspect-ratio: 1;
+        background-image: url('immagini/trama/sticker-rosa.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 500px;
+    }
+
+    .Lblue-sticker {
+        top:80%;
+        aspect-ratio:1;
+        right:80px;
+        width: 400px;
+        background-image: url('immagini/trama/sticker-blu.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .WPsticker {
+        padding: 20% 20% 20% 20%;
+    }
+
+    .WBsticker {
+        padding: 20% 25% 25% 25%;
     }
 
 }
-/**stavo facendo il tablet ma non serve
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-
-    .wave {
-        margin-left: -2vh;
-    }
-    .XSsticker {
-        width:40%;
-        left: 95%;
-        top:5%;
-    }
-    .stars_3 {
-        width: 18%;
-        left: 75%;
-        top: -33%;
-    }
-
-    .stars_2 {
-        width: 15%;
-        left: 5%;
-        bottom: 10%;
-    }
-
-    .pb-20 {
-        padding-bottom: 10vh;
-    }
-}**/
