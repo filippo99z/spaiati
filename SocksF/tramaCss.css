@@ -119,7 +119,12 @@
 .WBsticker {
     padding: 25% 25% 25% 25%;
 }
-
+#xs{
+    display: none;
+}
+#md-sm{
+    display: block;
+}
 @media screen and (max-width: 768px) {
 
     .c-background{
@@ -307,6 +312,16 @@
 
     .WBsticker {
         padding: 20% 25% 25% 25%;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    #xs{
+        display: block;
+    }
+    #md-sm{
+        display: none;
     }
 
 }
