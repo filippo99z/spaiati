@@ -57,9 +57,9 @@
 }
 
 .click-here {
-    width: 15%;
-    right: 30%;
-    bottom: 31%;
+    width: 8%;
+    right: 50%;
+    top: 31%;
 }
 
 .star-1 {
@@ -110,7 +110,9 @@
     background-repeat: no-repeat;
     width: 600px;
 }
-
+.TS-padding {
+    padding: 0 20%;
+}
 
 .WPsticker {
     padding: 20% 20% 25% 20%;
@@ -305,6 +307,12 @@
         background-image: url('immagini/trama/sticker-blu.png');
         background-size: contain;
         background-repeat: no-repeat;
+    }
+
+    .click-here {
+        width: 120px;
+        right: 50%;
+        top: 30%;
     }
     .WPsticker {
         padding: 20% 20% 20% 20%;
