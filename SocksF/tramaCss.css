@@ -111,7 +111,7 @@
     width: 600px;
 }
 .TS-padding {
-    padding: 0 20%;
+    padding: 0 10%;
 }
 
 .WPsticker {
@@ -127,7 +127,7 @@
 #md-sm{
     display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .c-background{
         height: 70vh;
@@ -237,11 +237,7 @@
         padding: 18% 20% 25% 25%;
     }
 
-    .bottone {
-        position: absolute;
-        bottom: 22%;
-        left: 30%
-    }
+
     .click-here {
         width: 15%;
         right: 19%;
@@ -250,7 +246,7 @@
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 767px) and (max-width: 1200px) {
 
     .stars-3 {
         width: 60px;
