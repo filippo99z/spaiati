@@ -31,42 +31,43 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header py-2">
-                <h5 class="offcanvas-title logo " id="offcanvasNavbarLabel"><img class="logo" src="immagini/logo.png" alt="logo"></h5>
-                <button type="button" class="shadow-none border-0 py-1 px-2 " data-bs-dismiss="offcanvas" aria-label="Close" >
+            <div class="offcanvas-header grid-border grid-border-sm">
+                <h5 class="offcanvas-title logo " id="offcanvasNavbarLabel"><img class="logo" src="immagini/logo.svg" alt="logo"></h5>
+                <button type="button" class="shadow-none border-0 p-0" data-bs-dismiss="offcanvas" aria-label="Close" >
                     <img src="immagini/close.png" class="close-btn">
                 </button>
             </div>
             <div class="offcanvas-body align-text-center p-0 flex">
-                <ul class="navbar-nav justify-content-center flex-grow-1">
-                    <li class="nav-item mx-md-2 mx-3">
+                <ul class="navbar-nav justify-content-md-around  justify-content-xl-evenly flex-grow-1 mx-lg-5 mx-md-1 px-lg-3 px-xl-5 px-md-0">
+                    <li class="nav-item ms-md-5 me-md-0 grid-border-sm">
                         <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
                     </li>
                     <hr class="my-1">
-                    <li class="nav-item mx-md-2 mx-3">
+                    <li class="nav-item mx-md-0 grid-border-sm">
                         <a class="nav-link " href="trama.html">TRAMA</a>
                     </li>
                     <hr class="my-1">
-                    <li class="nav-item mx-md-2 mx-3">
-                        <a class="nav-link " href="shop.html">PRODOTTI</a>
+                    <li class="nav-item mx-md-0  grid-border-sm">
+                        <a class="nav-link " href="shop.html">SHOP</a>
                     </li>
                     <hr class="my-1">
-                    <li class="nav-item mx-md-2 mx-3">
+                    <li class="nav-item mx-md-0 grid-border-sm">
                         <a class="nav-link" href="calza.html">CHE CALZA SEI?</a>
                     </li>
                     <hr class="my-1">
-                    <li class="nav-item mx-md-2 mx-3">
+                    <li class="nav-item mx-md-0 grid-border-sm">
                         <a class="nav-link"  href="gallery.html">#ONYOURFEET</a>
                     </li>
                     <hr class="my-1">
-                    <li class="nav-item mx-md-2 mx-3">
+                    <li class="nav-item me-md-5 ms-md-0 grid-border-sm">
                         <a class="nav-link" href="contatti.html">CONTATTI</a>
                     </li>
                     <hr class="my-1">
                 </ul>
-                <ul class="navbar-nav justify-content-end mx-md-0 mx-3 py-md-0 py-2" id="carrello">
-                    <li><svg fill="#F21DB9" height="35px" width="35px" version="1.1" id="XMLID_269_" xmlns="http://www.w3.org/2000/svg" viewBox="-2.4 -2.4 28.80 28.80" xml:space="preserve" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.24000000000000005"></g><g id="SVGRepo_iconCarrier"> <g id="shop-cart"> <g> <circle cx="9" cy="21" r="2"></circle> </g> <g> <circle cx="19" cy="21" r="2"></circle> </g> <g> <path d="M21,18H7.2l-4-16H0V0h4.8l0.8,3H24l-3.2,11H8.3l0.5,2H21V18z M7.8,12h11.5l2-7H6L7.8,12z"></path> </g> </g> </g></svg></li>
-                </ul>
+
+                <div id="carrello">
+                    <img src="immagini/shopping-cart%20(1).png" style="width: 5vh;margin:auto">
+                </div>
             </div>
         </div>
     </div>
@@ -298,7 +299,7 @@
             </div>
         </div>
         <div class="col-md-5  pe-md-0 order-md-2 order-1 px-0">
-            <div class="purple my-md-3 py-md-4 py-2 mb-md-0 mb-2  ps-md-4 quizBox px-0">
+            <div class="purple my-md-3 py-md-4 py-4 mb-md-0 mb-2  ps-md-4 quizBox px-0">
                 <h2 class="inter tWhite grid-border-right grid-border-sm"> Gratta e <span style="font-size: 6px">(non)</span> vinci</h2>
                 <p class="inter tWhite grid-border-right grid-border-sm">Preparati per l'emozione e gioca ora per dare un tocco giocoso al tuo shopping di calze stravaganti!
                     Gira tre card uguali e potresti essere il fortunato vincitore di fantastici premi e sconti esclusivi!
@@ -391,6 +392,8 @@
 
 
 </div>
+
+
 <div id="overlay">
     <h1>Complimenti hai vinto!</h1>
 </div>

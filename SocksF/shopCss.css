@@ -21,6 +21,9 @@
     left: -2vh;
     bottom: -3vw;
 }
+.pbackground2-sm{
+    display: none;
+}
 .pVector{
     background-image: url('immagini/shop/pVector.png');
     background-size: 60%;
@@ -102,10 +105,18 @@
     }
 
     .pbackground2{
+        display: none;
         width: 110%;
         position: relative;
         margin: auto;
         align-content: center;
+    }
+    .pbackground2-sm{
+        display: block;
+        width: 110%;
+        position: relative;
+        left: -5%;
+
     }
     .star1{
         width: 10%; right: 35%; top: 20%;
@@ -137,5 +148,8 @@
     }
     .firstDivP{
         height: auto;
+    }
+    #fucsia-sm{
+        background-color: #F21DB9;
     }
 }

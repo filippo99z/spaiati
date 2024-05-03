@@ -145,7 +145,7 @@ body{
 
 /* navbar */
 .logo{
-    height: 8vh;
+    height: 7vh;
 }
 .navbar{
     background-color: #ECF447;
@@ -178,6 +178,7 @@ button{
 .offcanvas-header{
     border-bottom:4px solid #F21DB9;
     background-color: #ECF447;
+    height: 10vh;
 }
 .navbar a:hover {
     -webkit-animation: jello-horizontal 0.9s both;
@@ -422,6 +423,7 @@ button{
         margin-left: 30vw;
         margin-right: 30vw;
         box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+        display: flex;
 
     }
     .navbar a:hover {
@@ -462,3 +464,4 @@ button{
 
 
 }
+

@@ -2,10 +2,15 @@ var counter =0;
 var counterSm = 0;
 var cards = [];
 var questions =["Sei più un tipo da colazione salata o dolce?", "Quale animale pensi descriva meglio la tua personalità?", "Il tuo superpotere ideale sarebbe:", "Qual è la tua stagione preferita?", "Scegli un colore che ti descrive meglio:", "Quale genere musicale rappresenta meglio la tua vita?"];
-var answers =["Salata come una torta di patate", "Dolce come una ciambella ricoperta di zucchero", "Una colazione mista, come un brunch gourmet", "Nessuna delle precedenti, preferisco il pranzo!", "Leopardo - elegante e indipendente", "Papero - socievole e vivace", "Gufo - saggio e riflessivo", "Pinguino - sempre pronto per una festa", "Invisibilità", "Teletrasporto","Lettura del pensiero","Capacità di volare","Primavera - rinascita e fioriture","Estate - sole, mare, e relax","Autunno - colori caldi e accoglienti","Inverno - neve e atmosfera natalizia","Rosso - audace e appassionato","Blu - calmo e riflessivo","Giallo - allegro e ottimista","Nero - elegante e misterioso","Rock","Pop","Jazz","Elettronica"];
+var answers =["Salata come una torta di patate", "Dolce come una ciambella", "Una colazione mista, come un brunch", "Preferisco il pranzo!", "Leopardo - elegante e indipendente", "Papero - socievole e vivace", "Gufo - saggio e riflessivo", "Pinguino - grande festaiolo", "Invisibilità", "Teletrasporto","Lettura del pensiero","Capacità di volare","Primavera - rinascita e fioriture","Estate - sole, mare, e relax","Autunno - colori caldi e accoglienti","Inverno - neve e atmosfera natalizia","Rosso - audace e appassionato","Blu - calmo e riflessivo","Giallo - allegro e ottimista","Nero - elegante e misterioso","Rock","Pop","Jazz","Elettronica"];
 var quizcounter = 0;
 let galleryDesc =["Animali felici, calzini eccezionali: la nostra filosofia","La nostra catena produttiva: etica, sostenibile, autentica","I nostri designer: mente creativa dietro ogni calza stravagante.","I nostri lavoratori: il cuore pulsante della nostra produzione.","Comprare le calze giuste non è mai stato così facile e conveniente.","Il nostro impegno: consegnarti le calze migliori nel modo più efficiente.","Condividere la gioia: un cliente felice mostra il suo amore per le nostre calze."]
-
+let buttons = {
+    superpower:false,
+    tech:false,
+    comfort:false,
+    mystery:false
+}
 let click = false;
 
 function gira(element){
@@ -210,29 +215,34 @@ function quizBack(){
 }
 
 function displayButton (){
-    if (quizcounter==5) {
-        let button = document.getElementsByClassName("gbottoneForm");
-
-        console.log(button)
-        button[0].style.display = "block";
-    }else{
-        let button = document.getElementsByClassName("gbottoneForm");
-
-
-        button[0].style.display = "none";
-    }
+    if (quizcounter===5) {
+        document.getElementById('HideMe').style.display='block';}
+    else {document.getElementById('HideMe').style.display='none';}
 }
 
 function filter(button){
 
     let check = button.getAttribute('active');
-
-
     let buttonPressed = button.getAttribute('val');
-    console.log("hai cliccato su:"+buttonPressed);
+
     let total = document.getElementsByClassName("products");
     let target = document.getElementById(buttonPressed);
+    console.log(buttons);
+    if( buttons[target.id]==="true"){
+        buttons[target.id]="none";
+    }else{
+        buttons[target.id]="true";
+        for (const attributo in buttons) {
 
+            if(attributo ===target.id ) {
+                buttons[target.id]="true";
+            }else{
+                buttons[target.id]="none";
+            }
+        }
+    }
+
+    console.log(buttons);
     if(check === "none"){
         for(let i=0;i<total.length;i++){
             if(target!==total[i]){
@@ -252,6 +262,73 @@ function filter(button){
         button.setAttribute("active","none");
 
     }
-
-
 }
+function filterButtons(button){
+    let buttonPressed = button.getAttribute('val');
+    let control = check(buttonPressed); //controlla se c'è un altro bottone attivo
+    if(control && !buttons[buttonPressed]){ //se c'è un altro bottne attivo diverso da quello cliccato entra
+        console.log("c'è un altro bottone attivo"); //in questo caso bisogna settare prima tutti i bottoni falsi e mettere quello selezionato true
+        for (let k in buttons){
+            buttons[k] = false;
+        }
+        buttons[buttonPressed] = true;
+
+    }else{ // qui invece basta mettere true se il bottone è false o pttere false se il bottone è true!
+        if(buttons[buttonPressed]){
+            buttons[buttonPressed] = false
+        }else{
+            buttons[buttonPressed] = true
+        }
+    }
+    change();
+    console.log(buttons)
+}
+
+function check(){
+    let checked = false;
+    for (const attributo in buttons) {
+        if(buttons[attributo]){
+            checked  = true;
+            break;
+        }
+    }
+    return checked;
+}
+
+function change(){
+    for (let k in buttons){
+        if(buttons[k]===true){
+            console.log(k)
+            let element = document.getElementsByClassName(k)[0];
+            console.log(element);
+            element.classList.replace("btn-purple","btn-yellow");
+
+        }else{
+            let element = document.getElementsByClassName(k)[0];
+            element.classList.replace("btn-yellow","btn-purple");
+        }
+    }
+    hide();
+}
+
+function hide() {
+    let info =check();
+        if(info){
+        for (let id in buttons) {
+            if (buttons[id] === true) {
+                let ele = document.getElementById(id);
+                ele.classList.remove("hidden");
+            } else {
+                let ele = document.getElementById(id);
+                ele.classList.add("hidden");
+            }
+        }
+    }else{
+            for (let id in buttons){
+                let ele = document.getElementById(id);
+                ele.classList.remove("hidden");
+            }
+        }
+}
+
+
