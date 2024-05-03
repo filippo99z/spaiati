@@ -12,7 +12,7 @@ let buttons = {
     mystery:false
 }
 let click = false;
-
+let giuliamora = false;
 function gira(element){
     let counter = document.getElementById("counter").textContent;
     console.log(counter);
@@ -214,8 +214,16 @@ function quizBack(){
     displayButton();
 }
 
+function clicked(){
+    if(quizcounter ==5){
+        giuliamora = true;
+    }
+
+    displayButton();
+}
 function displayButton (){
-    if (quizcounter===5) {
+    console.log(giuliamora)
+    if (quizcounter===5 && giuliamora) {
         document.getElementById('HideMe').style.display='block';}
     else {document.getElementById('HideMe').style.display='none';}
 }

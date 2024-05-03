@@ -127,9 +127,9 @@
         <img src="immagini/calza/trestelle.png" alt="" class="position-absolute gtrestelle d-none d-lg-block">
         <img src="immagini/calza/scrittaGia.png" alt="" class="position-absolute gscrittaGia d-none d-lg-block">
         <img src="immagini/calza/scrittaVi.png" alt="" class="position-absolute gscrittaVi">
-        <img src="immagini/calza/faitest-sm.png" alt="" class="position-absolute doQuiz d-lg-none d-xl-block">
-        <img src="immagini/calza/trestelle-sm.png" alt="" class="position-absolute threeStars d-lg-none d-xl-block">
-        <img src="immagini/calza/LittleStar.png" alt="" class="position-absolute littleStar-sm d-lg-none d-xl-block">
+        <img src="immagini/calza/faitest-sm.png" alt="" class="position-absolute doQuiz">
+        <img src="immagini/calza/trestelle-sm.png" alt="" class="position-absolute threeStars">
+        <img src="immagini/calza/LittleStar.png" alt="" class="position-absolute littleStar-sm">
       </div>
     </div>
 
@@ -146,19 +146,19 @@
             <img src="immagini/calza/freccia.png" alt="" class="gfreccia2 position-absolute" onclick="quizNext()">
           </div>
           <div class="gquiz d-inline-flex align-items-center">
-            <input class="form-check-input gcheck m-0 me-2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <input class="form-check-input gcheck m-0 me-2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" onclick="clicked()">
             <label class="form-check-label tBlack p inter" for="exampleRadios1" id="a1">Salata come una torta di patate</label>
           </div>
           <div class="gquiz d-inline-flex align-items-center">
-            <input class="form-check-input gcheck m-0 me-2" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <input class="form-check-input gcheck m-0 me-2" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" onclick="clicked()">
             <label class="form-check-label tBlack p inter" for="exampleRadios2" id="a2">Dolce come una ciambella</label>
           </div>
           <div class="gquiz d-inline-flex align-items-center">
-            <input class="form-check-input gcheck m-0 me-2" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <input class="form-check-input gcheck m-0 me-2" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" onclick="clicked()">
             <label class="form-check-label tBlack p inter" for="exampleRadios3" id="a3">Una colazione mista, come un brunch</label>
           </div>
           <div class="gquiz d-inline-flex align-items-center">
-            <input class="form-check-input gcheck m-0 me-2" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+            <input class="form-check-input gcheck m-0 me-2" type="radio" name="exampleRadios" id="exampleRadios4" value="option4" onclick="clicked()">
             <label class="form-check-label tBlack p inter" for="exampleRadios4" id="a4">Preferisco il pranzo!</label>
           </div>
           <div id ="HideMe" class="gbottoneForm" onclick="location.href='#jump'" data-bs-toggle="collapse" data-bs-target="#noShow">Scopri la tua calza</div>
@@ -179,14 +179,14 @@
       <div style="background-image: url('immagini/calza/ondaArancio-sm.png');" class="divVector-sm"></div>
     </div>
 
-    <div class="col-md-6 grid-border-left py-4 py-md-0 orange z-0 position-relative">
+    <div class="col-md-6 py-4 py-md-0 orange z-0 position-relative ps-md-5" style="padding-right: 80px">
       <img src="immagini/calza/stellineBelline.png" alt="" class="position-absolute gstellineBelline pulse-shrink-on-hover">
       <h2 class="h1 inter tPurple pt-md-5 mt-md-5 fw-semibold"> ECCO I TUOI CALZINI PERSONALIZZATI!</h2>
-      <p class="p inter tBlack py-md-4 py-3 my-0 my-md-2 me-md-5 pe-5">
+      <p class="p inter tBlack py-md-4">
         Non sono solo calzini, sono un'opera d'arte per i tuoi piedi. Preparati a innamorarti di comfort e stile, tutto racchiuso in un paio di calzini che sono letteralmente fatti su misura per te!
         <br><br>Non aspettare, mettili nel carrello adesso e trasforma ogni passo in una divertente avventura di stile!
       </p>
-      <div class="mb-md-5 pb-md-5 position-relative d-flex justify-content-center pe-5 me-5">
+      <div class="mb-md-5 pb-md-5 position-relative d-flex justify-content-center pe-0 pe-md-5 me-5">
         <div onclick="location.href='prodottoCalza.html';" class="bottone px-md-4 py-md-2 px-2 py-1 btn-yellow tBlack">
           COMPRA!
         </div>
@@ -203,14 +203,14 @@
     <img src="immagini/calza/ondaRosa.png" alt="" class="width pe-0 ps-0 d-none d-lg-block">
     <img src="immagini/calza/ondaRosa-sm.png" alt="" class="width pe-0 ps-0 d-lg-none">
 
-    <div class="col-2 container-fluid position-relative">
+    <div class="col-md-2 col-12 order-md-1 order-3 container-fluid position-relative" style="height: 10vh">
       <img src="immagini/calza/keepgoing.png" alt="" class="position-absolute gkeepgoing roll">
     </div>
 
-    <div class="col-8 container-fluid px-0 position-relative">
-      <h2 class="h1 inter tPurple text-center pt-10 fw-semibold">NON È STATO UN COLPO DI FULMINE?</h2>
-      <h3 class="tPurple inter text-center"> ESPLORA ALTRI TESORI NEL NOSTRO SHOP!</h3>
-      <p class="p pt-3 px-5 inter">Se per qualche motivo i tuoi piedi non hanno fatto scintille con la prima scelta di calzini personalizzati, niente paura! Nel nostro negozio, c'è un tesoro di opzioni che aspettano di essere scoperte.<br><br>
+    <div class="col-md-8 col-12 order-md-2 order-2 container-fluid px-0 position-relative">
+      <h2 class="h1 inter tPurple text-center pt-10 fw-semibold  grid-border-sm">NON È STATO UN COLPO DI FULMINE?</h2>
+      <h3 class="tPurple inter text-center  grid-border-sm"> ESPLORA ALTRI TESORI NEL NOSTRO SHOP!</h3>
+      <p class="p pt-3  grid-border-sm inter">Se per qualche motivo i tuoi piedi non hanno fatto scintille con la prima scelta di calzini personalizzati, niente paura! Nel nostro negozio, c'è un tesoro di opzioni che aspettano di essere scoperte.<br><br>
         Sbircia tra le altre gemme di stile, dai calzini più eccentrici alle creazioni classiche. C'è qualcosa per tutti i gusti, e chi sa, il tuo paio perfetto potrebbe aspettarti proprio dietro l'angolo!
         <br><br>Non accontentarti, divertiti a esplorare.
       </p>
@@ -225,7 +225,7 @@
       </div>
     </div>
 
-    <div class="col-2 container-fluid position-relative">
+    <div class="col-md-2 col-12 order-md-3 order-1 container-fluid position-relative">
       <img src="immagini/calza/nonfarti.png" alt="" class="position-absolute gnonfarti grow-rotate-on-hover">
     </div>
   </div>
