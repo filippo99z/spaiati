@@ -73,6 +73,15 @@
     right: -140%;
     bottom: -23%;
 }
+.doQuiz {
+    display:none;
+}
+.threeStars {
+    display:none;
+}
+.littleStar-sm {
+    display:none;
+}
 .gstellineBelline {
     width: 20%;
     left: -10%;
@@ -255,7 +264,7 @@ input[type="radio"]:checked {
     .gscrittaVi {
         width: 43%;
         right: 10%;
-        bottom: -168%;
+        bottom: -158%;
     }
     .purple {
         background-color: #EFB5F2;
@@ -267,7 +276,7 @@ input[type="radio"]:checked {
         height: 100%;
     }
     #gsfondo {
-        height: 71vh;
+        height: 84vh;
     }
     .gdivVector {
         display:none;
@@ -308,16 +317,19 @@ input[type="radio"]:checked {
         width: 40%;
         right: 0;
         bottom: -36%;
+        display:block
     }
     .threeStars {
         width: 20%;
         left: 0;
         bottom: -34%;
+        display:block;
     }
     .littleStar-sm {
         width: 8%;
         left: 0;
-        bottom: -170%;
+        bottom: -160%;
+        display:block;
     }
     .gstellineBelline {
         width: 30%;
