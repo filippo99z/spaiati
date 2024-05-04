@@ -145,12 +145,11 @@ body{
 
 /* navbar */
 .logo{
-    height: 7vh;
+    height: 50px;
 }
 .navbar{
     background-color: #ECF447;
     border-bottom:4px solid #F21DB9;
-    height: 10vh;
 }
 .navbar a{
     font-size: 1.3vw;
@@ -160,8 +159,10 @@ body{
 }
 .navbar-nav .nav-link.active{
     color: #F21DB9;
-    border-bottom: 2px solid #F21DB9;
-    padding-bottom: 0;
+    text-underline-offset: 8px;
+    text-decoration: underline;
+    text-decoration-color: #F21DB9;
+
 }
 .custom-toggler .navbar-toggler-icon {
     width: 40px;
@@ -178,12 +179,16 @@ button{
 .offcanvas-header{
     border-bottom:4px solid #F21DB9;
     background-color: #ECF447;
-    height: 10vh;
+
 }
 .navbar a:hover {
     -webkit-animation: jello-horizontal 0.9s both;
     animation: jello-horizontal 0.9s both;
     color: #F21DB9;
+}
+.cart{
+    width: 30px;
+    margin:auto;
 }
 /*fine navbar*/
 
@@ -394,7 +399,7 @@ button{
     }
     /*css navbar*/
     .logo{
-        height: 6vh;
+        height: 40px;
     }
     .sidebar{
         background-color: #ECF447;
@@ -426,6 +431,7 @@ button{
         display: flex;
 
     }
+
     .navbar a:hover {
         -webkit-animation: none;
         animation: none;

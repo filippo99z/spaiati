@@ -187,17 +187,7 @@
 
 @media screen and (max-width: 767px){
 
-    .divVector{
-        display: none;
-    }
-    .divVector-sm{
-        display: block;
-        height: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: relative;
-        top:-1vh
-    }
+
     .quizBox{
         border-top-left-radius: 0px;
         border-bottom-left-radius: 20px;
@@ -241,14 +231,12 @@
         left: 10%;
         top:0%
     }
-    .flower{
-        width: 50%;
-    }
+
 
 }
 @media screen and (max-width: 575px){
     .flower{
-        width: 70%;
+        width: 60%;
     }
     .s1{
         width: 30vw;left: 5%;top:40vw
@@ -276,5 +264,19 @@
         width: 20%;
         left: 10%;
         top:0%
+    }
+    .divVector {
+        display: none;
+    }
+    .divVector-sm {
+        display: block;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        top: -1vh
+    }
+    .background-img{
+        height: 300px;
     }
 }

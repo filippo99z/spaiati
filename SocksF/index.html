@@ -27,18 +27,18 @@
 <nav class="navbar navbar-expand-md sticky-top grid-border grid-border-sm">
     <div class="container-fluid px-0">
         <a class="navbar-brand logo py-0" href="index.html"><img class="logo" src="immagini/logo.svg" alt="logo"></a>
-        <button class="navbar-toggler shadow-none border-0 rounded-circle custom-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler shadow-none border-0 rounded-circle custom-toggler pe-0 py-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header grid-border grid-border-sm">
+            <div class="offcanvas-header grid-border grid-border-sm py-2">
                 <h5 class="offcanvas-title logo " id="offcanvasNavbarLabel"><img class="logo" src="immagini/logo.svg" alt="logo"></h5>
                 <button type="button" class="shadow-none border-0 p-0" data-bs-dismiss="offcanvas" aria-label="Close" >
                     <img src="immagini/close.png" class="close-btn">
                 </button>
             </div>
             <div class="offcanvas-body align-text-center p-0 flex">
-                <ul class="navbar-nav justify-content-md-around  justify-content-xl-evenly flex-grow-1 mx-lg-5 mx-md-1 px-lg-3 px-xl-5 px-md-0">
+                <ul class="navbar-nav justify-content-md-around  align-items-md-center justify-content-xl-evenly flex-grow-1 mx-lg-5 mx-md-1 px-lg-3 px-xl-5 px-md-0">
                     <li class="nav-item ms-md-5 me-md-0 grid-border-sm">
                         <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
                     </li>
@@ -65,8 +65,8 @@
                     <hr class="my-1">
                 </ul>
 
-                <div id="carrello">
-                    <img src="immagini/shopping-cart%20(1).png" style="width: 5vh;margin:auto">
+                <div id="carrello" class="d-flex align-items-center">
+                    <img src="immagini/shopping-cart%20(1).png" class="cart">
                 </div>
             </div>
         </div>
@@ -75,13 +75,13 @@
 <!--- contenuto -->
 <div class="container-fluid">
     <div class="row purple">
-        <div class="col-md-6 grid-border-left grid-border-sm py-4 py-md-0">
-            <h1 class="comba tYellow pt-md-5 mt-md-5"> Sockfusion Innovations</h1>
+        <div class="col-sm-6 grid-border-left grid-border-sm py-4 py-md-0">
+            <h1 class="comba tYellow  mt-md-5"> Sockfusion Innovations</h1>
             <p class="inter tWhite py-md-5 py-3 my-0 my-md-2 me-md-5" >
                 Benvenuti nel regno incantato delle calze che rompono gli schemi! Da SockFusion Innovations trasformiamo l'ordinario in straordinario, portando un tocco di allegria ai tuoi passi.<br>
                 Esplora il divertente universo delle nostre calze uniche e scopri tutte le curiosità sulla nostra fantasiosa azienda
             </p>
-            <div class="mb-md-5 pb-md-5" >
+            <div class="mb-md-5" >
                 <div class="bottone px-md-4 py-md-2 px-2 py-1 btn-yellow tBlack" style="position: relative">
                     SCOPRI CHI SIAMO
                     <img src="immagini/index/arrow1.png" style="position: absolute; left: 105%;width: 55%;top:80%" alt="">
@@ -89,7 +89,7 @@
             </div>
 
         </div>
-        <div class="col-md-6 px-md-0 background-sm px-0" style="background-image: url('immagini/index/background.png');background-size: cover;background-repeat: no-repeat; background-position: center;">
+        <div class="col-sm-6 px-md-0 background-img px-0" style="background-image: url('immagini/index/background.png');background-size: cover;background-repeat: no-repeat; background-position: center;">
 
             <div style="background-image: url('immagini/index/Vector.png'); " class="divVector">
             </div>
@@ -124,7 +124,7 @@
     <div class="row d-flex align-items-center mt-3 position-relative">
         <img src="immagini/index/star1.png" alt="" class="position-absolute indexStar1">
         <img src="immagini/index/s1.png" class="s1" style="position: absolute; " alt="">
-        <div class="col-md-7 grid-border-left grid-border-sm pe-md-0  order-md-1 order-2"  style="position: relative">
+        <div class="col-sm-7 grid-border-left grid-border-sm pe-md-0  order-sm-1 order-2"  style="position: relative">
 
             <h2 class="inter tPurple bolder position-relative">CALZINI MAI VISTI
 
@@ -139,7 +139,7 @@
             </div>
         </div>
 
-        <div class="col-md-5 px-0 d-flex justify-content-end overflow-hidden order-md-2 order-1" data-aos="fade-left">
+        <div class="col-sm-5 px-0 d-flex justify-content-end overflow-hidden order-sm-2 order-1" data-aos="fade-left">
             <img class="me-md-0 cut-img-right flower"src="immagini/index/img1.png" alt="">
         </div>
     </div>
@@ -147,11 +147,11 @@
     <div class="row d-flex align-items-center my-md-0 my-3 position-relative">
         <img src="immagini/index/star2.png" alt="" class="position-absolute indexStar2">
         <img src="immagini/index/s2.png" class="s2" style="position: absolute; " alt="">
-        <div class="col-md-5 px-0 d-flex justify-content-start overflow-hidden" data-aos="fade-right">
+        <div class="col-sm-5 px-0 d-flex justify-content-start overflow-hidden" data-aos="fade-right">
             <img class="me-md-0 cut-img-left flower"src="immagini/index/img2.png" alt="">
         </div>
 
-        <div class="col-md-7 pe-md-5 ps-md-0 px-0" style="position: relative">
+        <div class="col-sm-7 pe-md-5 ps-md-0 px-0" style="position: relative">
             <h2 class="inter tPurple bolder position-relative grid-border-sm">CHE CALZA SEI?
 
             </h2>
@@ -174,7 +174,7 @@
     <div class="row d-flex align-items-center mb-3 position-relative">
         <img src="immagini/index/star3.png" alt="" class="position-absolute indexStar3" >
         <img src="immagini/index/s3.png" class="s3" style="position: absolute; " alt="">
-        <div class="col-md-7  pe-md-0 order-md-1 order-2 grid-border-left grid-border-sm" style="position: relative">
+        <div class="col-sm-7  pe-md-0 order-sm-1 order-2 grid-border-left grid-border-sm" style="position: relative">
             <h2 class="inter tPurple bolder position-relative">#ONYOURFEET
 
             </h2>
@@ -190,14 +190,14 @@
                 SCOPRI
             </div>
         </div>
-        <div class="col-md-5 px-0 d-flex justify-content-end overflow-hidden order-md-2 order-1" data-aos="fade-left" >
+        <div class="col-sm-5 px-0 d-flex justify-content-end overflow-hidden order-sm-2 order-1" data-aos="fade-left" >
             <img class="me-md-0 cut-img-right flower"src="immagini/index/img3.png" alt="">
         </div>
     </div>
 </div>
 <div class="container-fluid fucsia">
     <div class="row" style="background-image: url('immagini/index/background2.png'); background-position: center; background-repeat: no-repeat; background-size: cover">
-        <div class="col-md-7 grid-border-left  grid-border-sm order-md-1 order-2">
+        <div class="col-sm-7 grid-border-left  grid-border-sm order-sm-1 order-2">
             <div class="" >
                 <div class="container p-0">
                     <div class="grid-container purple p-md-3 ms-md-0 my-md-3 me-md-3  p-2 my-2 border-rounded">
@@ -298,7 +298,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-5  pe-md-0 order-md-2 order-1 px-0">
+        <div class="col-sm-5  pe-md-0 order-sm-2 order-1 px-0">
             <div class="purple my-md-3 py-md-4 py-4 mb-md-0 mb-2  ps-md-4 quizBox px-0">
                 <h2 class="inter tWhite grid-border-right grid-border-sm"> Gratta e <span style="font-size: 6px">(non)</span> vinci</h2>
                 <p class="inter tWhite grid-border-right grid-border-sm">Preparati per l'emozione e gioca ora per dare un tocco giocoso al tuo shopping di calze stravaganti!
@@ -314,13 +314,13 @@
     <div class="row purple position-relative">
         <img src="immagini/index/s4.png" class="s4" style="position: absolute; " alt="">
         <img src="immagini/index/t2.png" class="t2" style="position: absolute; " alt="">
-        <div class="col-md-6 grid-border-left grid-border-sm py-4 py-md-0">
-            <h2 class="inter tYellow pt-md-5 mt-md-5"> STA ARRIVANDO L'ESTATE!</h2>
+        <div class="col-sm-6 grid-border-left grid-border-sm py-4 py-md-0">
+            <h2 class="inter tYellow  mt-md-5"> STA ARRIVANDO L'ESTATE!</h2>
             <p class="inter tWhite py-md-5 py-3 my-0 my-md-2 me-md-5" >
                 Immergiti in un mare di emozioni e avventure! <br>
                 Le calze Shark Attack sono il tuo passaporto per un'esperienza subacquea senza pari! Grazie alla loro tecnologia innovativa ti sentirai come uno squalo nel suo ambiente naturale  sfrecciando tra le onde con una velocità fino a 80 km/h.
             </p>
-            <div class="mb-md-5 pb-md-5" >
+            <div class="pb-md-5" >
                 <div class="bottone px-md-4 py-md-2 px-2 py-1 btn-yellow tBlack" style="position: relative" onclick="location.href = 'prodotto.html'">
                     COMPRA
 
@@ -328,7 +328,7 @@
             </div>
 
         </div>
-        <div class="col-md-6 px-md-0 background-sm px-0 " style="background-image: url('immagini/index/fin_Socks.png');background-size: cover;background-repeat: no-repeat; background-position: center;">
+        <div class="col-sm-6 px-md-0 background-img px-0 " style="background-image: url('immagini/index/fin_Socks.png');background-size: cover;background-repeat: no-repeat; background-position: center;">
 
             <div style="background-image: url('immagini/index/Vector.png'); " class="divVector">
             </div>
