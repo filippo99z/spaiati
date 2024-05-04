@@ -79,7 +79,7 @@
     width: 15%;left: 75%;bottom:0%;transform: rotate(12deg);
 }
 .s3{
-    width: 15%;left: 45%;bottom:0%; transform: rotate(-12deg);
+    width: 12%;left: 50%;bottom:-3%; transform: rotate(-12deg);
 }
 .s4{
     width: 19%;right: 38%;top:0; z-index:999;
@@ -186,7 +186,9 @@
 /* ------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 767px){
-
+    .flower{
+        width: 100%;
+    }
 
     .quizBox{
         border-top-left-radius: 0px;
@@ -204,33 +206,7 @@
         width: 100%;
         border-radius: 16px;
     }
-    .s1{
-        width: 25vw;left: 15%;top:25vw
-    }
-    .s2{
-        width: 25vw;left: 50%;top:20vw;padding: 0px;
-    }
-    .s3{
-        width: 25vw;left: 15%;top:20vw;
-    }
-    .s4{
-        width: 35vw;right: 0%;top:30%;z-index: 999
-    }
-    .indexStar1{
-        width: 20%;
-        left: 5%;
-        top:2%;
-    }
-    .indexStar2{
-        width: 15vw;
-        left: 70%;
-        top:0%
-    }
-    .indexStar3{
-        width: 20%;
-        left: 10%;
-        top:0%
-    }
+
 
 
 }
