@@ -2,11 +2,14 @@
     --bs-bg-warning: #FE6C0C;
     --component-active-color: #FE6C0C;
 }
+.padding-g {
+    padding-right: 80px;
+}
 .firstDiv {
     height: 66vh;
 }
 .secondDiv {
-    height: 110vh;
+    height: 100vh;
 }
 .gbackground{
     background-image: url('immagini/calza/gBackground.png');
@@ -269,14 +272,17 @@ input[type="radio"]:checked {
     .purple {
         background-color: #EFB5F2;
     }
+    .gsfondoForm {
+        display: none;
+    }
     .gsfondoForm-sm {
         background-image: url('immagini/calza/sfondoVmobile.png');
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         height: 100%;
     }
     #gsfondo {
-        height: 84vh;
+        height: 76vh;
     }
     .gdivVector {
         display:none;
@@ -290,8 +296,12 @@ input[type="radio"]:checked {
         background-position: bottom;
     }
     /*quiz calza*/
+    .grid-border-sm-g {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
     .gformContainer{
-        width: 100%;
+        width: 85%;
         margin: 2vh 1vh;
     }
     #question {
@@ -333,7 +343,7 @@ input[type="radio"]:checked {
     }
     .gstellineBelline {
         width: 30%;
-        left: 60%;
+        left: 65%;
         top: -20%;
     }
     .grid-border-left {
