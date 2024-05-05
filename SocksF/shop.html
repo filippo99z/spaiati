@@ -21,46 +21,47 @@
 <nav class="navbar navbar-expand-md sticky-top grid-border grid-border-sm">
     <div class="container-fluid px-0">
         <a class="navbar-brand logo py-0" href="index.html"><img class="logo" src="immagini/logo.svg" alt="logo"></a>
-        <button class="navbar-toggler shadow-none border-0 rounded-circle custom-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler shadow-none border-0 rounded-circle custom-toggler pe-0 py-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header py-2">
-                <h5 class="offcanvas-title logo " id="offcanvasNavbarLabel"><img class="logo" src="immagini/logo.png" alt="logo"></h5>
-                <button type="button" class="shadow-none border-0 py-1 px-2 " data-bs-dismiss="offcanvas" aria-label="Close" >
+            <div class="offcanvas-header grid-border grid-border-sm py-2">
+                <h5 class="offcanvas-title logo " id="offcanvasNavbarLabel"><img class="logo" src="immagini/logo.svg" alt="logo"></h5>
+                <button type="button" class="shadow-none border-0 p-0" data-bs-dismiss="offcanvas" aria-label="Close" >
                     <img src="immagini/close.png" class="close-btn">
                 </button>
             </div>
             <div class="offcanvas-body align-text-center p-0 flex">
-                <ul class="navbar-nav justify-content-center flex-grow-1">
-                    <li class="nav-item mx-md-2 mx-3">
-                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                <ul class="navbar-nav justify-content-md-around  align-items-md-center justify-content-xl-evenly flex-grow-1 mx-lg-5 mx-md-1 px-lg-3 px-xl-5 px-md-0">
+                    <li class="nav-item ms-md-5 me-md-0 grid-border-sm">
+                        <a class="nav-link" aria-current="page" href="index.html">HOME</a>
                     </li>
                     <hr class="my-1">
-                    <li class="nav-item mx-md-2 mx-3">
+                    <li class="nav-item mx-md-0 grid-border-sm">
                         <a class="nav-link " href="trama.html">TRAMA</a>
                     </li>
                     <hr class="my-1">
-                    <li class="nav-item mx-md-2 mx-3">
-                        <a class="nav-link " href="shop.html">PRODOTTI</a>
+                    <li class="nav-item mx-md-0  grid-border-sm">
+                        <a class="nav-link active" href="shop.html">SHOP</a>
                     </li>
                     <hr class="my-1">
-                    <li class="nav-item mx-md-2 mx-3">
+                    <li class="nav-item mx-md-0 grid-border-sm">
                         <a class="nav-link" href="calza.html">CHE CALZA SEI?</a>
                     </li>
                     <hr class="my-1">
-                    <li class="nav-item mx-md-2 mx-3">
+                    <li class="nav-item mx-md-0 grid-border-sm">
                         <a class="nav-link"  href="gallery.html">#ONYOURFEET</a>
                     </li>
                     <hr class="my-1">
-                    <li class="nav-item mx-md-2 mx-3">
+                    <li class="nav-item me-md-5 ms-md-0 grid-border-sm">
                         <a class="nav-link" href="contatti.html">CONTATTI</a>
                     </li>
                     <hr class="my-1">
                 </ul>
-                <ul class="navbar-nav justify-content-end mx-md-0 mx-3 py-md-0 py-2" id="carrello">
-                    <li><svg fill="#F21DB9" height="35px" width="35px" version="1.1" id="XMLID_269_" xmlns="http://www.w3.org/2000/svg" viewBox="-2.4 -2.4 28.80 28.80" xml:space="preserve" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.24000000000000005"></g><g id="SVGRepo_iconCarrier"> <g id="shop-cart"> <g> <circle cx="9" cy="21" r="2"></circle> </g> <g> <circle cx="19" cy="21" r="2"></circle> </g> <g> <path d="M21,18H7.2l-4-16H0V0h4.8l0.8,3H24l-3.2,11H8.3l0.5,2H21V18z M7.8,12h11.5l2-7H6L7.8,12z"></path> </g> </g> </g></svg></li>
-                </ul>
+
+                <div id="carrello" class="d-flex align-items-center py-2 py-md-0">
+                    <img src="immagini/shopping-cart%20(1).png" class="cart">
+                </div>
             </div>
         </div>
     </div>
@@ -68,14 +69,14 @@
 <!-- contenuto -->
 <div class=" container-fluid ">
     <div class="row firstDivP">
-        <div class="col-md-5 grid-border-left d-flex flex-column align-self-center position-relative grid-border-sm">
+        <div class="col-sm-5 d-flex flex-column align-self-center position-relative grid-border grid-border-sm py-sm-4 my-md-2 my-lg-5 pe-md-0 pe-sm-0">
             <h1 class="inter bolder tBlue position-relative" >
                 I NOSTRI <br>PRODOTTI
 
                 <img src="immagini/shop/s1.png" alt="" class="position-absolute star1">
 
             </h1>
-            <p class="mb-md-0 pt-md-3 tBlack" >
+            <p class="mb-sm-0 pt-sm-3 tBlack" >
                 <span id="text-hide"> Benvenuto nel cuore del nostro universo di stile, dove l'originalità si fonde con la comodità. Nel nostro shop, ti attende una collezione eclettica di calze stravaganti, progettate per esprimere la tua personalità in ogni passo.
                 <br><br>
                 Inizia il tuo viaggio di shopping e scopri la varietà di calze uniche che abbiamo da offrire! </span>
@@ -83,7 +84,7 @@
             </p>
 
         </div>
-        <div class="col-md-7 px-md-0 px-0" id="background1" data-aos="fade-left">
+        <div class="col-sm-7 px-sm-0 px-0" id="background1" data-aos="fade-left">
             <div class="pbackground">
 
             </div>
@@ -113,7 +114,7 @@
         <img src="immagini/shop/stelleshop.png" class="starshop" >
         <img src="immagini/shop/scritta1.png" alt="" class="textshop1 position-absolute" >
     </div>
-    <div class="row px-md-5 px-4" >
+    <div class="row grid-border grid-border-sm" >
         <div class="col-md-3 col-6 my-3 my-md-0 ps-0  px-md-2">
             <div class="bottone btn-purple py-2 superpower" style="width: 100%; text-align: center" val="superpower" active="none" onclick="filterButtons(this)">
                 SUPERPOTERI
@@ -136,10 +137,10 @@
         </div>
     </div>
 
-    <div class="row px-md-5 px-4 d-flex justify-content-between pt-md-5 products" id="superpower">
+    <div class="row grid-border grid-border-sm d-flex justify-content-between pt-sm-5 products" id="superpower">
         <h3 class="inter tBlue">SUPERPOTERI</h3>
         <hr>
-        <div class="col-md-4 px-md-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4 mt-3 mt-md-0">
+        <div class="col-sm-4 px-sm-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4 mt-3 mt-sm-0">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('tech1').style.display = 'none'; document.getElementById('shape1').style.display = 'inline';" onmouseout="document.getElementById('shape1').style.display = 'none'; document.getElementById('tech1').style.display = 'inline';">
                     <img src="immagini/shop/tech1.png" id="tech1" class="imgshop">
@@ -151,7 +152,7 @@
             </div>
 
         </div>
-        <div class="col-md-4 px-md-2 px-lg-4 px-xl-5 col-6 ps-4 pe-0 mt-3 mt-md-0">
+        <div class="col-sm-4 px-sm-2 px-lg-4 px-xl-5 col-6 ps-4 pe-0 mt-3 mt-sm-0">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('volare').style.display = 'none'; document.getElementById('shape2').style.display = 'inline';" onmouseout="document.getElementById('shape2').style.display = 'none'; document.getElementById('volare').style.display = 'inline';">
                     <img src="immagini/shop/volare.png" id="volare" class="imgshop">
@@ -164,7 +165,7 @@
 
 
         </div>
-        <div class="col-md-4 px-md-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4 ">
+        <div class="col-sm-4 px-sm-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4 ">
             <div class="grid-item mt-md-5" style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('razzi').style.display = 'none'; document.getElementById('shape3').style.display = 'inline';" onmouseout="document.getElementById('shape3').style.display = 'none'; document.getElementById('razzi').style.display = 'inline';">
                     <img src="immagini/shop/razzi.png" id="razzi" class="imgshop">
@@ -178,10 +179,10 @@
         </div>
     </div>
 
-    <div class="row px-md-5 px-4 d-flex justify-content-between pt-md-5  products" id="tech">
+    <div class="row grid-border grid-border-sm d-flex justify-content-between pt-sm-5  products" id="tech">
         <h3 class="inter tBlue">TECH</h3>
         <hr>
-        <div class="col-md-4 px-md-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4 mt-3 mt-md-0">
+        <div class="col-sm-4 px-sm-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4 mt-3 mt-sm-0">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('astuccio').style.display = 'none'; document.getElementById('shape4').style.display = 'inline';" onmouseout="document.getElementById('shape4').style.display = 'none'; document.getElementById('astuccio').style.display = 'inline';">
                     <img src="immagini/shop/astuccio.png" id="astuccio" class="imgshop">
@@ -193,7 +194,7 @@
             </div>
 
         </div>
-        <div class="col-md-4 px-md-2 px-lg-4 px-xl-5 col-6 ps-4 pe-0 mt-3 mt-md-0">
+        <div class="col-sm-4 px-sm-2 px-lg-4 px-xl-5 col-6 ps-4 pe-0 mt-3 mt-sm-0">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('tempo').style.display = 'none'; document.getElementById('shape5').style.display = 'inline';" onmouseout="document.getElementById('shape5').style.display = 'none'; document.getElementById('tempo').style.display = 'inline';">
                     <img src="immagini/shop/tempo.png" id="tempo" class="imgshop">
@@ -205,7 +206,7 @@
             </div>
 
         </div>
-        <div class="col-md-4 px-md-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4">
+        <div class="col-sm-4 px-sm-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('torcia').style.display = 'none'; document.getElementById('shape6').style.display = 'inline';" onmouseout="document.getElementById('shape6').style.display = 'none'; document.getElementById('torcia').style.display = 'inline';">
                     <img src="immagini/shop/torcia.png" id="torcia" class="imgshop">
@@ -218,10 +219,10 @@
 
         </div>
     </div>
-    <div class="row px-md-5 px-4 d-flex justify-content-between pt-md-5  products" id="comfort">
+    <div class="row grid-border grid-border-sm d-flex justify-content-between pt-sm-5  products" id="comfort">
         <h3 class="inter tBlue">COMFORT</h3>
         <hr>
-        <div class="col-md-4 px-md-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4 mt-3 mt-md-0">
+        <div class="col-sm-4 px-sm-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4 mt-3 mt-sm-0">
             <div class="grid-item mt-md-5" style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('music').style.display = 'none'; document.getElementById('shape7').style.display = 'inline';" onmouseout="document.getElementById('shape7').style.display = 'none'; document.getElementById('music').style.display = 'inline';">
                     <img src="immagini/shop/music.png" id="music" class="imgshop">
@@ -233,7 +234,7 @@
             </div>
 
         </div>
-        <div class="col-md-4 px-md-2 px-lg-4 px-xl-5 col-6 ps-4 pe-0 mt-3 mt-md-0">
+        <div class="col-sm-4 px-sm-2 px-lg-4 px-xl-5 col-6 ps-4 pe-0 mt-3 mt-sm-0">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('temperatura').style.display = 'none'; document.getElementById('shape8').style.display = 'inline';" onmouseout="document.getElementById('shape8').style.display = 'none'; document.getElementById('temperatura').style.display = 'inline';">
                     <img src="immagini/shop/temperatura.png" id="temperatura" class="imgshop">
@@ -245,7 +246,7 @@
             </div>
 
         </div>
-        <div class="col-md-4 px-md-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4">
+        <div class="col-sm-4 px-sm-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('molla').style.display = 'none'; document.getElementById('shape9').style.display = 'inline';" onmouseout="document.getElementById('shape9').style.display = 'none'; document.getElementById('molla').style.display = 'inline';">
                     <img src="immagini/shop/molla.png" id="molla" class="imgshop">
@@ -258,10 +259,10 @@
 
         </div>
     </div>
-    <div class="row px-md-5 px-4 d-flex justify-content-between pt-md-5  products" id="mystery">
+    <div class="row grid-border grid-border-sm d-flex justify-content-between pt-sm-5  products" id="mystery">
         <h3 class="inter tBlue">MYSTERY</h3>
         <hr>
-        <div class="col-md-4 px-md-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4 mt-3 mt-md-0">
+        <div class="col-sm-4 px-sm-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4 mt-3 mt-sm-0">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('mysterys').style.display = 'none'; document.getElementById('shape11').style.display = 'inline';" onmouseout="document.getElementById('shape11').style.display = 'none'; document.getElementById('mysterys').style.display = 'inline';">
                     <img src="immagini/shop/mysterys.png" id="mysterys" class="imgshop">
@@ -273,7 +274,7 @@
             </div>
 
         </div>
-        <div class="col-md-4 px-md-2 px-lg-4 px-xl-5 col-6 ps-4 pe-0 mt-3 mt-md-0">
+        <div class="col-sm-4 px-sm-2 px-lg-4 px-xl-5 col-6 ps-4 pe-0 mt-3 mt-sm-0">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('mysterym').style.display = 'none'; document.getElementById('shape12').style.display = 'inline';" onmouseout="document.getElementById('shape12').style.display = 'none'; document.getElementById('mysterym').style.display = 'inline';">
                     <img src="immagini/shop/mysterym.png" id="mysterym" class="imgshop">
@@ -285,7 +286,7 @@
             </div>
 
         </div>
-        <div class="col-md-4 px-md-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4">
+        <div class="col-sm-4 px-sm-2 px-lg-4 px-xl-5 col-6 ps-0 pe-4">
             <div class="grid-item mt-md-5 " style="position: relative" >
                 <a href="#" onmouseover="document.getElementById('mysteryl').style.display = 'none'; document.getElementById('shape13').style.display = 'inline';" onmouseout="document.getElementById('shape13').style.display = 'none'; document.getElementById('mysteryl').style.display = 'inline';">
                     <img src="immagini/shop/mysteryl.png" id="mysteryl" class="imgshop">
@@ -404,8 +405,8 @@
         </div>
     </div>
     -->
-    <div class="row" style="position: relative">
-        <div class="col-md-6 px-md-0 overflow-hidden-x text-center px-0">
+    <div class="row d-flex align-items-center" style="position: relative">
+        <div class="col-sm-6 px-sm-0 overflow-hidden-x text-center px-0">
             <img src="immagini/shop/s3.png" class="star3">
 
             <img class="pbackground2" src="immagini/shop/pBackground2.png">
@@ -413,12 +414,12 @@
 
         </div>
 
-        <div class="col-md-6 px-md-5 d-flex align-items-center px-4" id="fucsia-sm">
-            <div class="pe-md-5 ">
-                <img src="immagini/shop/scrittaread.png" class="textshop2">
+        <div class="col-sm-6 d-flex align-items-center ps-sm-2 grid-border grid-border-sm" id="fucsia-sm">
+            <div class="w-100">
+
                 <h1 class="inter bolder" style="padding-top: 10vh; position: relative">
                     CHE CALZA <br>SEI?
-                    <img src="immagini/shop/stickershop.png" alt="" class="stickershop">
+
 
                 </h1>
                 <p class="mb-md-0 py-md-3 py-3">
@@ -428,10 +429,10 @@
                     <br><br>
                     Cosa aspetti? Clicca sul bottone!
                 </p>
-                <div class="bottone mt-md-3 btn-yellow mb-4" style="margin: auto;">
+                <div class="bottone mt-md-3 btn-yellow mb-4 px-md-4 py-md-2 px-2 py-1" style="margin: auto;">
                     FAI IL TEST
                 </div>
-                <img src="immagini/shop/s2.png" class="star2" alt="">
+
 
             </div>
         </div>
@@ -448,7 +449,7 @@
 
 
     <div class="row mt-3">
-        <div class="col-md-3 col-6">
+        <div class="col-sm-3 col-6">
             <p class="fw-bolder">
                 Contattaci
             </p>
@@ -459,22 +460,22 @@
             </p>
         </div>
 
-        <div class="col-md-6 col-6 d-flex  justify-content-center ">
+        <div class="col-sm-6 col-6 d-flex  justify-content-center ">
             <div class="m-0 p-0">
                 <div class="row">
-                    <div class="col-md-12 col-6">
+                    <div class="col-sm-12 col-6">
                         <p  id="seguici" class="schoolbell" style="display: inline-block;" >Seguici:</p>
                         <img id="freccia" src="immagini/freccia.png" width="60px">
                     </div>
-                    <div class="col-md-12 col-6">
+                    <div class="col-sm-12 col-6">
                         <div class="row">
-                            <div class="col-md-4 col-12">
+                            <div class="col-sm-4 col-12 d-flex justify-content-end justify-content-sm-start">
                                 <img class="m-2 icona grow" src="immagini/facebook.png" >
                             </div>
-                            <div class="col-md-4 col-12">
+                            <div class="col-sm-4 col-12 d-flex justify-content-end justify-content-sm-start">
                                 <img class="m-2 icona grow" src="immagini/instagram.png">
                             </div>
-                            <div class="col-md-4 col-12">
+                            <div class="col-sm-4 col-12 d-flex justify-content-end justify-content-sm-start">
                                 <img class="m-2 icona grow" src="immagini/telegram.png">
                             </div>
                         </div>
@@ -499,7 +500,7 @@
             </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-sm-3">
             <h3 class="schoolbell text-md-end text-center">Tanto chi lo guarda il footer nel 2023?</h3>
         </div>
     </div>

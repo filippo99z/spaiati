@@ -3,17 +3,17 @@
 }
 
 .firstDivP{
-    height: 66vh;
+   /* height: 66vh;*/
 }
 
 .pbackground{
     background-image: url('immagini/shop/pBackground.png');
     height: 100%;
-    background-size: cover;
+    background-size: 90%;
     position: relative;
-    background-position-x: 12vh;
+    background-position-x: 100px;
     background-repeat: no-repeat;
-    background-position-y: 50%;
+    background-position-y: center;
 }
 .pbackground2{
     width: 100%;
@@ -26,7 +26,7 @@
 }
 .pVector{
     background-image: url('immagini/shop/pVector.png');
-    background-size: 60%;
+    background-size: 50%;
     background-repeat: no-repeat;
 }
 .star1 {
@@ -97,27 +97,18 @@
     .pbackground{
         background-image: url('immagini/shop/pBackground.png');
         height: 100%;
-        background-size:110%;
+        background-size:100%;
         position: relative;
-        background-position-x: center;
+        background-position-x: 30px;
         background-repeat: no-repeat;
-        background-position-y: 0;
+        background-position-y: center;
     }
 
     .pbackground2{
-        display: none;
-        width: 110%;
-        position: relative;
-        margin: auto;
-        align-content: center;
-    }
-    .pbackground2-sm{
-        display: block;
-        width: 110%;
-        position: relative;
-        left: -5%;
+       margin: auto;
 
     }
+
     .star1{
         width: 10%; right: 35%; top: 20%;
     }
@@ -140,14 +131,36 @@
     .starshop{
         width: 10%;position: absolute; left: 90%; top: 10%;
     }
-    #background1{
-        height: 45vh;
+
+
+    .firstDivP{
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+    .pbackground2{
+        display: none;
+
     }
     .pVector{
         background-image:none;
     }
-    .firstDivP{
-        height: auto;
+    #background1{
+        height: 300px;
+    }
+    .pbackground{
+
+        background-position-x:center;
+        background-size:100%;
+
+        background-position-y: 0;
+    }
+    .pbackground2-sm{
+        display: block;
+        width: 100%;
+        position: relative;
     }
     #fucsia-sm{
         background-color: #F21DB9;
