@@ -29,13 +29,17 @@
 .XSsticker {
     width:30%;
     left: 95%;
-    top:5%;
+    top:8%;
 }
 
 .XSsticker2 {
     width:15%;
-    right: 15%;
-    top: -50%;
+    right: 25%;
+    top: -25%;
+}
+
+.wave-hor {
+    padding: 0;
 }
 
 .c-background{
@@ -44,16 +48,15 @@
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-
     background-position: left center;
     z-index: 2;
     left: 0;
 }
 
 .read-here {
-    width: 30%;
-    right: 50%;
-    top: 5%;
+    width: 150px;
+    right: 10%;
+    top: 0%;
 }
 
 .click-here {
@@ -64,19 +67,20 @@
 
 .star-1 {
     width: 3.8%;
-    right: 15%;
+    right: -5%;
     bottom: 43%;
 }
 
 .starr-2 {
     width: 3.8%;
     bottom: 7%;
+    left: -5%;
 }
 
 .send-pic {
-    width: 30%;
+    width: 150px;
     right: 15%;
-    bottom: 10%;
+    bottom: -3%;
 }
 
 .total-background{
@@ -85,120 +89,129 @@
     background-size: cover;
     background-repeat: no-repeat;
     position:relative;
+    height: auto;
 }
 
-.c-height {
-    height: 140vh;
+.c-overflow {
+    overflow-x: hidden;
 }
+
+/*.c-height {
+    height: 140vh;
+}*/
 
 .Lpink-sticker {
-    top:0;
+
     aspect-ratio: 1;
     background-image: url('immagini/trama/sticker-rosa.png');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 700px;
+
 }
 
 .Lblue-sticker {
-    top:80%;
     aspect-ratio:1;
-    right:80px;
-    height:100%;
     background-image: url('immagini/trama/sticker-blu.png');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 600px;
+    background-position: center center;
+}
+
+.Spink-sticker {
+    left:-20px;
+    aspect-ratio: 1;
+    background-image: url('immagini/trama/sticker-rosa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 44px;
+    padding-right: 50px;
+}
+
+.Sblue-sticker {
+    left:24px;
+    aspect-ratio: 1;
+    background-image: url('immagini/trama/sticker-blu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    background-position: center center;
+    padding-right: 48px;
+}
+
+.c-btn {
+    margin: auto;
+}
+
+.c-btn a {
+    text-decoration: none;
+    color:#262626;
 }
 .TS-padding {
     padding: 0 10%;
 }
 
-.WPsticker {
+/*.WPsticker {
     padding: 20% 20% 25% 20%;
 }
 
 .WBsticker {
     padding: 25% 25% 25% 25%;
-}
+}*/
 #xs{
     display: none;
 }
 #md-sm{
     display: block;
 }
+
 @media screen and (max-width: 767px) {
-
-
-
     .pt-10 {
         padding-top: 5vh;
     }
-
     .pb-20 {
         padding-bottom: 8vh;
     }
-
-    .pt-20 {
+    /*.pt-20 {
         padding-top: 10vh;
-    }
-
+    }*/
     .stars-3 {
         width: 40px;
         left: 80%;
         top: -30%;
     }
-
     .stars-2 {
         width: 40px;
         left: 60%;
         bottom: 5%;
     }
-
-    .XSsticker {
-        width: 130px;
-        left: 7%;
-        top: 80%;
-    }
-
-    .mobile-reverse {
+    /*.mobile-reverse {
         flex-direction: column-reverse;
-    }
-
+    }*/
     .XSsticker2 {
         display: none;
     }
-
-
-
     .star-1 {
         width: 15px;
-        right: 5%;
+        right: -5%;
         bottom: 40%;
     }
-
     .starr-2 {
         width: 15px;
-        bottom: 5%;
-        margin-left: 6vh;
+        bottom: 8%;
+        left: -5%;
     }
-
-    .mobile-margin {
+    /*.mobile-margin {
         margin-left: 4vh;
-    }
-
+    }*/
     .send-pic {
-        width: 120px;
-        right: 15%;
-        bottom: 3%;
+        display: none;
     }
-
     .read-here {
-        width: 120px;
-        right: 50%;
-        top: 3%;
+        width: 110px;
+        right: 16%;
+        top: -3%;
     }
-    .Lpink-sticker {
+    /*.Lpink-sticker {
         top:0;
         aspect-ratio: 1;
         background-image: url('immagini/trama/sticker-rosa.png');
@@ -206,7 +219,6 @@
         background-repeat: no-repeat;
         width: 400px;
     }
-
     .Lblue-sticker {
         top:80%;
         aspect-ratio:1;
@@ -217,22 +229,17 @@
         background-repeat: no-repeat;
         margin-top: 6vh;
     }
-
     .WPsticker {
         padding: 19% 18% 25% 20%;
     }
-
     .WBsticker {
         padding: 18% 20% 25% 25%;
-    }
-
-
+    }*/
     .click-here {
         width: 15%;
         right: 19%;
         bottom: 30%;
     }
-
 }
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
@@ -251,31 +258,31 @@
 
     .star-1 {
         width: 18px;
-        right: 5%;
+        right: -5%;
         bottom: 40%;
     }
 
     .starr-2 {
         width: 18px;
         bottom: 5%;
-        margin-left: 6vh;
+        left: -7%;
     }
 
     .send-pic {
         width: 130px;
-        right: 11%;
-        bottom: 3%;
+        right: -8%;
+        bottom: -2%;
     }
 
     .read-here {
         width: 130px;
-        right: 50%;
-        top: 10%;
+        right: 15%;
+        top: 2%;
     }
     .pb-20 {
         padding-bottom: 12vh;
     }
-    .Lpink-sticker {
+    /*.Lpink-sticker {
         top:0;
         aspect-ratio: 1;
         background-image: url('immagini/trama/sticker-rosa.png');
@@ -292,20 +299,20 @@
         background-image: url('immagini/trama/sticker-blu.png');
         background-size: contain;
         background-repeat: no-repeat;
-    }
+    }*/
 
     .click-here {
         width: 120px;
         right: 50%;
         top: 30%;
     }
-    .WPsticker {
+    /*.WPsticker {
         padding: 20% 20% 20% 20%;
     }
 
     .WBsticker {
         padding: 20% 25% 25% 25%;
-    }
+    }*/
 
 }
 
@@ -329,6 +336,11 @@
         height: 400px;
         background-position: center;
         position: relative;
+    }
+    .XSsticker {
+        width: 130px;
+        left: 7%;
+        top: 80%;
     }
 
 }
