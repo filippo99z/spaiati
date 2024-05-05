@@ -5,6 +5,9 @@
 .padding-g {
     padding-right: 80px;
 }
+.prova{
+    height: 66vh;
+}
 .firstDiv {
     height: 66vh;
 }
@@ -354,3 +357,9 @@ input[type="radio"]:checked {
         padding-right: 0;
     }
 }
+@media screen and (max-width: 575px){
+    .prova{
+        height: auto;
+    }
+}
+
