@@ -44,7 +44,7 @@
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    position: absolute;
+
     background-position: left center;
     z-index: 2;
     left: 0;
@@ -129,11 +129,7 @@
 }
 @media screen and (max-width: 767px) {
 
-    .c-background{
-        height: 70vh;
-        background-position: center;
-        position: relative;
-    }
+
 
     .pt-10 {
         padding-top: 5vh;
@@ -173,14 +169,7 @@
         display: none;
     }
 
-    .wave {
-        width: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-left: 0;
-        background-image: url('immagini/trama/wave_hor.png');
-        top: -4%;
-    }
+
 
     .star-1 {
         width: 15px;
@@ -326,6 +315,20 @@
     }
     #md-sm{
         display: none;
+    }
+    .wave {
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 0;
+        background-image: url('immagini/trama/wave_hor.png');
+        top: -4%;
+    }
+    .c-background{
+
+        height: 400px;
+        background-position: center;
+        position: relative;
     }
 
 }

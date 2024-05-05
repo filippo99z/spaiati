@@ -394,9 +394,7 @@ button{
     .center-sm{
         margin: auto;
     }
-    .background-sm{
-        height: 40vh;
-    }
+
     /*css navbar*/
     .logo{
         height: 40px;
@@ -476,5 +474,8 @@ button{
         -webkit-animation: jello-horizontal 0.9s both;
         animation: jello-horizontal 0.9s both;
         cursor: pointer;
+    }
+    .background-sm{
+        height: 300px;
     }
 }
