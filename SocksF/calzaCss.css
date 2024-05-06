@@ -356,6 +356,20 @@ input[type="radio"]:checked {
     .Gmargin {
         padding-right: 0;
     }
+    /*quarto div*/
+    .gbig {
+        height: 10vh;
+    }
+    .gkeepgoing {
+        width: 30%;
+        top:-50%;
+        left: 2%;
+    }
+    .gnonfarti {
+        width: 30%;
+        top: -90%;
+        right: 2%;
+    }
 }
 @media screen and (max-width: 575px){
     .prova{
