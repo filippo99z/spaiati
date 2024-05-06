@@ -10,6 +10,9 @@
 .grid-border-right{
     padding-right: 80px;
 }
+.header{
+    min-height: 60vh;
+}
 
 .schoolbell{
     font-family: Schoolbell, sans-serif;
@@ -450,6 +453,9 @@ button{
 }
 
 @media screen and (max-width: 575px){
+    .header{
+        height: auto
+    }
     .icona{
         width: 45px;
         height: 45px;

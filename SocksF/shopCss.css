@@ -168,4 +168,10 @@
     .prova{
         height: auto;
     }
+    .price-position{
+        width: 50%;
+        position: absolute;
+        top: -12%;
+        left: -12%;
+    }
 }
