@@ -19,49 +19,50 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-md sticky-top grid-border">
+<nav class="navbar navbar-expand-md sticky-top grid-border grid-border-sm">
   <div class="container-fluid px-0">
     <a class="navbar-brand logo py-0" href="index.html"><img class="logo" src="immagini/logo.svg" alt="logo"></a>
-    <button class="navbar-toggler shadow-none border-0 rounded-circle custom-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+    <button class="navbar-toggler shadow-none border-0 rounded-circle custom-toggler pe-0 py-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header py-2">
-        <h5 class="offcanvas-title logo " id="offcanvasNavbarLabel"><img class="logo" src="immagini/logo.png" alt="logo"></h5>
-        <button type="button" class="shadow-none border-0 py-1 px-2 " data-bs-dismiss="offcanvas" aria-label="Close" >
+      <div class="offcanvas-header grid-border grid-border-sm py-2">
+        <h5 class="offcanvas-title logo " id="offcanvasNavbarLabel"><img class="logo" src="immagini/logo.svg" alt="logo"></h5>
+        <button type="button" class="shadow-none border-0 p-0" data-bs-dismiss="offcanvas" aria-label="Close" >
           <img src="immagini/close.png" class="close-btn">
         </button>
       </div>
       <div class="offcanvas-body align-text-center p-0 flex">
-        <ul class="navbar-nav justify-content-center flex-grow-1">
-          <li class="nav-item mx-md-2 mx-3">
-            <a class="nav-link "aria-current="page" href="index.html">HOME</a>
+        <ul class="navbar-nav justify-content-md-around  align-items-md-center justify-content-xl-evenly flex-grow-1 mx-lg-5 mx-md-1 px-lg-3 px-xl-5 px-md-0">
+          <li class="nav-item ms-md-5 me-md-0 grid-border-sm">
+            <a class="nav-link " aria-current="page" href="index.html">HOME</a>
           </li>
           <hr class="my-1">
-          <li class="nav-item mx-md-2 mx-3">
+          <li class="nav-item mx-md-0 grid-border-sm">
             <a class="nav-link " href="trama.html">TRAMA</a>
           </li>
           <hr class="my-1">
-          <li class="nav-item mx-md-2 mx-3">
-            <a class="nav-link " href="shop.html">PRODOTTI</a>
+          <li class="nav-item mx-md-0  grid-border-sm">
+            <a class="nav-link" href="shop.html">SHOP</a>
           </li>
           <hr class="my-1">
-          <li class="nav-item mx-md-2 mx-3">
+          <li class="nav-item mx-md-0 grid-border-sm">
             <a class="nav-link" href="calza.html">CHE CALZA SEI?</a>
           </li>
           <hr class="my-1">
-          <li class="nav-item mx-md-2 mx-3">
+          <li class="nav-item mx-md-0 grid-border-sm">
             <a class="nav-link active"  href="gallery.html">#ONYOURFEET</a>
           </li>
           <hr class="my-1">
-          <li class="nav-item mx-md-2 mx-3">
+          <li class="nav-item me-md-5 ms-md-0 grid-border-sm">
             <a class="nav-link" href="contatti.html">CONTATTI</a>
           </li>
           <hr class="my-1">
         </ul>
-        <ul class="navbar-nav justify-content-end mx-md-0 mx-3 py-md-0 py-2" id="carrello">
-          <li><svg fill="#F21DB9" height="35px" width="35px" version="1.1" id="XMLID_269_" xmlns="http://www.w3.org/2000/svg" viewBox="-2.4 -2.4 28.80 28.80" xml:space="preserve" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.24000000000000005"></g><g id="SVGRepo_iconCarrier"> <g id="shop-cart"> <g> <circle cx="9" cy="21" r="2"></circle> </g> <g> <circle cx="19" cy="21" r="2"></circle> </g> <g> <path d="M21,18H7.2l-4-16H0V0h4.8l0.8,3H24l-3.2,11H8.3l0.5,2H21V18z M7.8,12h11.5l2-7H6L7.8,12z"></path> </g> </g> </g></svg></li>
-        </ul>
+
+        <div id="carrello" class="d-flex align-items-center py-2 py-md-0">
+          <img src="immagini/shopping-cart%20(1).png" class="cart">
+        </div>
       </div>
     </div>
   </div>
@@ -69,26 +70,26 @@
 
 <!-----SEZIONE HERO COVER-->
 <div class="container-fluid">
-  <div class="row purple">
-    <div class="col-md-6 grid-border grid-border-sm py-4 py-md-0">
-      <h1 class="inter tYellow pt-md-5 mt-md-5 bolder"> #ONYOURFEET</h1>
-      <p class="inter tWhite py-3 my-0  me-md-5  italic" >
-        Calza il futuro con #OnYourFeet: dove l'originalità abbraccia lo stile in ogni filo!
-      </p>
-      <p class="inter tWhite pb-md-5 py-3 my-0 my-md-2 me-md-5" >
-        Scopri il futuro nei dettagli: nella galleria #OnYourFeet le calze diventano opere d'arte. Sfoglia immagini uniche, esplora stili straordinari. La moda, ad ogni passo, è un capolavoro.
-      </p>
-      <div class="mb-md-5 pb-md-5" >
-        <div class="bottone px-md-4 py-md-2 px-2 py-1 btn-yellow tBlack" style="position: relative">
-          SCOPRI CHI SIAMO
+  <div class="row purple header">
+    <div class="col-sm-6 grid-border grid-border-sm d-flex align-items-center pe-sm-2 py-3 py-sm-0">
+      <div>
+        <h1 class="inter tYellow bolder mb-2"> #ONYOURFEET</h1>
+        <p class="inter tWhite py-3 my-0   italic" >
+          Calza il futuro con #OnYourFeet: dove l'originalità abbraccia lo stile in ogni filo!<br>
+          Scopri il futuro nei dettagli: nella galleria #OnYourFeet le calze diventano opere d'arte. Sfoglia immagini uniche, esplora stili straordinari. La moda, ad ogni passo, è un capolavoro.
+        </p>
+        <div class="mt-2" >
+          <div class="bottone px-md-4 py-md-2 px-2 py-1 btn-yellow tBlack" style="position: relative">
+            SCOPRI CHI SIAMO
 
-          <img src="immagini/index/arrow1.png" style="position: absolute; left: 105%;width: 55%;top:80%" alt="">
 
+
+          </div>
         </div>
       </div>
 
     </div>
-    <div class="col-md-6 px-md-0 background-sm px-0" style="background-image: url('immagini/gallery/gallery_cover.png');background-size: cover;background-repeat: no-repeat; background-position: center;">
+    <div class="col-sm-6 px-md-0 background-sm px-0" style="background-image: url('immagini/gallery/gallery_cover.png');background-size: cover;background-repeat: no-repeat; background-position: center;">
 
       <div style="background-image: url('immagini/index/Vector.png'); " class="divVector">
       </div>
@@ -176,13 +177,13 @@
       <!-- slider da mobile  inzialmente nascosto-->
       <div class="my-5" style="position: relative;width: fit-content;margin: auto" id="sliderMobile">
         <div class="slider" style="width:72vw;height: 70vw">
-          <img src="immagini/gallery/visor.png" id="rollsm1" alt="" style="position:absolute;z-index: 100">
-          <img src="immagini/gallery/gallery_cover.png" id="rollsm2" alt="" style="position:absolute;z-index: 99; transform: rotate(3deg)">
-          <img src="immagini/gallery/gallery_cover.png" id="rollsm3" alt="" style="position:absolute;z-index: 98;transform: rotate(-2deg)">
-          <img src="immagini/gallery/gallery_cover.png" id="rollsm4" alt="" style="position:absolute;z-index: 97;transform: rotate(2deg)">
-          <img src="immagini/gallery/gallery_cover.png" id="rollsm5" alt="" style="position:absolute;z-index: 96;transform: rotate(-4deg)">
-          <img src="immagini/gallery/gallery_cover.png" id="rollsm6" alt="" style="position:absolute;z-index: 95;transform: rotate(3deg)">
-          <img src="immagini/gallery/gallery_cover.png" id="rollsm7" alt="" style="position:absolute;z-index: 94;transform: rotate(-3deg)">
+          <img src="immagini/gallery/slide1.png" id="rollsm1" alt="" style="position:absolute;z-index: 100">
+          <img src="immagini/gallery/slide2.png" id="rollsm2" alt="" style="position:absolute;z-index: 99; transform: rotate(3deg)">
+          <img src="immagini/gallery/slide3.png" id="rollsm3" alt="" style="position:absolute;z-index: 98;transform: rotate(-2deg)">
+          <img src="immagini/gallery/slide4.png" id="rollsm4" alt="" style="position:absolute;z-index: 97;transform: rotate(2deg)">
+          <img src="immagini/gallery/slide5.png" id="rollsm5" alt="" style="position:absolute;z-index: 96;transform: rotate(-4deg)">
+          <img src="immagini/gallery/slide6.png" id="rollsm6" alt="" style="position:absolute;z-index: 95;transform: rotate(3deg)">
+          <img src="immagini/gallery/slide7.png" id="rollsm7" alt="" style="position:absolute;z-index: 94;transform: rotate(-3deg)">
         </div>
         <img src="immagini/gallery/leftButton.png" width="10%" style="position: absolute;left: -15%;top:40%; z-index: 1000" onclick="slideInSm()">
         <img src="immagini/gallery/rightButton.png" width="10%" style="position: absolute;right: -15%;top:40%;z-index: 1000" onclick="slideOutSm()">
@@ -196,10 +197,10 @@
 </div>
 
 <!----SEZIONE CARICA LE FOTO-->
-<div class="container-fluid px-0" style="position: relative">
+<div class="container-fluid px-0 pink" style="position: relative">
   <img src="immagini/contatti/Vector3.png" style="width: 100%; transform: rotate(180deg);">
   <div class="row m-0 d-flex align-items-center">
-    <div class="col-md-6 grid-border grid-border-sm">
+    <div class="col-sm-6 grid-border grid-border-sm py-4 py-md-0 pe-sm-5">
       <h2 class="tPurple inter bolder">
         CARICA LE TUE FOTO
       </h2>
@@ -208,7 +209,7 @@
         Esplora la moda con un tocco personale! Carica le tue foto delle calze acquistate e fai brillare il tuo stile nella nostra galleria. Condividi il comfort e la gioia, perché le nostre calze rendono le persone felici!
       </p>
     </div>
-    <div class="col-md-6">
+    <div class="col-sm-6">
       <img src="immagini/gallery/Group 268.png" alt="gallery" style="width: 90%; margin-left: 5%;">
       <div class="bottone btn-purple px-4  py-2 center-sm " style="margin:auto" >
         CARICA FOTO
