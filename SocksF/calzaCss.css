@@ -17,11 +17,11 @@
 .gbackground{
     background-image: url('immagini/calza/gBackground.png');
     height: 100%;
-    background-size: cover;
+    background-size: 90%;
     position: relative;
-    background-position-x: 12vh;
+    background-position-x: 100px;
     background-repeat: no-repeat;
-    background-position-y: 50%;
+    background-position-y: center;
 }
 .littleStar {
     width: 4%;
@@ -133,11 +133,17 @@
     right: 20%;
     top: 15%;
 }
-/*quiz calza*/
+.wave-prpl{
+    left:0%;
+    height: 100%
+}
+.wave-prpl-sm{
+    display: none;
+}
+    /*quiz calza*/
 .gformContainer{
-    width: 60%;
-    margin-left: 15vw;
-    margin-top: 10vh
+    width: 70%;
+
 }
 .gquiz {
     background-color: #f8f4db;
@@ -254,6 +260,7 @@ input[type="radio"]:checked {
     #che_calza_sei{
         height: 52vh;
     }
+    /*
     .gbackground {
         background-image: url('immagini/calza/gBackground.png');
         height: 100%;
@@ -262,7 +269,7 @@ input[type="radio"]:checked {
         background-position-x: center;
         background-repeat: no-repeat;
         background-position-y: 0;
-    }
+    }*/
     .gscrittaGia {
         width: 10%;
         left: 1%;
@@ -272,9 +279,7 @@ input[type="radio"]:checked {
         right: 10%;
         bottom: -158%;
     }
-    .purple {
-        background-color: #EFB5F2;
-    }
+
     .gsfondoForm {
         display: none;
     }
@@ -284,20 +289,9 @@ input[type="radio"]:checked {
         background-repeat: no-repeat;
         height: 100%;
     }
-    #gsfondo {
-        height: 76vh;
-    }
-    .gdivVector {
-        display:none;
-    }
-    .divVector-sm {
-        display: block;
-        height: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: relative;
-        background-position: bottom;
-    }
+
+
+
     /*quiz calza*/
     .grid-border-sm-g {
         padding-left: 35px;
@@ -305,7 +299,8 @@ input[type="radio"]:checked {
     }
     .gformContainer{
         width: 85%;
-        margin: 2vh 1vh;
+
+
     }
     #question {
         font-size: 16px;
@@ -374,6 +369,37 @@ input[type="radio"]:checked {
 @media screen and (max-width: 575px){
     .prova{
         height: auto;
+    }
+    .gbackground{
+        background-position-x: center;
+        background-size: 90%;
+        background-position-y: 0;
+    }
+    #background1{
+        height: 300px;
+    }
+    #background2{
+        height: 500px;
+    }
+    .wave-prpl{
+       display: none;
+    }
+    .wave-prpl-sm{
+        display: block;
+        left:0%;
+        width: 100%;
+        top:-1px;
+    }
+    .gdivVector {
+        display:none;
+    }
+    .divVector-sm {
+        display: block;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: bottom;
     }
 }
 
