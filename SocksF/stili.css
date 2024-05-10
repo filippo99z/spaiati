@@ -12,7 +12,7 @@
     padding-right: 80px;
 }
 .header{
-    min-height: 66vh;
+    min-height: 35vw;
 }
 
 .schoolbell{
@@ -386,8 +386,22 @@ button{
 /* ----------------------------------------MEDIA QUERY---------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1200px) {
+    .header {
+        min-height: 45vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        min-height: 50vw;
+    }
+}
 
 @media screen and (max-width: 767px){
+    .header {
+        min-height: 70vw;
+    }
     .wrapper {
         height: 32px;
     }
