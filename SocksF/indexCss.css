@@ -79,10 +79,10 @@
     width: 15%;left: 75%;bottom:0%;transform: rotate(12deg);
 }
 .s3{
-    width: 12%;left: 50%;bottom:-3%; transform: rotate(-12deg);
+    width: 16%;left: 50%;bottom:-3%; transform: rotate(-12deg);
 }
 .s4{
-    width: 19%;right: 38%;top:0; z-index:999;
+    width: 17%;right: 38%;top:0; z-index:999;
 }
 .indexStar1{
     width: 10%;
@@ -186,6 +186,19 @@
 /* ------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 767px){
+
+    .s1{
+        width: 20%;left: 43%;bottom:0%;transform: rotate(-8deg);
+    }
+    .s2{
+        width: 20%;left: 80%;bottom:-10%;
+    }
+    .s3{
+        width: 16%;left: 50%;bottom:-3%; transform: rotate(-12deg);
+    }
+    .s4{
+        width: 19%;right: 38%;top:0; z-index:999;
+    }
     .flower{
         width: 100%;
     }
@@ -215,13 +228,13 @@
         width: 60%;
     }
     .s1{
-        width: 30vw;left: 5%;top:40vw
+        width: 30vw;left: 5%;top:30vw
     }
     .s2{
-        width: 25vw;left: 70%;top:40vw;padding: 0px;
+        width: 25vw;left: 70%;top:35vw;padding: 0px;
     }
     .s3{
-        width: 30vw;left: 5%;top:30vw;
+        width: 30vw;left: 5%;top:25vw;
     }
     .s4{
         width: 40vw;right: 0%;top:40%;z-index: 999

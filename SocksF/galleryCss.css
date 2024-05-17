@@ -11,6 +11,19 @@
 #sliderMobile{
     display: none;
 }
+.story{
+    width: 14%;
+    bottom:4%;
+    left:5%;
+    z-index: 999;
+    transform: rotate(-8deg);
+}
+.socialS{
+    width: 60%;
+    bottom:10%;
+    left:-40%;
+    z-index: 999;
+}
 .slider img{
     width: 30vw;
     border-radius: 30px;
@@ -254,6 +267,10 @@
         aspect-ratio: 1;
         object-fit: cover;
     }
+    .story{
+        width: 30%;
+
+    }
 
 }
 
@@ -269,4 +286,5 @@
         position: relative;
         top:-1vh
     }
+
 }

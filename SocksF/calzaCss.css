@@ -70,9 +70,10 @@
     bottom: -20%;
 }
 .gtryme {
-    width: 40%;
-    left: -50%;
-    top: -17%;
+    width: 17%;
+    left: 45%;
+    top: 10%;
+    z-index: 999;
 }
 .gscrittaVi {
     width: 40%;
@@ -262,6 +263,12 @@ input[type="radio"]:checked {
     #che_calza_sei{
         height: 52vh;
     }
+    .gtryme {
+        width: 20%;
+        left: 35%;
+        top: 0%;
+        z-index: 999;
+    }
     /*
     .gbackground {
         background-image: url('immagini/calza/gBackground.png');
@@ -400,6 +407,12 @@ input[type="radio"]:checked {
         display: block;
        bottom: -2px;
        width: 100%;
+    }
+    .gtryme {
+        width: 150px;
+        left: 55%;
+        top: 35%;
+        z-index: 999;
     }
 }
 

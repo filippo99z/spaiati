@@ -412,9 +412,7 @@ button{
         padding-left: 30px;
         padding-right: 30px;
     }
-    .center-sm{
-        margin: auto;
-    }
+
 
     /*css navbar*/
     .logo{
@@ -471,6 +469,9 @@ button{
 }
 
 @media screen and (max-width: 575px ){
+    .center-sm{
+        margin: auto;
+    }
     .header{
         min-height: auto
     }
