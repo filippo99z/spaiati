@@ -64,7 +64,7 @@
     cursor: pointer;
 }
 .grid-container >.grid-item{
-    border: 1vh solid white;
+    border: 8px solid white;
     border-radius: 1vh;
 }
 
@@ -209,7 +209,7 @@
         border-bottom-right-radius: 20px;
     }
     .grid-container >.grid-item{
-        border: 1vw solid white;
+        border: 5px solid white;
         border-radius: 5px;
     }
     .border-rounded{
