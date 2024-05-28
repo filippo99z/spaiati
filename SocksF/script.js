@@ -345,6 +345,4 @@ function switchImg(val){
     change = boh.src; //mi salvo l'iimagine nella variabile
     boh.src=val.src; //sostituisco la thumbnail con l'immagine cliccata
     val.src = change //sostituisco l'iiagine sotto con quella di copertina
-
-
 }
