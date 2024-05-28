@@ -339,4 +339,12 @@ function hide() {
         }
 }
 
+function switchImg(val){
+    let change; //variabile di scambio
+    let boh = document.getElementById('thumbanil_active'); //thumbnail
+    change = boh.src; //mi salvo l'iimagine nella variabile
+    boh.src=val.src; //sostituisco la thumbnail con l'immagine cliccata
+    val.src = change //sostituisco l'iiagine sotto con quella di copertina
 
+
+}
