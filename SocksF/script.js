@@ -52,7 +52,14 @@ function checkWin(array){
     }
 
 }
-
+function sliderssOut(){
+    slideOut();
+    slideOutSm()
+}
+function sliderssIn(){
+    slideIn();
+    slideInSm()
+}
 function slideOut() {
 
     console.log("cliccato");
@@ -102,6 +109,7 @@ function slideIn() {
 }
 
 function slideOutSm() {
+
     document.getElementById("description").innerHTML = galleryDesc[counterSm];
     console.log( galleryDesc[counterSm]);
     console.log("cliccato");
@@ -148,6 +156,7 @@ function slideInSm() {
         }
         counterSm--;
     }
+
 }
 
 function change(foto){
@@ -346,3 +355,4 @@ function switchImg(val){
     boh.src=val.src; //sostituisco la thumbnail con l'immagine cliccata
     val.src = change //sostituisco l'iiagine sotto con quella di copertina
 }
+

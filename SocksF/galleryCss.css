@@ -21,8 +21,11 @@
 .socialS{
     width: 60%;
     bottom:10%;
-    left:-40%;
+    left:-30%;
     z-index: 999;
+}
+.socialSm{
+    display: none;
 }
 .slider img{
     width: 30vw;
@@ -271,6 +274,12 @@
         width: 30%;
 
     }
+    .socialS{
+        width: 70%;
+
+        left:-40%;
+
+    }
 
 }
 
@@ -286,5 +295,15 @@
         position: relative;
         top:-1vh
     }
+    .socialS{
+        display: none;
+    }
+    .socialSm{
+        display: block;
+        width: 50%;
+        left: 45%;
+        top:30%
+    }
+
 
 }
