@@ -4,13 +4,13 @@
     border-radius: 3vh;
     padding:30px 2vw;
     margin: auto;
-
 }
 .callUs{
     top:-50%;
     left:-50%;
     width: 70%;
 }
+
 .forumSticker{
     top: -40px;
     left:95%;
@@ -151,9 +151,6 @@
         left: 75%;
         width: 25%;
     }
-
-
-
 }
 @media screen and (max-width: 576px){
     .formContainer{
