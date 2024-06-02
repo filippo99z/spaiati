@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-Bold.woff2') format('woff2'),
         url('Poppins-Bold.woff') format('woff');
     font-weight: bold;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-Black.woff2') format('woff2'),
         url('Poppins-Black.woff') format('woff');
     font-weight: 900;
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-BlackItalic.woff2') format('woff2'),
         url('Poppins-BlackItalic.woff') format('woff');
     font-weight: 900;
@@ -26,7 +26,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-ExtraBoldItalic.woff2') format('woff2'),
         url('Poppins-ExtraBoldItalic.woff') format('woff');
     font-weight: bold;
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-ExtraBold.woff2') format('woff2'),
         url('Poppins-ExtraBold.woff') format('woff');
     font-weight: bold;
@@ -44,7 +44,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-BoldItalic.woff2') format('woff2'),
         url('Poppins-BoldItalic.woff') format('woff');
     font-weight: bold;
@@ -53,7 +53,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-Italic.woff2') format('woff2'),
         url('Poppins-Italic.woff') format('woff');
     font-weight: normal;
@@ -62,7 +62,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-ExtraLightItalic.woff2') format('woff2'),
         url('Poppins-ExtraLightItalic.woff') format('woff');
     font-weight: 200;
@@ -71,7 +71,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-ExtraLight.woff2') format('woff2'),
         url('Poppins-ExtraLight.woff') format('woff');
     font-weight: 200;
@@ -80,7 +80,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-LightItalic.woff2') format('woff2'),
         url('Poppins-LightItalic.woff') format('woff');
     font-weight: 300;
@@ -89,7 +89,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-Light.woff2') format('woff2'),
         url('Poppins-Light.woff') format('woff');
     font-weight: 300;
@@ -98,7 +98,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-ThinItalic.woff2') format('woff2'),
         url('Poppins-ThinItalic.woff') format('woff');
     font-weight: 100;
@@ -107,7 +107,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-SemiBold.woff2') format('woff2'),
         url('Poppins-SemiBold.woff') format('woff');
     font-weight: 600;
@@ -116,7 +116,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-Medium.woff2') format('woff2'),
         url('Poppins-Medium.woff') format('woff');
     font-weight: 500;
@@ -125,7 +125,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-SemiBoldItalic.woff2') format('woff2'),
         url('Poppins-SemiBoldItalic.woff') format('woff');
     font-weight: 600;
@@ -134,7 +134,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-Regular.woff2') format('woff2'),
         url('Poppins-Regular.woff') format('woff');
     font-weight: normal;
@@ -143,7 +143,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-MediumItalic.woff2') format('woff2'),
         url('Poppins-MediumItalic.woff') format('woff');
     font-weight: 500;
@@ -152,7 +152,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-Thin.woff2') format('woff2'),
         url('Poppins-Thin.woff') format('woff');
     font-weight: 100;
@@ -161,7 +161,17 @@
 }
 
 @font-face {
-    font-family: 'Comba Ultra Wide';
+    font-family: 'Comba Ultra Wide', sans-serif;
+    src: url('Comba-BoldUltraWide.woff2') format('woff2'),
+        url('Comba-BoldUltraWide.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'Comba Ultra Wide', sans-serif;
     src: url('Comba-BoldUltraWide.woff2') format('woff2'),
         url('Comba-BoldUltraWide.woff') format('woff');
     font-weight: bold;
@@ -170,16 +180,7 @@
 }
 
 @font-face {
-    font-family: 'Comba Ultra Wide';
-    src: url('Comba-BoldUltraWide.woff2') format('woff2'),
-        url('Comba-BoldUltraWide.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Schoolbell';
+    font-family: 'Schoolbell', sans-serif;
     src: url('Schoolbell-Regular.woff2') format('woff2'),
         url('Schoolbell-Regular.woff') format('woff');
     font-weight: normal;
@@ -188,7 +189,7 @@
 }
 
 @font-face {
-    font-family: 'Schoolbell';
+    font-family: 'Schoolbell', sans-serif;
     src: url('Schoolbell-Regular.woff2') format('woff2'),
         url('Schoolbell-Regular.woff') format('woff');
     font-weight: normal;

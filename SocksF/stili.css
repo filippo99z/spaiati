@@ -1,4 +1,4 @@
-@import "font/stylesheet.css";
+@import "font/font.css";
 
 .grid-border{
     padding-left: 80px;
@@ -16,13 +16,13 @@
 }
 
 .schoolbell{
-    font-family: Schoolbell, sans-serif;
+    font-family: 'Schoolbell', sans-serif;
 }
 .comba{
-    font-family: Comba, sans-serif;;
+    font-family: 'Comba Ultra Wide', sans-serif;
 }
 .inter{
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .bolder{
     font-weight: bolder;
