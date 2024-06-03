@@ -367,11 +367,37 @@ input[type="radio"]:checked {
     .gbig {
         height: 10vh;
     }
+    .gBlue1 {
+        width: 30%;
+        right: 0;
+        top: 20%;
+    }
     .gBlue2 {
         display: none;
     }
+    .glittleStar2 {
+        display:none;
+    }
+    .glittleStar1 {
+        display:none;
+    }
     .gpurpleStar2 {
         display:none;
+    }
+    .gpurpleStar4 {
+        width: 10%;
+        left: 10%;
+        top: -30%;
+    }
+    .gkeepgoing {
+        width: 20%;
+        left: 5%;
+        top: -100%;
+    }
+    .gnonfarti {
+        width: 20%;
+        right: 10%;
+        top: -120%;
     }
 }
 @media screen and (max-width: 575px){
@@ -408,7 +434,7 @@ input[type="radio"]:checked {
     }
     .wave-prpl-sm{
         display: block;
-        left:0%;
+        left:0;
         width: 100%;
         top:-1px;
     }
@@ -495,6 +521,9 @@ input[type="radio"]:checked {
         width: 30%;
         top: -90%;
         right: 2%;
+    }
+    .gpurpleStar4 {
+        display: none;
     }
 }
 
