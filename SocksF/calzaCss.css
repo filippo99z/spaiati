@@ -24,19 +24,19 @@
     background-position-y: center;
 }
 .littleStar {
-    width: 4%;
-    right: -30%;
-    bottom: -10%;
+    width: 3.5%;
+    left: 50%;
+    top: 75%;
 }
 .gSticker {
-    width: 35%;
-    right: -135%;
-    top: -15%;
+    width: 25%;
+    right: 10%;
+    top: 10%;
 }
 .gstar1 {
-    width: 15%;
-    right: -25%;
-    top: -10%;
+    width: 8%;
+    left: 42%;
+    top: 15%;
 }
 .gsfondoForm{
     background-image: url('immagini/calza/sfondoRosa.png');
@@ -53,76 +53,81 @@
     background-position: right center;
 }
 .gbackground2{
-    background-image: url('immagini/calza/calziniSpeciali.png');
+    background-image: url('immagini/calza/JukeSocks.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.gscrittaGia {
-    position: absolute;
-    left: 78%;
-    width: 75%;
-    top: 90%;
+.gYellow1 {
+    width: 24%;
+    left: 32%;
+    bottom: 5%;
+    z-index: 3;
 }
-.gtrestelle {
-    width: 20%;
-    left: 10%;
-    bottom: -20%;
+.gstars3 {
+    width: 8%;
+    left: 3%;
+    bottom: 1%;
 }
 .gtryme {
-    width: 17%;
-    left: 45%;
-    top: 10%;
+    width: 15%;
+    left: 43%;
+    top: 2%;
     z-index: 999;
 }
-.gscrittaVi {
-    width: 40%;
-    right: -140%;
-    bottom: -23%;
+.gPurple1 {
+    width: 25%;
+    right: 17%;
+    bottom: 0;
+    z-index: 4;
 }
-.doQuiz {
-    display:none;
+.gpurpleStar3 {
+    display: none;
+}
+.gorange1 {
+    display: none;
 }
 .threeStars {
     display:none;
 }
-.littleStar-sm {
+.littleStar2 {
     display:none;
 }
-.gstellineBelline {
+.gprettyStars {
     width: 20%;
-    left: -10%;
+    left: -15%;
     top: 5%;
 }
-.gscrittaGia2 {
-    width: 20%;
-    right: 15%;
-    top: 20%;
-}
-.gscrittaGia3 {
+.gYellow3 {
     width: 40%;
     left: -10%;
     top: 20%;
 }
-.gduestelline {
+.gpurpleStar4 {
     width: 10%;
-    left: 5%;
+    left: 0;
     top: 3%;
 }
-.gpiccolaStella1 {
+.glittleStar1 {
     width: 3%;
     left: 25%;
     bottom: 20%;
 }
-.gpiccolaStella2 {
+.glittleStar2 {
     width: 3%;
     right: 1%;
     bottom: 35%;
 }
-.gscrittaBlu {
+.gBlue1 {
     width: 30%;
     right: -2%;
     top: 10%;
+}
+.gBlue2 {
+    display: none;
+}
+.gpurpleStar2 {
+    display:none;
 }
 .gkeepgoing {
     width: 80%;
@@ -246,16 +251,20 @@ input[type="radio"]:checked {
     .h1mt {
         margin-top: 30px;
     }
-    .gSticker {
-        width: 35%;
-        right: 10%;
-        top: 140%;
-    }
     .littleStar {
-        width: 7%;
-        left: 13%;
-        bottom: -33%;
-        transform: rotate(215deg);
+        width: 6%;
+        left: 49%;
+        top: 55%;
+    }
+    .gstar1 {
+        width: 12%;
+        left: 49%;
+        top: 20%;
+    }
+    .gSticker {
+        width: 25%;
+        right: 10%;
+        top: 25%;
     }
     .firstDiv {
         height: auto;
@@ -265,8 +274,8 @@ input[type="radio"]:checked {
     }
     .gtryme {
         width: 20%;
-        left: 35%;
-        top: 0%;
+        left: 30%;
+        top: 0;
         z-index: 999;
     }
     /*
@@ -279,16 +288,24 @@ input[type="radio"]:checked {
         background-repeat: no-repeat;
         background-position-y: 0;
     }*/
-    .gscrittaGia {
-        width: 10%;
-        left: 1%;
+    .gYellow1 {
+        width: 26%;
+        left: 23%;
+        bottom: 8%;
+        z-index: 3;
     }
-    .gscrittaVi {
-        width: 43%;
-        right: 10%;
-        bottom: -158%;
+    .gPurple1 {
+        width: 35%;
+        right: 13%;
+        bottom: 4%;
+        z-index: 4;
     }
-
+    .gpurpleStar3 {
+        display: none;
+    }
+    .gorange1 {
+        display: none;
+    }
     .gsfondoForm {
         display: none;
     }
@@ -331,28 +348,13 @@ input[type="radio"]:checked {
         margin: auto;
         display: none;
     }
-    .doQuiz {
-        width: 40%;
-        right: 0;
-        bottom: -36%;
-        display:block
+    .gstars3 {
+        width: 10%;
+        left: 5%;
+        bottom: 5%;
     }
-    .threeStars {
-        width: 20%;
-        left: 0;
-        bottom: -34%;
-        display:block;
-    }
-    .littleStar-sm {
-        width: 8%;
-        left: 0;
-        bottom: -160%;
-        display:block;
-    }
-    .gstellineBelline {
-        width: 30%;
-        left: 65%;
-        top: -20%;
+    .littleStar2 {
+        display:none;
     }
     .grid-border-left {
         padding-left: 50px;
@@ -365,20 +367,30 @@ input[type="radio"]:checked {
     .gbig {
         height: 10vh;
     }
-    .gkeepgoing {
-        width: 30%;
-        top:-50%;
-        left: 2%;
+    .gBlue2 {
+        display: none;
     }
-    .gnonfarti {
-        width: 30%;
-        top: -90%;
-        right: 2%;
+    .gpurpleStar2 {
+        display:none;
     }
 }
 @media screen and (max-width: 575px){
     .prova{
         height: auto;
+    }
+    .littleStar {
+        width: 12%;
+        left: 16%;
+        top: 45%;
+        transform: rotate(212deg);
+    }
+    .gstar1 {
+        display:none;
+    }
+    .gSticker {
+        width: 30%;
+        right: 15%;
+        top: 25%;
     }
     .gbackground{
         background-position-x: center;
@@ -409,10 +421,80 @@ input[type="radio"]:checked {
        width: 100%;
     }
     .gtryme {
-        width: 150px;
+        display:none;
+    }
+    .gstars3 {
+        display:none;
+    }
+    .gYellow1 {
+        display:none;
+    }
+    .gPurple1 {
+        width: 40%;
+        right: 13%;
+        bottom: 6%;
+        z-index: 4;
+    }
+    .gpurpleStar3 {
+        width: 20%;
+        left: 25%;
+        bottom: 55%;
+        z-index: 55;
+        display: block;
+    }
+    .gorange1 {
+        width: 35%;
+        right: 7%;
+        bottom: 55%;
+        z-index: 55;
+        display: block;
+    }
+    .gprettyStars {
+        width: 25%;
         left: 55%;
-        top: 35%;
-        z-index: 999;
+        top: -20%;
+    }
+    .gYellow3 {
+        width: 35%;
+        left: -7%;
+        top: 30%;
+    }
+    .littleStar2 {
+        width: 5%;
+        left: 8%;
+        bottom: 6%;
+        display: block;
+    }
+    .glittleStar1 {
+        display:none;
+    }
+    .glittleStar2 {
+        display:none;
+    }
+    .gBlue1 {
+        display:none;
+    }
+    .gBlue2 {
+        width: 32%;
+        right: 8%;
+        bottom: -58%;
+        display:block;
+    }
+    .gpurpleStar2{
+        width: 10%;
+        right: 5%;
+        top: 5%;
+        display:block;
+    }
+    .gkeepgoing {
+        width: 30%;
+        top:-45%;
+        left: 2%;
+    }
+    .gnonfarti {
+        width: 30%;
+        top: -90%;
+        right: 2%;
     }
 }
 
