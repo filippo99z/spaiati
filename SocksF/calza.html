@@ -11,12 +11,19 @@
   <link href="stili.css" rel="stylesheet" type="text/css"><!-- foglio di stile che definisce navabr footer da non modificare-->
   <link href="calzaCss.css" rel="stylesheet" type="text/css">
   <link href="font/font.css" rel="stylesheet" type="text/css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script src="script.js"></script>
   <!-- creare e aggiungere un foglio di stile unico per la propria pagina e collegarlo come quello sopra-->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<script>
+  AOS.init({offset:200,
+    duration:1000}
+  );
+</script>
 <!--- navbar -->
 <nav class="navbar navbar-expand-md sticky-top grid-border grid-border-sm">
   <div class="container-fluid px-0">
@@ -98,10 +105,10 @@
 
 
 <div class=" container-fluid pink" >
-  <div class="row header position-relative">
+  <div class="row header position-relative" style="overflow-x: hidden">
     <img src="immagini/shop/s1.png" alt="" class="position-absolute gstar1">
     <img src="immagini/calza/LittleStar.png" alt="" class="position-absolute littleStar">
-    <div class="col-sm-5 d-flex flex-column align-self-center position-relative grid-border grid-border-sm d-flex align-items-center pe-sm-0">
+    <div class="col-sm-5 d-flex flex-column align-self-center position-relative grid-border grid-border-sm d-flex align-items-center pe-sm-0 pt-4 pt-sm-0">
       <div>
         <h1 class="inter bolder tPurple position-relative title" >
           CHE CALZA SEI?
@@ -117,9 +124,9 @@
 
 
     </div>
-    <div class="col-sm-7 px-sm-0 px-0 position-relative" id="background1" data-aos="fade-left">
+    <div class="col-sm-7 px-sm-0 px-0 position-relative" id="background1">
       <img src="immagini/calza/gSticker.png" alt="" class="position-absolute gSticker z-1 roll">
-      <div class="gbackground">
+      <div class="gbackground" data-aos="fade-left">
 
       </div>
     </div>
