@@ -1,3 +1,9 @@
+.starTop{
+    width: 20%;left: 70%;top:6%
+}
+.starTop2{
+    width: 6%;left: 92%;top:60%
+}
 .contatti{
     background-color: #EFB5F2;
     border: 5px solid #ECF447;
@@ -9,6 +15,9 @@
     top:-50%;
     left:-50%;
     width: 70%;
+}
+.infoNumber{
+    margin-top: 7vh; margin-left:5vw;
 }
 
 .forumSticker{
@@ -110,6 +119,11 @@
 
 @media screen and (max-width: 767px){
     /* ---------------------------DA FARE-----------------------------------------------*/
+    .starTop{
+        width: 10%;left: 70%;
+    }
+
+
     .sfondoForm{
         background-image:url("immagini/contatti/vector2.png");
     }
@@ -121,6 +135,9 @@
 
     .infoDiv{
         height: 70vh;
+    }
+    .infoNumber{
+         margin-left:30vw;
     }
     .mailInfo{
         top:200%;
@@ -153,6 +170,9 @@
     }
 }
 @media screen and (max-width: 576px){
+    .starTop{
+        width: 20%;left: 70%;
+    }
     .formContainer{
         width: 100%;
         left: 0%;
