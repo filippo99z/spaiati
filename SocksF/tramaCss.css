@@ -22,7 +22,7 @@
 }
 
 .stars-2 {
-    width: 12%;
+    width: 8%;
     left: 3%;
     bottom: 2%;
 }
@@ -239,13 +239,9 @@
     .margin-flower{
         margin-top:0vh ;
     }
-}
-
-@media screen and (min-width: 767px) and (max-width: 1200px) {
-
 
     .stars-2 {
-        width: 10%;
+        width: 13%;
         left: 3%;
         bottom: 2%;
     }
@@ -260,7 +256,7 @@
     .starr-2 {
         width: 18px;
         bottom: 5%;
-        left: -7%;
+        left: -25px;
     }
 
     .send-pic {
@@ -269,11 +265,6 @@
         bottom: -2%;
     }
 
-    .read-here {
-        width: 130px;
-        right: 15%;
-        top: 2%;
-    }
     .pb-20 {
         padding-bottom: 12vh;
     }
