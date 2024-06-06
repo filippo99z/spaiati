@@ -1,3 +1,4 @@
+let shopCounter =0;
 var counter =0;
 var counterSm = 0;
 var cards = [];
@@ -356,3 +357,7 @@ function switchImg(val){
     val.src = change //sostituisco l'iiagine sotto con quella di copertina
 }
 
+function addCart(){
+
+    shopCounter++;
+}
