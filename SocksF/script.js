@@ -360,4 +360,8 @@ function switchImg(val){
 function addCart(){
 
     shopCounter++;
+    if(shopCounter>0){
+        document.getElementById('counterCart').innerHTML = shopCounter;
+        document.getElementById('counterCart').style.display ="block";
+    }
 }
