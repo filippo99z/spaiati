@@ -358,10 +358,26 @@ function switchImg(val){
 }
 
 function addCart(){
+    if (!sessionStorage.getItem('counter')) {
+        sessionStorage.setItem('counter', 0);
+    }
+    let counterShop = parseInt(sessionStorage.getItem('counter'), 10);
+    counterShop ++;
 
-    shopCounter++;
-    if(shopCounter>0){
-        document.getElementById('counterCart').innerHTML = shopCounter;
+// Salvare nuovamente il valore incrementato
+    sessionStorage.setItem('counter', counterShop);
+
+    if(counterShop>0){
+        document.getElementById('counterCart').innerHTML = counterShop;
+        document.getElementById('counterCart').style.display ="block";
+    }
+}
+
+function onLoadCart(){
+    let counterShop = parseInt(sessionStorage.getItem('counter'), 10);
+
+    if (counterShop>0){
+        document.getElementById('counterCart').innerHTML = counterShop;
         document.getElementById('counterCart').style.display ="block";
     }
 }

@@ -6,19 +6,7 @@
     background-repeat: no-repeat;
 
 }
-.nonCart{
-    display: none;
-    background-color: #F21DB9;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 20px;
-    top:0%;
-    right: -50%;
 
-}
 .sfondoForm{
     background-image: url('immagini/contatti/vector.png');
     background-size: cover;
@@ -48,9 +36,5 @@
     #carousel-sm {
         display: block;
     }
-    .nonCart{
-        top:0%;
-        right: 0%;
 
-    }
 }
