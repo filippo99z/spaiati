@@ -12,7 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<body>
+<body onload="onLoadCart()">
 <script>
     AOS.init({offset:200,
         duration:1000}
@@ -59,8 +59,9 @@
                     <hr class="my-1">
                 </ul>
 
-                <div id="carrello" class="d-flex align-items-center py-2 py-md-0">
+                <div id="carrello" class="d-flex align-items-center py-2 py-md-0 position-relative">
                     <img src="immagini/shopping-cart%20(1).png" class="cart">
+                    <div id="counterCart" class="nonCart position-absolute">0</div>
                 </div>
             </div>
         </div>
@@ -193,7 +194,7 @@
                 </a>
                 <img src="immagini/shop/stellinasoldout.png" class="price-position">
                 <img src="immagini/shop/freccianome.png" class="arrow position-absolute">
-                <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+                <p style="text-align: center" class="pt-md-3 schoolbell" >E luce fu</p>
             </div>
 
         </div>
@@ -205,7 +206,7 @@
                 </a>
                 <img src="immagini/shop/stellinasoldout.png" class="price-position">
                 <img src="immagini/shop/freccianome.png" class="arrow position-absolute">
-                <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+                <p style="text-align: center" class="pt-md-3 schoolbell" >Tic-tac</p>
             </div>
 
         </div>
@@ -217,7 +218,7 @@
                 </a>
                 <img src="immagini/shop/stellinaventi.png" class="price-position">
                 <img src="immagini/shop/freccianome.png" class="arrow position-absolute">
-                <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+                <p style="text-align: center" class="pt-md-3 schoolbell" >Geosocks</p>
             </div>
 
         </div>
@@ -233,7 +234,7 @@
                 </a>
                 <img src="immagini/shop/stellinasoldout.png" class="price-position">
                 <img src="immagini/shop/freccianome.png" class="arrow position-absolute">
-                <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+                <p style="text-align: center" class="pt-md-3 schoolbell" >Le bluetooth</p>
             </div>
 
         </div>
@@ -245,7 +246,7 @@
                 </a>
                 <img src="immagini/shop/stellina.png" class="price-position">
                 <img src="immagini/shop/freccianome.png" class="arrow position-absolute">
-                <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+                <p style="text-align: center" class="pt-md-3 schoolbell" >4 stagioni</p>
             </div>
 
         </div>
@@ -257,7 +258,7 @@
                 </a>
                 <img src="immagini/shop/stellinasoldout.png" class="price-position">
                 <img src="immagini/shop/freccianome.png" class="arrow position-absolute">
-                <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+                <p style="text-align: center" class="pt-md-3 schoolbell" >Molla(mi)</p>
             </div>
 
         </div>
@@ -273,7 +274,7 @@
                 </a>
                 <img src="immagini/shop/stellinasoldout.png" class="price-position">
                 <img src="immagini/shop/freccianome.png" class="arrow position-absolute">
-                <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+                <p style="text-align: center" class="pt-md-3 schoolbell" >Box small</p>
             </div>
 
         </div>
@@ -285,7 +286,7 @@
                 </a>
                 <img src="immagini/shop/stellinasoldout.png" class="price-position">
                 <img src="immagini/shop/freccianome.png" class="arrow position-absolute">
-                <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+                <p style="text-align: center" class="pt-md-3 schoolbell" >Box medium</p>
             </div>
 
         </div>
@@ -297,7 +298,7 @@
                 </a>
                 <img src="immagini/shop/stellinasoldout.png" class="price-position">
                 <img src="immagini/shop/freccianome.png" class="arrow position-absolute">
-                <p style="text-align: center" class="pt-md-3 schoolbell" >Calza</p>
+                <p style="text-align: center" class="pt-md-3 schoolbell" >Box large</p>
             </div>
 
         </div>

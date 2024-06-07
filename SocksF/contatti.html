@@ -10,6 +10,7 @@
   <link href="contattiCss.css" rel="stylesheet" type="text/css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <link href="font/font.css" rel="stylesheet" type="text/css">
+  <script src="script.js"></script>
 </head>
 <body onload="onLoadCart()">
 <!--- navbar non toccare-->
@@ -54,8 +55,9 @@
           <hr class="my-1">
         </ul>
 
-        <div id="carrello" class="d-flex align-items-center py-2 py-md-0">
+        <div id="carrello" class="d-flex align-items-center py-2 py-md-0 position-relative">
           <img src="immagini/shopping-cart%20(1).png" class="cart" alt="">
+          <div id="counterCart" class="nonCart position-absolute">0</div>
         </div>
       </div>
     </div>
