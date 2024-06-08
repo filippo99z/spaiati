@@ -93,7 +93,7 @@
     top:-50%;
 }
 .buttonMail{
-    left: 0px;
+    left: 0;
     top:45px
 }
 .buttonCell{
@@ -180,12 +180,12 @@
     }
     .formContainer{
         width: 100%;
-        left: 0%;
+        left: 0;
         margin-top: 15vh
     }
     .contattiS1{
 
-        left:0%;
+        left:0;
         top:-30%;
         width: 130px;/*sistemare*/
 

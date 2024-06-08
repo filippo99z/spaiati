@@ -11,6 +11,12 @@
 #sliderMobile{
     display: none;
 }
+.galley_cover {
+    background-image: url('immagini/gallery/gallery_cover.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .story{
     width: 14%;
     bottom:4%;
@@ -30,9 +36,74 @@
 .slider img{
     width: 30vw;
     border-radius: 30px;
-    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    box-shadow: 10px 10px 0 0 rgba(0,0,0,1);
     aspect-ratio: 1;
     object-fit: cover;
+}
+.gallery1 {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.slider1 {
+    width:72vw;
+    height: 30vw;
+}
+.slide1 {
+    position:absolute;
+    z-index: 100;
+}
+.slide2 {
+    position:absolute;
+    z-index: 99;
+    left:7vw;
+}
+.slide3 {
+    position:absolute;
+    z-index: 98;
+    left:14vw;
+}
+.slide4 {
+    position:absolute;
+    z-index: 97;
+    left:21vw;
+}
+.slide5 {
+    position:absolute;
+    z-index: 96;
+    left:28vw;
+}
+.slide6 {
+    position:absolute;
+    z-index: 95;
+    left:35vw;
+}
+.slide7{
+    position:absolute;
+    z-index: 94;
+    left:42vw;
+}
+.leftButton {
+    position: absolute;
+    left: -10%;
+    top:44%;
+    z-index: 1000;
+    cursor: pointer;
+}
+.rightButton {
+    position: absolute;
+    right: -10%;
+    top:44%;
+    z-index: 1000;
+    cursor: pointer;
+}
+.vector3 {
+    width: 100%;
+    transform: rotate(180deg);
+}
+.imgGallery {
+    width: 80%;
+    margin-left: 10%;
 }
 .roll-out-left {
     -webkit-animation: roll-out-left 0.6s ease-in both;
@@ -215,7 +286,7 @@
     background-color: #6204BF;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Comba;
+    font-family: Comba, sans-serif;
     margin-bottom: 0;
 }
 
@@ -266,7 +337,7 @@
     .slider img{
         width: 100%;
         border-radius: 30px;
-        box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+        box-shadow: 10px 10px 0 0 rgba(0,0,0,1);
         aspect-ratio: 1;
         object-fit: cover;
     }
