@@ -212,6 +212,19 @@ button{
     width: 30px;
     margin:auto;
 }
+.nonCart{
+    display: none;
+    background-color: #F21DB9;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+    top:0%;
+    right: -50%;
+
+}
 /*fine navbar*/
 
 /*footer*/
@@ -446,6 +459,11 @@ button{
         color: #F21DB9;
         border: 0px solid #F21DB9;
         padding-bottom: 8px;
+    }
+    .nonCart{
+        top:0%;
+        right: 0%;
+
     }
     hr{
         color: #F21DB9;

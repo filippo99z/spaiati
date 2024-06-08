@@ -18,7 +18,7 @@
 
 
 </head>
-<body>
+<body onload="onLoadCart()">
 <script>
     AOS.init({offset:200,
         duration:1000}
@@ -65,8 +65,9 @@
                     <hr class="my-1">
                 </ul>
 
-                <div id="carrello" class="d-flex align-items-center py-2 py-md-0">
+                <div id="carrello" class="d-flex align-items-center py-2 py-md-0 position-relative">
                     <img src="immagini/shopping-cart%20(1).png" class="cart">
+                    <div id="counterCart" class="nonCart position-absolute">0</div>
                 </div>
             </div>
         </div>

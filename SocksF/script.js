@@ -1,3 +1,4 @@
+let shopCounter =0;
 var counter =0;
 var counterSm = 0;
 var cards = [];
@@ -356,3 +357,27 @@ function switchImg(val){
     val.src = change //sostituisco l'iiagine sotto con quella di copertina
 }
 
+function addCart(){
+    if (!sessionStorage.getItem('counter')) {
+        sessionStorage.setItem('counter', 0);
+    }
+    let counterShop = parseInt(sessionStorage.getItem('counter'), 10);
+    counterShop ++;
+
+// Salvare nuovamente il valore incrementato
+    sessionStorage.setItem('counter', counterShop);
+
+    if(counterShop>0){
+        document.getElementById('counterCart').innerHTML = counterShop;
+        document.getElementById('counterCart').style.display ="block";
+    }
+}
+
+function onLoadCart(){
+    let counterShop = parseInt(sessionStorage.getItem('counter'), 10);
+
+    if (counterShop>0){
+        document.getElementById('counterCart').innerHTML = counterShop;
+        document.getElementById('counterCart').style.display ="block";
+    }
+}

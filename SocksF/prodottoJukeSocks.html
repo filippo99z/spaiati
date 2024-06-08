@@ -12,7 +12,7 @@
   <script src="script.js"></script>
 
 </head>
-<body>
+<body onload="onLoadCart()">
 <nav class="navbar navbar-expand-md sticky-top grid-border grid-border-sm">
   <div class="container-fluid px-0">
     <a class="navbar-brand logo py-0" href="index.html"><img class="logo" src="immagini/logo.svg" alt="logo"></a>
@@ -54,8 +54,9 @@
           <hr class="my-1">
         </ul>
 
-        <div id="carrello" class="d-flex align-items-center py-2 py-md-0">
+        <div id="carrello" class="d-flex align-items-center py-2 py-md-0 position-relative">
           <img src="immagini/shopping-cart%20(1).png" class="cart">
+          <div id="counterCart" class="nonCart position-absolute">0</div>
         </div>
       </div>
     </div>
@@ -118,7 +119,7 @@
           <div class="d-flex justify-content-center">
             <h2 class="align-center tYellow bolder">Jukesocks</h2>
           </div>
-          <div class="d-flex justify-content-center tWhite">
+          <div class="d-flex justify-content-centgit er tWhite">
             <p>34.90€</p>
           </div>
           <p CLASS="tWhite">
@@ -128,7 +129,7 @@
           </p>
           <p CLASS="tWhite">
             Materiale: 100% note musicali<br>
-            Cura: lavare in lavatrice a qualisasi temperatura
+            Cura: lavare in lavatrice a qualsiasi temperatura
           </p>
           <div class="d-flex justify-content-center align-items-center my-md-5">
             <img src="immagini/prodotto/less.png" style="width: 8%" id="less" onclick="addP(this)">
@@ -138,7 +139,7 @@
           </div>
 
           <div class="d-flex justify-content-center my-3">
-            <div class="bottone btn-purple px-md-4 py-md-2 px-2 py-1">
+            <div class="bottone btn-purple px-md-4 py-md-2 px-2 py-1" onclick="addCart()">
               <p class="m-0">METTI NEL CARRELLO</p>
             </div>
           </div>
