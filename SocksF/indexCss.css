@@ -13,6 +13,29 @@
     background-position: center;
     background-size: 50%;
 }
+.arrow1 {
+    left: 105%;
+    width: 55%;
+    top:80%;
+}
+.indexbackground {
+    background-image: url('immagini/index/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.indexbackground2{
+    background-image: url('immagini/index/background2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.indexbackground3 {
+    background-image: url('immagini/index/fin_Socks.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .quizBox{
     border-top-left-radius: 32px;
     border-bottom-left-radius: 32px;
@@ -76,7 +99,7 @@
     width: 15%;left: 50%;bottom:10%;transform: rotate(-8deg);
 }
 .s2{
-    width: 15%;left: 75%;bottom:0%;transform: rotate(12deg);
+    width: 15%;left: 75%;bottom:0;transform: rotate(12deg);
 }
 .s3{
     width: 16%;left: 50%;bottom:-3%; transform: rotate(-12deg);
@@ -97,7 +120,7 @@
 .indexStar3{
     width: 10%;
     right: 50%;
-    top:0%
+    top:0;
 }
 .t2{
     width: 20%;
@@ -188,7 +211,7 @@
 @media screen and (max-width: 767px){
 
     .s1{
-        width: 20%;left: 43%;bottom:0%;transform: rotate(-8deg);
+        width: 20%;left: 43%;bottom:0;transform: rotate(-8deg);
     }
     .s2{
         width: 20%;left: 80%;bottom:-10%;
@@ -204,7 +227,7 @@
     }
 
     .quizBox{
-        border-top-left-radius: 0px;
+        border-top-left-radius: 0;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
@@ -231,13 +254,13 @@
         width: 30vw;left: 5%;top:30vw
     }
     .s2{
-        width: 25vw;left: 70%;top:35vw;padding: 0px;
+        width: 25vw;left: 70%;top:35vw;padding: 0;
     }
     .s3{
         width: 30vw;left: 5%;top:25vw;
     }
     .s4{
-        width: 40vw;right: 0%;top:40%;z-index: 999
+        width: 40vw;right: 0;top:40%;z-index: 999
     }
     .indexStar1{
         width: 20%;
@@ -247,12 +270,12 @@
     .indexStar2{
         width: 15vw;
         left: 70%;
-        top:0%
+        top:0;
     }
     .indexStar3{
         width: 20%;
         left: 10%;
-        top:0%
+        top:0;
     }
     .divVector {
         display: none;

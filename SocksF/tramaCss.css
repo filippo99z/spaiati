@@ -57,7 +57,7 @@
 .read-here {
     width: 150px;
     right: 10%;
-    top: 0%;
+    top: 0;
 }
 
 .click-here {
@@ -237,7 +237,7 @@
         bottom: 30%;
     }
     .margin-flower{
-        margin-top:0vh ;
+        margin-top:0;
     }
 
     .stars-2 {
