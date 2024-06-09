@@ -101,12 +101,10 @@
 }*/
 
 .Lpink-sticker {
-
     aspect-ratio: 1;
     background-image: url('immagini/trama/sticker-rosa.png');
     background-size: contain;
     background-repeat: no-repeat;
-
 }
 
 .Lblue-sticker {
