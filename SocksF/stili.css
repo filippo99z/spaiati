@@ -255,6 +255,9 @@ button{
     animation: jello-horizontal 0.9s both;
     cursor: pointer;
 }
+#freccia{
+    width: 60px;
+}
 /*fine footer*/
 /*SCRITTE CHE SCORRONO*/
 .wrapper {
@@ -514,6 +517,7 @@ button{
     }
     #freccia{
         transform: rotate(-90deg) scaleX(-1);
+
     }
     .footer p{
         font-weight: 200;

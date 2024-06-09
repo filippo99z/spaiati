@@ -24,8 +24,8 @@ function gira(element){
         document.getElementById("counter").innerHTML = counter;
         element.style.display ="none";
         let fronte = element.nextElementSibling;
-        console.log(fronte.getAttribute("value"))
-        let value = fronte.getAttribute("value")
+        console.log(fronte.getAttribute("alt"))
+        let value = fronte.getAttribute("alt")
         cards.push(value);
         if (counter ==3){
             checkWin(cards);
@@ -240,8 +240,8 @@ function displayButton (){
 
 function filter(button){
 
-    let check = button.getAttribute('active');
-    let buttonPressed = button.getAttribute('val');
+    let check = button.getAttribute('data-active');
+    let buttonPressed = button.getAttribute('data-val');
 
     let total = document.getElementsByClassName("products");
     let target = document.getElementById(buttonPressed);
@@ -269,7 +269,7 @@ function filter(button){
         }
         console.log("hai cliccato per filtrare");
         button.classList.replace("btn-purple","btn-yellow");
-        button.setAttribute("active","true");
+        button.setAttribute("data-active","true");
     }else{
         console.log("hai cliccato per togliere il  filtroo");
         for(let i=0;i<total.length;i++){
@@ -277,12 +277,12 @@ function filter(button){
             total[i].classList.remove('hidden');
         }
         button.classList.replace("btn-yellow","btn-purple");
-        button.setAttribute("active","none");
+        button.setAttribute("data-active","none");
 
     }
 }
 function filterButtons(button){
-    let buttonPressed = button.getAttribute('val');
+    let buttonPressed = button.getAttribute('data-val');
     let control = check(buttonPressed); //controlla se c'è un altro bottone attivo
     if(control && !buttons[buttonPressed]){ //se c'è un altro bottne attivo diverso da quello cliccato entra
         console.log("c'è un altro bottone attivo"); //in questo caso bisogna settare prima tutti i bottoni falsi e mettere quello selezionato true
