@@ -17,6 +17,7 @@
     left: 105%;
     width: 55%;
     top:80%;
+    z-index: 1000;
 }
 .indexbackground {
     background-image: url('immagini/index/background.png');
@@ -290,5 +291,10 @@
     }
     .background-img{
         height: 300px;
+    }
+}
+@media screen and (max-width: 366px){
+    .arrow1 {
+        display: none;
     }
 }
