@@ -62,10 +62,12 @@ function sliderssIn(){
     slideInSm()
 }
 function slideOut() {
-
-    console.log("cliccato");
+    console.log("counter slide out:"+counter)
     if(counter<6){
     counter++;
+    counterSm++;
+    console.log("counter slide out:"+counter);
+    console.log("questo lo vedi:"+galleryDesc[counter])
     document.getElementById("description").innerHTML = galleryDesc[counter];
     console.log("slide out"+counter);
     let idPhoto = "roll"+counter
@@ -87,9 +89,10 @@ function slideOut() {
     }
 }
 function slideIn() {
-
+    console.log("counterSlidein:"+counter)
     if (counter>0) {
-        console.log("slide in"+counter);
+
+        console.log("slide in"+counter+1);
 
         let idPhoto = "roll" + counter
         let img = document.getElementById(idPhoto);
@@ -104,7 +107,9 @@ function slideIn() {
             img.style.display = "block";
 
         }
+        console.log("slide in small:"+counterSm);
         counter--;
+        counterSm--;
         document.getElementById("description").innerHTML = galleryDesc[counter];
     }
 }
@@ -115,9 +120,9 @@ function slideOutSm() {
     console.log( galleryDesc[counterSm]);
     console.log("cliccato");
     if(counterSm<7){
-        counterSm++;
-        console.log("slide out"+counter);
-        let idPhoto = "rollsm"+counterSm
+
+
+        let idPhoto = "rollsm"+(counterSm)
         let img =document.getElementById(idPhoto);
 
         if (counterSm%2 ==0){
@@ -139,23 +144,23 @@ function slideOutSm() {
 function slideInSm() {
     document.getElementById("description").innerHTML = galleryDesc[counterSm];
     console.log( galleryDesc[counterSm]);
-    if (counterSm>0) {
-        console.log("slide in"+counterSm);
+    console.log("slide in small:"+counterSm);
+    if (counterSm>=0) {
+        console.log("slide in small 2:"+counterSm);
 
-        let idPhoto = "rollsm" + counterSm
+        let idPhoto = "rollsm" + (counterSm+1)
+        console.log(idPhoto);
         let img = document.getElementById(idPhoto);
 
-        if (counterSm % 2 == 0) {
+        if (counterSm%2 == 0) {
             img.classList.add("roll-in-left");
             img.style.display = "block";
-
 
         } else {
             img.classList.add("roll-in-right");
             img.style.display = "block";
 
         }
-        counterSm--;
     }
 
 }
